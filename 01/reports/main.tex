@@ -1,0 +1,115 @@
+\documentclass[table, 12pt]{article}
+\usepackage[a4paper, top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[default]{cantarell}
+\usepackage{tocloft}
+\usepackage{caption}
+\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{textpos}
+\usepackage{scrhack}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{tasks}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{graphicx}
+
+\newcommand{\red}{\color{red}}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.95ex plus 1ex minus .2ex}{.5ex plus .2ex}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace{2cm}
+    \scshape\large Academic Year 2020/2021 \par
+    \vfill
+    \includegraphics[width=200pt]{images/LogoPoliMI}\par\vspace{1cm}
+    {\scshape\LARGE Computer Science and Engineering \par}
+    \vspace{1.5cm}
+    {\Large\bfseries System and Methods for Big and Unstructured Data \par}
+    \vspace{0.5cm}
+    {\huge\bfseries \textbf{Project Report - Neo4j} \par}
+    \vspace{2cm}
+    {\large{Matteo Falzi \quad Fabio La Manna \quad Filippo Manzardo \\Paolo Marzolo \quad Matteo Regge}\par}
+    \vfill
+    {\large Prof. Marco Brambilla }
+    \vfill
+    {\large \textbf{Version 0.1}\\ \today \par}
+\end{titlepage}
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+\thispagestyle{plain}
+\pagenumbering{gobble}
+\mbox{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+\subsection{Assumptions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Relational Model}
+
+\subsection{Logic Model}
+Bozza da controllare :(
+
+\begin{minted}
+    [
+    frame=lines,
+    framesep=5mm,
+    baselinestretch=1.5,
+    escapeinside=||
+    ]
+    {python}
+    ####### Entities #######
+    Person(|\red{CIF}|,Name,Surname,Age,Birth,Cell Number,e-Mail,
+            Positive,Positiviness Confirm Time) 
+    Medical Record(|\red{CIF}|,COVID Vaccinated,Risky Subject,Health Status)
+    COVID Test(|\red{CIF}|,|\red{Date}|,Esit)
+    COVID Vaccine(|\red{CIF}|,|\red{Date}|,Type)
+    Place(|\red{Address}|,|\red{Zip Code}|,|\red{State}|,Name,Type)
+    Room(|\red{Name}|,|\red{Address}|,|\red{Zip Code}|,|\red{State}|,Capience)
+    
+    ####### Relations #######
+    Has(|\red{CIF}|)
+    Registered(|\red{CIF}|,|\red{Date}|)
+    Registered(|\red{CIF}|,|\red{Date}|)
+    Contacts(|\red{CIF}|,|\red{CIF}|,Date,Start Time,End Time)
+    Lives(|\red{CIF}|,|\red{Address}|,|\red{Zip Code}|,|\red{State}|)
+    Visits(|\red{CIF}|,|\red{Address}|,|\red{Zip Code}|,|\red{State}|,|\red{Name}|,Date,Start Time,End Time)
+    
+            
+\end{minted}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Neo4j Implementation}
+
+\subsection{Queries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{User Interface Implementation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusion}
+
+:)
+\end{document}
+
