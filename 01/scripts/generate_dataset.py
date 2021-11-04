@@ -11,37 +11,48 @@ import scipy.stats as ss
 import pandas as pd
 
 
-### Settings ###
+#########   Settings   #########
 
+# number of nodes and arcs
 NUMBER_OF_PEOPLE = 200
-CONTACTS = 100
-NUMBER_OF_PLACES = 100
+NUMBER_OF_CONTACTS = 100
+NUMBER_OF_PLACES = 20
 NUMBER_OF_ROOMS = 50
 NUMBER_OF_VISITS = 100
 
+# datetime related to COVID
 min_datetime = datetime(2020, 1, 1, 0, 0, 0)
 min_positive_datetime = datetime.now() - relativedelta(days=45)
 max_datetime = datetime.now()
 
+# datetime related to birth
 birth_min_datetime = datetime(1950, 1, 1, 0, 0, 0)
 birth_max_datetime = datetime.now() - relativedelta(years=18)
 
+# probability ratio
 positive_ratio = 0.08
 risky_ratio = 0.1
 
+# number of tests per person
 max_tests = 10
 
-min_contact_duration = 10  ##minutes
+# duration of contacts/visits in minutes
+min_contact_duration = 10  
 max_contact_duration = 1439  
 
-min_visit_duration = 5  ##minutes
+min_visit_duration = 5  
 max_visit_duration = 720  
 
+# max capience of a room
 max_capience = 150
 
-### Functions ###
+# filepaths
+cities_filepath = './data/Comuni-Italiani.csv'
+places_filepath = './data/Luoghi-Italiani.csv'
 
+#########   Functions   #########
 
+# Save list of dictionaries to CSV
 def saveCSV(toCSV, filename) -> None:
 
     keys = toCSV[0].keys()
@@ -50,6 +61,7 @@ def saveCSV(toCSV, filename) -> None:
         dict_writer.writeheader()
         dict_writer.writerows(toCSV)
 
+# Generate random italian phone number in string format
 def randomPhone() -> str:
 
     phone_number = '3'
@@ -60,12 +72,15 @@ def randomPhone() -> str:
 
     return phone_number
 
+# Generate random Room Name format: #ASCIILetter.#Digit.#Digit
 def randomRoomName() -> str:
 
     S = random.choice(string.ascii_letters).upper() + '.' + str(random.randint(0,9)) + '.' + str(random.randint(0,9))
 
     return S
 
+
+# Assert Place has rooms
 def hasRooms(place):
 
     places_with_rooms = ['populated place', 'palace', 'church', 'hotel', 'school']
@@ -73,26 +88,29 @@ def hasRooms(place):
     return place in places_with_rooms 
 
 
+# Generate rooms from places
 def generateRooms(places) -> list:
 
     rooms = []
-    current_place = {'type': None}
+    current_place = {'Type': None}
 
     for i in range(NUMBER_OF_ROOMS):
-        while not(hasRooms(current_place['type'])):
+        while not(hasRooms(current_place['Type'])):
             current_place = places[random.randint(0,len(places) - 1)]
 
         room_name = randomRoomName()
         capience = random.randint(0, max_capience - 1)
         rooms.append({
-                'Place': current_place['code'],
+                'Place': current_place['Code'],
                 'Name': room_name,
                 'Capience': capience
             })
-        current_place = {'type': None}
+        current_place = {'Type': None}
 
     return rooms
 
+
+# Return Entities in list of dictionaries format
 def getEntities() -> (list, list, list, list, list, list):
 
     people = []
@@ -101,30 +119,33 @@ def getEntities() -> (list, list, list, list, list, list):
     medical_records = []
     covid_vaccines = []
     covid_tests = []
-    df = pd.read_csv('data/Comuni-Italiani.csv', header = 1, sep=';')
-    cities = df['Denominazione in italiano']
-    del df
+    places_df = pd.read_csv(places_filepath, sep=';')
+    cities_df = pd.read_csv(cities_filepath, header = 1, sep=';')
+    cities = cities_df['Denominazione in italiano']
+    del cities_df
 
     for i in range(NUMBER_OF_PEOPLE):
 
         ### Person Info ####
 
-        first_name = names.get_first_name()
+        sex = random.choice(['male','female'])
+        first_name = names.get_first_name(gender=sex)
         last_name = names.get_last_name()
         positive = np.random.choice([True, False], p=[positive_ratio, 1 - positive_ratio])
         birth = (birth_min_datetime + (birth_max_datetime - birth_min_datetime) * random.random()).strftime('%d/%m/%Y')
         phone_number = randomPhone()
-        email = f'{first_name.lower()}.{last_name.lower()}@gmail.com'
+        mail_provider  = random.choice(['gmail.com','outlook.it','icloud.com','hotmail.it','yahoo.it'])
+        email = f'{first_name.lower()}.{last_name.lower()}@{mail_provider}'
         if positive:
             last_confirm = (min_positive_datetime + (max_datetime - min_positive_datetime) * random.random()).strftime('%d/%m/%Y')
         else:
             last_confirm = random.choice([None, (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y')])
 
-        sex = random.choice(['M','F'])
+        sex = sex[0].upper()
         birthplace = cities[random.randint(0,len(cities)-1)]
 
         try:
-            CFI = codicefiscale.encode(surname=last_name, name=first_name, sex=sex, birthdate=birth, birthplace=birthplace)
+            CIF = codicefiscale.encode(surname=last_name, name=first_name, sex=sex, birthdate=birth, birthplace=birthplace)
         except:
             continue
 
@@ -135,43 +156,44 @@ def getEntities() -> (list, list, list, list, list, list):
         ### ###
 
         people.append({
-            'CFI': CFI,
-            'first_name': first_name,
-            'last_name': last_name,
-            'positive': positive,
-            'birth': birth,
-            'birthplace': birthplace,
-            'phone_number': phone_number,
-            'email': email,
-            'last_confirm': last_confirm,
-            'sex': sex
+            'CIF': CIF,
+            'First_name': first_name,
+            'Last_name': last_name,
+            'Positive': positive,
+            'Birth': birth,
+            'Birthplace': birthplace,
+            'Phone_number': phone_number,
+            'Email': email,
+            'Last_Confirm': last_confirm,
+            'Sex': sex
             })
 
         medical_records.append({
-                'CFI': CFI,
-                'covid_vaccinated': covid_vaccinated,
-                'risky_subject': risky_subject,
-                'health_status': health_status,
+                'CIF': CIF,
+                'Covid_Vaccinated': covid_vaccinated,
+                'Risky_Subject': risky_subject,
+                'Health_Status': health_status,
             })
 
 
+        # Max 2 Vaccines per person
         if (covid_vaccinated):
                 for i in range(random.randint(1,2)):
                     covid_vaccines.append({
-                        'CFI': CFI,
-                        'date': (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y'),
-                        'type': random.choice(["Pfizer", "Moderna", "Astrazeneca", "Johnson & Johnson"])
+                        'CIF': CIF,
+                        'Date': (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y'),
+                        'Type': random.choice(["Pfizer", "Moderna", "Astrazeneca", "Johnson & Johnson"])
                     })
 
-        
+        # At leats one test if last_confirm (with the same result as Person.Positive)
         if (last_confirm):
             covid_tests.append({
-                'CFI': CFI,
-                'date': last_confirm,
-                'result': positive,
+                'CIF': CIF,
+                'Date': last_confirm,
+                'Result': positive,
             })
 
-            #Discrete ~Normal Distribution~ centered in 0
+            #Discrete ~Normal Distribution~ centered in 0 describing number of test per person
             x = np.arange(0, max_tests)
             xU, xL = x + 0.5, x - 0.5 
             prob = ss.norm.cdf(xU, scale = 3) - ss.norm.cdf(xL, scale = 3)
@@ -180,36 +202,38 @@ def getEntities() -> (list, list, list, list, list, list):
 
             for i in range(num):
                 covid_tests.append({
-                    'CFI': CFI,
-                    'date': (min_datetime + (datetime.strptime(last_confirm,'%d/%m/%Y') - min_datetime) * random.random()).strftime('%d/%m/%Y'),
-                    'result': positive,
+                    'CIF': CIF,
+                    'Date': (min_datetime + (datetime.strptime(last_confirm,'%d/%m/%Y') - min_datetime) * random.random()).strftime('%d/%m/%Y'),
+                    'Result': positive,
                 })
 
-
-    places_df = pd.read_csv("data/Luoghi-Italiani.csv")
     
     n = len(places_df)
     idxs = np.zeros(n)
 
+    # Get #NUMBER_OF_PLACES random places
     for i in range (NUMBER_OF_PLACES):
       l = random.randint(0,n)
-      idxs[l] = places_df['code'][l]
+      idxs[l] = places_df['Code'][l]
 
-    places = places_df[places_df['code'] == idxs].to_dict('records')
+    places = places_df[places_df['Code'] == idxs].to_dict('records')
+    del places_df
 
-
+    # Generate Rooms
     rooms  = generateRooms(places)
 
     return people, medical_records, covid_vaccines, covid_tests, places, rooms
 
 
-
+# Generate Relations
 def getRelations(people, places, rooms):
 
     contacts = []
     visits =  []
+    lives = []
 
-    for i in range(CONTACTS):
+    # Generate Contacts
+    for i in range(NUMBER_OF_CONTACTS):
 
         contact_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y')
         contact_duration = str(timedelta(minutes=random.randint(min_contact_duration, max_contact_duration)))
@@ -217,17 +241,19 @@ def getRelations(people, places, rooms):
         P1 = random.randint(0, NUMBER_OF_PEOPLE - 1) 
         P2 = random.randint(0, NUMBER_OF_PEOPLE - 1)
 
+        # No contact with itself
         if P1 == P2:
             P2 -= 1
 
         contacts.append(
             {
-                'CFI1': people[P1]['CFI'],
-                'CFI2': people[P2]['CFI'],
-                'date': contact_date,
-                'duration': contact_duration
+                'CIF1': people[P1]['CIF'],
+                'CIF2': people[P2]['CIF'],
+                'Date': contact_date,
+                'Duration': contact_duration
             })
 
+    # Generate Visits
     for i in range(NUMBER_OF_VISITS):
 
         visit_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y')
@@ -236,16 +262,16 @@ def getRelations(people, places, rooms):
         person = random.randint(0, NUMBER_OF_PEOPLE - 1)
         room = random.choice([None, random.randint(0, NUMBER_OF_ROOMS - 1)])
 
-
+        # If the place has no Rooms
         if room is None:
             place = places[random.randint(0, NUMBER_OF_PLACES - 1)]
-            while hasRooms(place['type']):
+            while hasRooms(place['Type']):
                 place = places[random.randint(0, NUMBER_OF_PLACES - 1)]
 
             visits.append(
             {
-                'CFI': people[person]['CFI'],
-                'Place': place['code'],
+                'CIF': people[person]['CIF'],
+                'Place': place['Code'],
                 'Room': None,
                 'Date': visit_date,
                 'Duration': visit_duration
@@ -255,16 +281,26 @@ def getRelations(people, places, rooms):
         else:
             visits.append(
             {
-                'CFI': people[person]['CFI'],
+                'CIF': people[person]['CIF'],
                 'Place': rooms[room]['Place'],
                 'Room': rooms[room]['Name'],
                 'Date': visit_date,
                 'Duration': visit_duration
             })
         
+    # Generate Lives
+    for i in range(NUMBER_OF_PEOPLE):
+
+        place = places[random.randint(0,len(places)-1)]
+
+        lives.append(
+            {
+                'CIF': people[i]['CIF'],
+                'Place': place['Code']
+            })
 
 
-    return contacts, visits
+    return contacts, visits, lives
 
 
 
@@ -272,7 +308,11 @@ if __name__ == "__main__":
 
     people, medical_records, covid_vaccines, covid_tests, places, rooms = getEntities()
     
-    contacts, visits = getRelations(people, places, rooms)
+    #update counts
+    NUMBER_OF_PEOPLE = len(people)
+    NUMBER_OF_PLACES = len(places)
+
+    contacts, visits, lives = getRelations(people, places, rooms)
 
     saveCSV(people, 'people.csv')
     saveCSV(medical_records, 'medical_records.csv')
@@ -281,5 +321,6 @@ if __name__ == "__main__":
     saveCSV(places, 'places.csv')
     saveCSV(rooms, 'rooms.csv')
 
+    saveCSV(lives, 'lives.csv')
     saveCSV(contacts, 'contacts.csv')
     saveCSV(visits, 'visits.csv')
