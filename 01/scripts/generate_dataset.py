@@ -9,6 +9,9 @@ from codicefiscale import codicefiscale
 import scipy.stats as ss
 import pandas as pd
 
+
+### Settings ###
+
 SIZE_DATASET = 200
 CONTACTS = 100
 
@@ -26,6 +29,10 @@ max_tests = 10
 
 min_contact_duration = 10  ##minutes
 max_contact_duration = 1439  
+
+
+### Functions ###
+
 
 def saveCSV(toCSV, filename) -> None:
 
@@ -54,7 +61,7 @@ def getEntities() -> (list, list, list, list):
     medical_records = []
     covid_vaccines = []
     covid_tests = []
-    df = pd.read_csv('data/Elenco-comuni-italiani.csv', header = 1, sep=';')
+    df = pd.read_csv('data/Comuni-Italiani.csv', header = 1, sep=';')
     cities = df['Denominazione in italiano']
     del df
 
@@ -137,7 +144,10 @@ def getEntities() -> (list, list, list, list):
                     'date': (min_datetime + (datetime.strptime(last_confirm,'%d/%m/%Y') - min_datetime) * random.random()).strftime('%d/%m/%Y'),
                     'result': positive,
                 })
+
     return people, medical_records, covid_vaccines, covid_tests
+
+
 
 def getRelations(people, num_people_contacts=100):
 
@@ -169,10 +179,12 @@ def getRelations(people, num_people_contacts=100):
 if __name__ == "__main__":
 
     people, medical_records, covid_vaccines, covid_tests = getEntities()
+    
     contacts = getRelations(people, num_people_contacts=CONTACTS)
 
     saveCSV(people, 'people.csv')
     saveCSV(medical_records, 'medical_records.csv')
     saveCSV(covid_vaccines, 'covid_vaccines.csv')
     saveCSV(covid_tests, 'covid_tests.csv')
+
     saveCSV(contacts, 'contacts.csv')
