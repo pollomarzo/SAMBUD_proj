@@ -2,6 +2,7 @@ import names
 import random
 import numpy as np
 import csv
+import string
 
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
@@ -12,8 +13,11 @@ import pandas as pd
 
 ### Settings ###
 
-SIZE_DATASET = 200
+NUMBER_OF_PEOPLE = 200
 CONTACTS = 100
+NUMBER_OF_PLACES = 100
+NUMBER_OF_ROOMS = 50
+NUMBER_OF_VISITS = 100
 
 min_datetime = datetime(2020, 1, 1, 0, 0, 0)
 min_positive_datetime = datetime.now() - relativedelta(days=45)
@@ -30,6 +34,10 @@ max_tests = 10
 min_contact_duration = 10  ##minutes
 max_contact_duration = 1439  
 
+min_visit_duration = 5  ##minutes
+max_visit_duration = 720  
+
+max_capience = 150
 
 ### Functions ###
 
@@ -52,8 +60,40 @@ def randomPhone() -> str:
 
     return phone_number
 
+def randomRoomName() -> str:
 
-def getEntities() -> (list, list, list, list):
+    S = random.choice(string.ascii_letters).upper() + '.' + str(random.randint(0,9)) + '.' + str(random.randint(0,9))
+
+    return S
+
+def hasRooms(place):
+
+    places_with_rooms = ['populated place', 'palace', 'church', 'hotel', 'school']
+
+    return place in places_with_rooms 
+
+
+def generateRooms(places) -> list:
+
+    rooms = []
+    current_place = {'type': None}
+
+    for i in range(NUMBER_OF_ROOMS):
+        while not(hasRooms(current_place['type'])):
+            current_place = places[random.randint(0,len(places) - 1)]
+
+        room_name = randomRoomName()
+        capience = random.randint(0, max_capience - 1)
+        rooms.append({
+                'Place': current_place['code'],
+                'Name': room_name,
+                'Capience': capience
+            })
+        current_place = {'type': None}
+
+    return rooms
+
+def getEntities() -> (list, list, list, list, list, list):
 
     people = []
     places = []
@@ -65,7 +105,7 @@ def getEntities() -> (list, list, list, list):
     cities = df['Denominazione in italiano']
     del df
 
-    for i in range(SIZE_DATASET):
+    for i in range(NUMBER_OF_PEOPLE):
 
         ### Person Info ####
 
@@ -145,21 +185,37 @@ def getEntities() -> (list, list, list, list):
                     'result': positive,
                 })
 
-    return people, medical_records, covid_vaccines, covid_tests
+
+    places_df = pd.read_csv("data/Luoghi-Italiani.csv")
+    
+    n = len(places_df)
+    idxs = np.zeros(n)
+
+    for i in range (NUMBER_OF_PLACES):
+      l = random.randint(0,n)
+      idxs[l] = places_df['code'][l]
+
+    places = places_df[places_df['code'] == idxs].to_dict('records')
+
+
+    rooms  = generateRooms(places)
+
+    return people, medical_records, covid_vaccines, covid_tests, places, rooms
 
 
 
-def getRelations(people, num_people_contacts=100):
+def getRelations(people, places, rooms):
 
     contacts = []
+    visits =  []
 
-    for i in range(num_people_contacts):
+    for i in range(CONTACTS):
 
         contact_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y')
         contact_duration = str(timedelta(minutes=random.randint(min_contact_duration, max_contact_duration)))
 
-        P1 = random.randint(0, SIZE_DATASET - 1) 
-        P2 = random.randint(0, SIZE_DATASET - 1)
+        P1 = random.randint(0, NUMBER_OF_PEOPLE - 1) 
+        P2 = random.randint(0, NUMBER_OF_PEOPLE - 1)
 
         if P1 == P2:
             P2 -= 1
@@ -172,19 +228,58 @@ def getRelations(people, num_people_contacts=100):
                 'duration': contact_duration
             })
 
-    return contacts
+    for i in range(NUMBER_OF_VISITS):
+
+        visit_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y')
+        visit_duration = str(timedelta(minutes=random.randint(min_visit_duration, max_visit_duration)))
+
+        person = random.randint(0, NUMBER_OF_PEOPLE - 1)
+        room = random.choice([None, random.randint(0, NUMBER_OF_ROOMS - 1)])
+
+
+        if room is None:
+            place = places[random.randint(0, NUMBER_OF_PLACES - 1)]
+            while hasRooms(place['type']):
+                place = places[random.randint(0, NUMBER_OF_PLACES - 1)]
+
+            visits.append(
+            {
+                'CFI': people[person]['CFI'],
+                'Place': place['code'],
+                'Room': None,
+                'Date': visit_date,
+                'Duration': visit_duration
+
+            })
+
+        else:
+            visits.append(
+            {
+                'CFI': people[person]['CFI'],
+                'Place': rooms[room]['Place'],
+                'Room': rooms[room]['Name'],
+                'Date': visit_date,
+                'Duration': visit_duration
+            })
+        
+
+
+    return contacts, visits
 
 
 
 if __name__ == "__main__":
 
-    people, medical_records, covid_vaccines, covid_tests = getEntities()
+    people, medical_records, covid_vaccines, covid_tests, places, rooms = getEntities()
     
-    contacts = getRelations(people, num_people_contacts=CONTACTS)
+    contacts, visits = getRelations(people, places, rooms)
 
     saveCSV(people, 'people.csv')
     saveCSV(medical_records, 'medical_records.csv')
     saveCSV(covid_vaccines, 'covid_vaccines.csv')
     saveCSV(covid_tests, 'covid_tests.csv')
+    saveCSV(places, 'places.csv')
+    saveCSV(rooms, 'rooms.csv')
 
     saveCSV(contacts, 'contacts.csv')
+    saveCSV(visits, 'visits.csv')
