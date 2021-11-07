@@ -14,11 +14,11 @@ import pandas as pd
 #########   Settings   #########
 
 # number of nodes and arcs
-NUMBER_OF_PEOPLE = 200
-NUMBER_OF_CONTACTS = 100
+NUMBER_OF_PEOPLE = 500
+NUMBER_OF_CONTACTS = 1500
 NUMBER_OF_PLACES = 20
 NUMBER_OF_ROOMS = 50
-NUMBER_OF_VISITS = 100
+NUMBER_OF_VISITS = 1000
 
 # datetime related to COVID
 min_datetime = datetime(2020, 1, 1, 0, 0, 0)
@@ -101,7 +101,7 @@ def generateRooms(places) -> list:
         room_name = randomRoomName()
         capience = random.randint(0, max_capience - 1)
         rooms.append({
-                'Place': current_place['Code'],
+                'Code': current_place['Code'],
                 'Name': room_name,
                 'Capience': capience
             })
@@ -157,12 +157,12 @@ def getEntities() -> (list, list, list, list, list, list):
 
         people.append({
             'CIF': CIF,
-            'First_name': first_name,
-            'Last_name': last_name,
+            'First_Name': first_name,
+            'Last_Name': last_name,
             'Positive': positive,
             'Birth': birth,
             'Birthplace': birthplace,
-            'Phone_number': phone_number,
+            'Phone_Number': phone_number,
             'Email': email,
             'Last_Confirm': last_confirm,
             'Sex': sex
@@ -282,7 +282,7 @@ def getRelations(people, places, rooms):
             visits.append(
             {
                 'CIF': people[person]['CIF'],
-                'Place': rooms[room]['Place'],
+                'Place': rooms[room]['Code'],
                 'Room': rooms[room]['Name'],
                 'Date': visit_date,
                 'Duration': visit_duration
@@ -296,7 +296,7 @@ def getRelations(people, places, rooms):
         lives.append(
             {
                 'CIF': people[i]['CIF'],
-                'Place': place['Code']
+                'Code': place['Code']
             })
 
 

@@ -1,21 +1,21 @@
 Code,Name,Lat,Long,CAP,State,Region,District,Type,Type_Desc
-3166390,Sopra la Frua,46.41667,8.4,103031,IT,Piedmont,Provincia Verbano-Cusio-Ossola,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3167252,Rada di Santo Stefano,41.2,9.43333,-1,IT,Sardinia,nan,roadstead,an open anchorage affording less protection than a harbor
-3172622,Moranego,44.4775,9.10307,10021,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3177879,Costrignano,44.36258,10.66544,36029,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3179801,Caspoli,41.38099,13.96717,61051,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3181149,Calvera,40.14871,16.143620000000002,76016,IT,nan,nan,seat of a third-order administrative division,nan
-3219911,Masarolis,46.17239,13.43043,30122,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-6537955,San Pietro Avellana,41.79063,14.18222,94043,IT,Molise,Provincia di Isernia,third-order administrative division,a subdivision of a second-order administrative division
-6538581,San Giuliano Terme,43.76164,10.4404,50031,IT,Tuscany,Province of Pisa,third-order administrative division,a subdivision of a second-order administrative division
-6542837,Pocapaglia,44.71524,7.88293,4170,IT,Piedmont,Provincia di Cuneo,third-order administrative division,a subdivision of a second-order administrative division
-6543342,Santa Maria Hoè,45.74428,9.37445,97074,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
-8966778,Lorie,44.288,7.9046,4159,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8975418,Baltrina,44.2413,9.93425,45015,IT,Tuscany,Provincia di Massa-Carrara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8980945,Frati,45.48689,9.96758,17060,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8982146,Maias,46.41844,12.37368,25039,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8985243,I.B.I.S Industria Bussetana,44.9896,10.03908,34007,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
-9036399,Due Carrare,45.29151,11.82402,28106,IT,Veneto,Provincia di Padova,seat of a third-order administrative division,nan
-10281975,Majestic San Sicario,44.95323,6.7937,1074,IT,Piedmont,Torino,hotel,a building providing lodging and/or meals for the public
-10629428,Spiaggia di Marina di Grosseto,42.71744,10.97878,53011,IT,Tuscany,Provincia di Grosseto,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
-11978784,Spiaggia di Acqua Sa Canna,39.25236,8.40122,111030,IT,Sardinia,Provincia del Sud Sardegna,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+2524537,I Casoni,39.73333,16.48333,78029,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2525417,Campoli Cerasara,38.45191,16.3911,80025,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3168390,San Felice d'Ocre,42.29363,13.45559,66059,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3172508,Motta di Livenza,45.77552,12.60411,26049,IT,Veneto,Provincia di Treviso,seat of a third-order administrative division,nan
+3179357,Catino,42.29014,12.6935,57052,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3218636,Manzana,45.92785,12.27158,26092,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+6536861,Roccalbegna,42.78613,11.50914,53020,IT,Tuscany,Provincia di Grosseto,third-order administrative division,a subdivision of a second-order administrative division
+6538019,Petilia Policastro,39.113890000000005,16.785510000000002,101017,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+8953124,Campo Maiuri,40.69061,14.85316,65121,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8960640,Ponterio,43.071670000000005,12.76066,54059,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8962622,Sabbioni,45.08587,12.05052,29001,IT,Veneto,Provincia di Rovigo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966102,Priare,45.42454,11.5764,24071,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976448,Marasco,45.73662,8.29454,2016,IT,Piedmont,Provincia di Vercelli,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8979608,Spaltini,45.12687,10.58423,20031,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8981581,Borgone,46.93629,11.53247,21107,IT,Trentino-Alto Adige,Bolzano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8983737,La Bruca,39.76897,15.813529999999998,78138,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8984463,Trucco,44.59147,7.365439999999999,4103,IT,Piedmont,Provincia di Cuneo,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8984714,Azienda Agricola Virginia Fiorina,44.98581,11.90424,29019,IT,Veneto,Provincia di Rovigo,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+10401162,Cantina Petra,43.03267,10.70905,49020,IT,Tuscany,Provincia di Livorno,vineyard,a planting of grapevines
+11863119,Castrovillari centro storico,39.81815,16.19735,78033,IT,nan,nan,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
