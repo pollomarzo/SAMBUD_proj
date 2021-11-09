@@ -9,7 +9,7 @@ create(p:Place{Code: ToInteger(CSV.Code), Name: CSV.Name, Lat: ToFloat(CSV.Lat),
 ## ADD MEDICAL RECORDS PLUS RELATION WITH PERSON 
 LOAD CSV WITH HEADERS FROM "file:///medical_records.csv" as CSV 
 match(p:Person{CIF: CSV.CIF})
-merge(m:Medical_Record{CIF: p.CIF, Covid_Vaccinated: CSV.Covid_Vaccinated, Risky_Subject: CSV.Risky_Subject, Health_Status: CSV.Health_Status})
+merge(m:Medical_Record{CIF: p.CIF, Covid_Vaccinated: toBoolean(CSV.Covid_Vaccinated), Risky_Subject: toBoolean(CSV.Risky_Subject), Health_Status: CSV.Health_Status})
 create(p)-[:HAS]->(m)
 
 ## ADD COVID VACCINES PLUS RELATION WITH MEDICAL RECORD 
