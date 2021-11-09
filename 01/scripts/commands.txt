@@ -37,9 +37,9 @@ merge(p1)-[:CONTACTS{Date: CSV.Date, Duration: CSV.Duration}]->(p2)
 merge(p2)-[:CONTACTS{Date: CSV.Date, Duration: CSV.Duration}]->(p1)
 
 ## ADD LIVES RELATION
-LOAD CSV WITH HEADERS FROM "file:///lives.csv" as CSV 
-match(p:Person{CIF: ToInteger(CSV.CIF)}),(h:Place{Code: ToInteger(CSV.Code)})
-merge(p)-[:LIVES]->(h)
+LOAD CSV WITH HEADERS FROM "file:///lives.csv" as CSV
+match(p:Person{CIF: CSV.CIF}), (h:Place{Code: ToInteger(CSV.Code)})
+merge (p)-[:LIVES]->(h)
 
 ## ADD VISIT RELATION WITH ROOM
 LOAD CSV WITH HEADERS FROM "file:///visits.csv" as CSV with CSV where CSV.Room is not null
