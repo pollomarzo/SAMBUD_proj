@@ -1,6 +1,6 @@
 ## ADD PEOPLE 
 LOAD CSV WITH HEADERS FROM "file:///people.csv" as CSV 
-create(p:Person{CIF: CSV.CIF, Name: CSV.First_Name, Last_Name: CSV.Last_Name, Birth: CSV.Birth, Sex: CSV.Sex, Birthplace: CSV.Birthplace, Phone_Number: CSV.Phone_Number, eMail: CSV.Email, Positive: CSV.Positive, Last_Confirm: CSV.Last_Confirm})
+create(p:Person{CIF: CSV.CIF, Name: CSV.First_Name, Last_Name: CSV.Last_Name, Birth: CSV.Birth, Sex: CSV.Sex, Birthplace: CSV.Birthplace, Phone_Number: CSV.Phone_Number, eMail: CSV.Email, Positive: toBoolean(CSV.Positive), Last_Confirm: CSV.Last_Confirm})
 
 ## ADD PLACES 
 LOAD CSV WITH HEADERS FROM "file:///places.csv" as CSV 
