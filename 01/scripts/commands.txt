@@ -44,7 +44,7 @@ merge(p)-[:LIVES]->(h)
 ## ADD VISIT RELATION WITH ROOM
 LOAD CSV WITH HEADERS FROM "file:///visits.csv" as CSV with CSV where CSV.Room is not null
 match(p:Person{CIF: CSV.CIF}),(r:Rooms{Code: ToInteger(CSV.Place), Name: CSV.Room}) 
-merge(p)-[v:VISITS{Date: CSV.Date, Duration: CSV.Duration}]->(pl)
+merge(p)-[v:VISITS{Date: CSV.Date, Duration: CSV.Duration}]->(r)
 
 ## ADD VISIT WITHOUT ROOM
 LOAD CSV WITH HEADERS FROM "file:///visits.csv" as CSV with CSV where CSV.Room is null
