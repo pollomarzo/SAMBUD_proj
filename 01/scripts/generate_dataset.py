@@ -1,14 +1,15 @@
 import names
-import random
-import numpy as np
+import scipy.stats as ss
+import pandas as pd
 import csv
 import string
 
+from numpy import arange, zeros
+from numpy import random as random
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from codicefiscale import codicefiscale
-import scipy.stats as ss
-import pandas as pd
+
 
 
 #########   Settings   #########
@@ -30,8 +31,9 @@ birth_min_datetime = datetime(1950, 1, 1, 0, 0, 0)
 birth_max_datetime = datetime.now() - relativedelta(years=18)
 
 # probability ratio
-positive_ratio = 0.08
+positive_ratio = 0.8
 risky_ratio = 0.1
+tested_ratio = 0.7
 
 # number of tests per person
 max_tests = 10
@@ -65,49 +67,28 @@ def saveCSV(toCSV, filename) -> None:
 def randomPhone() -> str:
 
     phone_number = '3'
-    phone_number += str(random.randint(2, 5))
     
-    for i in range(1, 9):
-        phone_number += str(random.randint(0, 9))
+    for i in range(10):
+        phone_number += str(random.randint(0, 9) + 1)
 
     return phone_number
 
 # Generate random Room Name format: #ASCIILetter.#Digit.#Digit
 def randomRoomName() -> str:
 
-    S = random.choice(string.ascii_letters).upper() + '.' + str(random.randint(0,9)) + '.' + str(random.randint(0,9))
+    letters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    S = random.choice(letters) + '.' + str(random.randint(10)) + '.' + str(random.randint(10))
 
     return S
 
 
 # Assert Place has rooms
-def hasRooms(place):
+def hasRooms(place) -> bool:
 
+    # related to current Dataset
     places_with_rooms = ['populated place', 'palace', 'church', 'hotel', 'school']
 
     return place in places_with_rooms 
-
-
-# Generate rooms from places
-def generateRooms(places) -> list:
-
-    rooms = []
-    current_place = {'Type': None}
-
-    for i in range(NUMBER_OF_ROOMS):
-        while not(hasRooms(current_place['Type'])):
-            current_place = places[random.randint(0,len(places) - 1)]
-
-        room_name = randomRoomName()
-        capience = random.randint(0, max_capience - 1)
-        rooms.append({
-                'Code': current_place['Code'],
-                'Name': room_name,
-                'Capience': capience
-            })
-        current_place = {'Type': None}
-
-    return rooms
 
 
 # Return Entities in list of dictionaries format
@@ -131,18 +112,18 @@ def getEntities() -> (list, list, list, list, list, list):
         sex = random.choice(['male','female'])
         first_name = names.get_first_name(gender=sex)
         last_name = names.get_last_name()
-        positive = np.random.choice([True, False], p=[positive_ratio, 1 - positive_ratio])
+        positive = random.choice([True, False], p=[positive_ratio, 1 - positive_ratio])
         birth = (birth_min_datetime + (birth_max_datetime - birth_min_datetime) * random.random()).strftime('%d/%m/%Y')
         phone_number = randomPhone()
         mail_provider  = random.choice(['gmail.com','outlook.it','icloud.com','hotmail.it','yahoo.it'])
         email = f'{first_name.lower()}.{last_name.lower()}@{mail_provider}'
         if positive:
-            last_confirm = (min_positive_datetime + (max_datetime - min_positive_datetime) * random.random()).strftime('%d/%m/%Y')
+            last_confirm = (min_positive_datetime + (max_datetime - min_positive_datetime) * random.random()).strftime('%Y-%m-%d')
         else:
-            last_confirm = random.choice([None, (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y')])
+            last_confirm = random.choice([None, (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%Y-%m-%d')], p=[tested_ratio,1-tested_ratio])
 
         sex = sex[0].upper()
-        birthplace = cities[random.randint(0,len(cities)-1)]
+        birthplace = cities[random.randint(0,len(cities))]
 
         try:
             CIF = codicefiscale.encode(surname=last_name, name=first_name, sex=sex, birthdate=birth, birthplace=birthplace)
@@ -150,7 +131,7 @@ def getEntities() -> (list, list, list, list, list, list):
             continue
 
         covid_vaccinated = random.choice([True, False])
-        risky_subject = np.random.choice([True, False], p=[risky_ratio, 1 - risky_ratio])
+        risky_subject = random.choice([True, False], p=[risky_ratio, 1 - risky_ratio])
         health_status = random.choice(["bad", "average", "good"])
         
         ### ###
@@ -178,10 +159,10 @@ def getEntities() -> (list, list, list, list, list, list):
 
         # Max 2 Vaccines per person
         if (covid_vaccinated):
-                for i in range(random.randint(1,2)):
+                for i in range(random.randint(1,3)):
                     covid_vaccines.append({
                         'CIF': CIF,
-                        'Date': (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y'),
+                        'Date': (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%Y-%m-%d'),
                         'Type': random.choice(["Pfizer", "Moderna", "Astrazeneca", "Johnson & Johnson"])
                     })
 
@@ -193,23 +174,23 @@ def getEntities() -> (list, list, list, list, list, list):
                 'Result': positive,
             })
 
-            #Discrete ~Normal Distribution~ centered in 0 describing number of test per person
-            x = np.arange(0, max_tests)
+            # Discrete ~Normal Distribution~ centered in 0 for number of test per person
+            x = arange(0, max_tests)
             xU, xL = x + 0.5, x - 0.5 
             prob = ss.norm.cdf(xU, scale = 3) - ss.norm.cdf(xL, scale = 3)
             prob = prob / prob.sum() 
-            num = np.random.choice(x, p=prob)
+            num = random.choice(x, p=prob)
 
             for i in range(num):
                 covid_tests.append({
                     'CIF': CIF,
-                    'Date': (min_datetime + (datetime.strptime(last_confirm,'%d/%m/%Y') - min_datetime) * random.random()).strftime('%d/%m/%Y'),
-                    'Result': positive,
+                    'Date': (min_datetime + (datetime.strptime(last_confirm,'%Y-%m-%d') - min_datetime) * random.random()).strftime('%Y-%m-%d'),
+                    'Result': random.choice([True,False], p=[positive_ratio, 1 - positive_ratio])
                 })
 
     
     n = len(places_df)
-    idxs = np.zeros(n)
+    idxs = zeros(n)
 
     # Get #NUMBER_OF_PLACES random places
     for i in range (NUMBER_OF_PLACES):
@@ -220,7 +201,21 @@ def getEntities() -> (list, list, list, list, list, list):
     del places_df
 
     # Generate Rooms
-    rooms  = generateRooms(places)
+    rooms = []
+    current_place = {'Type': None}
+
+    for i in range(NUMBER_OF_ROOMS):
+        while not(hasRooms(current_place['Type'])):
+            current_place = places[random.randint(0,len(places))]
+
+        room_name = randomRoomName()
+        capience = random.randint(0, max_capience)
+        rooms.append({
+                'Code': current_place['Code'],
+                'Name': room_name,
+                'Capience': capience
+            })
+        current_place = {'Type': None}
 
     return people, medical_records, covid_vaccines, covid_tests, places, rooms
 
@@ -235,11 +230,11 @@ def getRelations(people, places, rooms):
     # Generate Contacts
     for i in range(NUMBER_OF_CONTACTS):
 
-        contact_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y')
+        contact_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%Y-%m-%d')
         contact_duration = str(timedelta(minutes=random.randint(min_contact_duration, max_contact_duration)))
 
-        P1 = random.randint(0, NUMBER_OF_PEOPLE - 1) 
-        P2 = random.randint(0, NUMBER_OF_PEOPLE - 1)
+        P1 = random.randint(0, NUMBER_OF_PEOPLE) 
+        P2 = random.randint(0, NUMBER_OF_PEOPLE)
 
         # No contact with itself
         if P1 == P2:
@@ -256,17 +251,17 @@ def getRelations(people, places, rooms):
     # Generate Visits
     for i in range(NUMBER_OF_VISITS):
 
-        visit_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%d/%m/%Y')
+        visit_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%Y-%m-%d')
         visit_duration = str(timedelta(minutes=random.randint(min_visit_duration, max_visit_duration)))
 
         person = random.randint(0, NUMBER_OF_PEOPLE - 1)
-        room = random.choice([None, random.randint(0, NUMBER_OF_ROOMS - 1)])
+        room = random.choice([None, random.randint(0, NUMBER_OF_ROOMS)])
 
         # If the place has no Rooms
         if room is None:
-            place = places[random.randint(0, NUMBER_OF_PLACES - 1)]
+            place = places[random.randint(0, NUMBER_OF_PLACES)]
             while hasRooms(place['Type']):
-                place = places[random.randint(0, NUMBER_OF_PLACES - 1)]
+                place = places[random.randint(0, NUMBER_OF_PLACES)]
 
             visits.append(
             {
@@ -291,7 +286,7 @@ def getRelations(people, places, rooms):
     # Generate Lives
     for i in range(NUMBER_OF_PEOPLE):
 
-        place = places[random.randint(0,len(places)-1)]
+        place = places[random.randint(0,len(places))]
 
         lives.append(
             {

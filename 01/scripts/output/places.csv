@@ -1,21 +1,21 @@
 Code,Name,Lat,Long,CAP,State,Region,District,Type,Type_Desc
-2524537,I Casoni,39.73333,16.48333,78029,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-2525417,Campoli Cerasara,38.45191,16.3911,80025,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3168390,San Felice d'Ocre,42.29363,13.45559,66059,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3172508,Motta di Livenza,45.77552,12.60411,26049,IT,Veneto,Provincia di Treviso,seat of a third-order administrative division,nan
-3179357,Catino,42.29014,12.6935,57052,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3218636,Manzana,45.92785,12.27158,26092,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-6536861,Roccalbegna,42.78613,11.50914,53020,IT,Tuscany,Provincia di Grosseto,third-order administrative division,a subdivision of a second-order administrative division
-6538019,Petilia Policastro,39.113890000000005,16.785510000000002,101017,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
-8953124,Campo Maiuri,40.69061,14.85316,65121,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8960640,Ponterio,43.071670000000005,12.76066,54059,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8962622,Sabbioni,45.08587,12.05052,29001,IT,Veneto,Provincia di Rovigo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8966102,Priare,45.42454,11.5764,24071,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8976448,Marasco,45.73662,8.29454,2016,IT,Piedmont,Provincia di Vercelli,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8979608,Spaltini,45.12687,10.58423,20031,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8981581,Borgone,46.93629,11.53247,21107,IT,Trentino-Alto Adige,Bolzano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8983737,La Bruca,39.76897,15.813529999999998,78138,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
-8984463,Trucco,44.59147,7.365439999999999,4103,IT,Piedmont,Provincia di Cuneo,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
-8984714,Azienda Agricola Virginia Fiorina,44.98581,11.90424,29019,IT,Veneto,Provincia di Rovigo,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
-10401162,Cantina Petra,43.03267,10.70905,49020,IT,Tuscany,Provincia di Livorno,vineyard,a planting of grapevines
-11863119,Castrovillari centro storico,39.81815,16.19735,78033,IT,nan,nan,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+2524636,Gergei,39.69878,9.09965,111025,IT,Sardinia,Provincia del Sud Sardegna,seat of a third-order administrative division,nan
+3164295,Villa Bibone,44.35,10.91667,36030,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3166166,Stelvio,46.59767,10.5458,21095,IT,Trentino-Alto Adige,Bolzano,seat of a third-order administrative division,nan
+6485329,Hotel Borgo Antico,40.72987,9.39012,90002,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
+6491192,Hotel Porta Pia,41.9111,12.5024,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6537056,Arenzano,44.40274,8.67455,10001,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6539162,Sant'Alessio Siculo,37.92456,15.34909,83085,IT,Sicily,Messina,third-order administrative division,a subdivision of a second-order administrative division
+7627797,Breitnock,46.97252,11.75816,21088,IT,Trentino-Alto Adige,Bolzano,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+8015130,Basilica S. Paolo,41.85582,12.47809,58091,IT,nan,nan,metro station,"metro station (Underground, Tube, or Metro) "
+8950064,Abbadia,43.48821,13.53644,42034,IT,The Marches,Provincia di Ancona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8950069,San Giacomo-Marinella,39.57362,16.82186,78021,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8968040,Cavaglia di Mezzo,45.78422,8.29312,2171,IT,Piedmont,Provincia di Vercelli,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976831,Bettola,44.73844,10.97129,36044,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+10300209,Parrocchia San Francesco D'Assisi,41.22692,16.295289999999998,110001,IT,Apulia,Provincia di Barletta - Andria - Trani,church,a building for public Christian worship
+10571755,Parco Salvo D'Acquisto,45.12132,7.63127,1292,IT,Piedmont,Torino,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+10626628,Santino Punto Moda,45.63457,9.01544,12075,IT,nan,nan,mall,"A large, often enclosed shopping complex containing various stores, businesses, and restaurants usually accessible by common passageways."
+11838859,Chiesa di Santa Maria del Carmine,42.85408,13.584029999999998,44007,IT,The Marches,Provincia di Ascoli Piceno,church,a building for public Christian worship
+11839507,Cattedrale di Santa Maria Assunta e San Pardo,41.80103,14.91029,70031,IT,Molise,Provincia di Campobasso,church,a building for public Christian worship
+11963456,Palazzo Quadrio-Foppoli,46.21679,10.1728,14066,IT,nan,nan,palace,"a large stately house, often a royal or presidential residence"
+12035615,Lago Blu,45.92261,7.61826,7071,IT,Aosta Valley,Valle d'Aosta,lake,a large inland body of standing water
