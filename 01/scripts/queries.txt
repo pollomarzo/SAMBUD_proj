@@ -1,0 +1,60 @@
+### QUERY n. 1
+
+# Find all the contacts a Positive Person made during the last 5 days, returning Names, Dates and Days Passed
+
+MATCH (p1:Person)-[c:CONTACTS]-(p2:Person)
+WITH p1, p2, p1.Last_Confirm as positiveness_date, c.Date as contact_date 
+WHERE positiveness_date > contact_date and 
+    positiveness_date < contact_date + duration({days: 5}) and
+    p1.Positive = True
+RETURN DISTINCT p1.Name + " " + p1.Last_Name as Positive, 
+    p2.Name + " " + p2.Last_Name as Contacted, positiveness_date, contact_date,     
+    duration.inDays(contact_date, positiveness_date).days  as days_passed        
+    LIMIT 25
+
+
+
+### Query n. 2
+
+# Find how many positive vaccinated people have a determined type of Vaccine, returning Positive to Total ratio
+
+MATCH (m)-[:REGISTERED]->(c:Covid_Vaccines)
+WITH c.Type as Type, count(*) as TotalNumber
+ORDER BY c.Type 
+MATCH 
+    (p:Person)-[:HAS]-(m:Medical_Record),
+    (m)-[:REGISTERED]->(c:Covid_Vaccines)
+WHERE 
+    p.Positive = True 
+    and 
+    Type = c.Type
+RETURN  Type, count(*) as Positives, TotalNumber, round(ToFloat(count(*)) / ToFloat(TotalNumber)*100, 2) + "%" as Percent 
+ORDER BY Percent DESC
+
+
+
+### Query n. 3
+
+# Find which places and rooms has visited a positive person in the last 5 days
+
+MATCH (p1:Person)-[v1:VISITS]->(pl:Place)
+WHERE
+    p1.Last_Confirm > v1.Date and 
+    p1.Last_Confirm < v1.Date + duration({days:5})
+    and
+    p1.Positive = True and
+    v1.Duration > time({hour:0,minute:50})
+
+RETURN DISTINCT p1.CIF as CIF, p1.Name as Name, pl.Code as Place, pl.Room as Room, v1.Date as Date,p1.Last_Confirm as Positiveness_Date, count(v1) as Count
+ORDER BY p1.CIF
+UNION
+MATCH (p1:Person)-[v1:VISITS]->(r:Rooms)
+WHERE
+    p1.Last_Confirm > v1.Date and 
+    p1.Last_Confirm < v1.Date + duration({days:15})
+    and
+    p1.Positive = True and
+    v1.Duration > time({hour:0,minute:50})
+
+RETURN DISTINCT p1.CIF as CIF, p1.Name as Name, r.Code as Place, r.Name as Room, v1.Date as Date, p1.Last_Confirm as Positiveness_Date, count(v1) as Count
+ORDER BY p1.CIF

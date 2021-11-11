@@ -9,17 +9,17 @@ from numpy import random as random
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from codicefiscale import codicefiscale
-
+from math import floor
 
 
 #########   Settings   #########
 
 # number of nodes and arcs
-NUMBER_OF_PEOPLE = 500
-NUMBER_OF_CONTACTS = 1500
-NUMBER_OF_PLACES = 20
+NUMBER_OF_PEOPLE = 1000
+NUMBER_OF_CONTACTS = 3000
+NUMBER_OF_PLACES = 100
 NUMBER_OF_ROOMS = 50
-NUMBER_OF_VISITS = 1000
+NUMBER_OF_VISITS = 2000
 
 # datetime related to COVID
 min_datetime = datetime(2020, 1, 1, 0, 0, 0)
@@ -231,7 +231,8 @@ def getRelations(people, places, rooms):
     for i in range(NUMBER_OF_CONTACTS):
 
         contact_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%Y-%m-%d')
-        contact_duration = str(timedelta(minutes=random.randint(min_contact_duration, max_contact_duration)))
+        time = timedelta(minutes=random.randint(min_contact_duration, max_contact_duration))
+        contact_duration = '{:02.0f}:{:02.0f}:00'.format(floor(time.seconds/3600), time.seconds % 3600 /60)
 
         P1 = random.randint(0, NUMBER_OF_PEOPLE) 
         P2 = random.randint(0, NUMBER_OF_PEOPLE)
@@ -252,7 +253,8 @@ def getRelations(people, places, rooms):
     for i in range(NUMBER_OF_VISITS):
 
         visit_date = (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%Y-%m-%d')
-        visit_duration = str(timedelta(minutes=random.randint(min_visit_duration, max_visit_duration)))
+        time = timedelta(minutes=random.randint(min_contact_duration, max_contact_duration))
+        visit_duration = '{:02.0f}:{:02.0f}:00'.format(floor(time.seconds/3600), time.seconds % 3600 /60)
 
         person = random.randint(0, NUMBER_OF_PEOPLE - 1)
         room = random.choice([None, random.randint(0, NUMBER_OF_ROOMS)])
