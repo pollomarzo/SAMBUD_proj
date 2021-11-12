@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Neo4jProvider, createDriver } from 'use-neo4j'
 
-const driver = createDriver('neo4j+s://cbdc369d.databases.neo4j.io', 'myauradb.neo4j.io', 7687, 'neo4j', 'mYYGw4dV-v7GLAuwWUuwfhqCJKUs_zSR4ytR-xf-MRk')
+const driver = createDriver('neo4j+s', '7d26a3c2.databases.neo4j.io', '7687', 'neo4j', 'Nem13r3dWbn5lfzs-kKdV8W7OplReDksuaB8X_aahqk')
 
 ReactDOM.render(
   <React.StrictMode>
