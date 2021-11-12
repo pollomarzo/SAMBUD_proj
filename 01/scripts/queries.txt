@@ -35,7 +35,7 @@ ORDER BY Percent DESC
 
 ### Query n. 3
 
-# Find which places and rooms has visited a positive person in the last 5 days
+# Find which places and rooms have been visited by positive person in the last 5 days for a duration time longer than 50 minutes
 
 MATCH (p1:Person)-[v1:VISITS]->(pl:Place)
 WHERE
@@ -51,10 +51,59 @@ UNION
 MATCH (p1:Person)-[v1:VISITS]->(r:Rooms)
 WHERE
     p1.Last_Confirm > v1.Date and 
-    p1.Last_Confirm < v1.Date + duration({days:15})
+    p1.Last_Confirm < v1.Date + duration({days:5})
     and
     p1.Positive = True and
     v1.Duration > time({hour:0,minute:50})
 
 RETURN DISTINCT p1.CIF as CIF, p1.Name as Name, r.Code as Place, r.Name as Room, v1.Date as Date, p1.Last_Confirm as Positiveness_Date, count(v1) as Count
 ORDER BY p1.CIF
+
+
+
+### Query n. 4
+
+##Track all the people who were in contact with a positive in the last 15 days from his confirmation and find all their familiars
+
+match (p1:Person{Positive:true})-[c:CONTACTS]-(p2:Person), 
+	(p1)-[:LIVES]->(:Place)<-[:LIVES]-(p3:Person),
+	(p2)-[:LIVES]->(:Place)<-[:LIVES]-(p4:Person)
+where p1.Last_Confirm >= c.Date and p1.Last_Confirm <= c.Date + duration({days: 15})
+return distinct p1.Name + " " + p1.Last_Name as Positive, p2.Name + " " + p2.Last_Name as Contacted, p1.Last_Confirm, c.Date as Contact_Date, p3.Name as Familiar1, p4.Name as Familiar2
+
+
+
+### Query n. 5 
+
+##Track all the people who were in the same place of a positive in the last 15 days from his confirmation
+
+match (p1:Person{Positive:true})-[v1:VISITS]->(pl:Place)<-[v2:VISITS]-(p2:Person) 
+where p1.Last_Confirm >= v1.Date and p1.Last_Confirm >= v2.Date and p1.Last_Confirm <= v1.Date + duration({days: 15}) and p1.Last_Confirm <= v2.Date + duration({days: 15})
+return distinct p1.Name + " " + p1.Last_Name as Positive, p2.Name + " " + p2.Last_Name as Contacted, pl.Name as Place, p1.Last_Confirm, v1.Date as Positive_Visit, v2.Date as Contact_Visit
+
+
+
+### Query n. 6
+
+##Track all the people who were in contact, also indirectly, with a positive or with one of his contacts in the last 15 days of his confirmation 
+##The possible infected are risky subjects and they don't have a vaccine
+
+match p = (p1:Person{Positive:true})-[*]-(p2:Person)
+where all(r IN relationships(p) where (p1.Last_Confirm >= r.Date and p1.Last_Confirm <= r.Date + duration({days: 15})))
+match (p2:Person)-[:HAS]->(m:Medical_Record{Risky_Subject:true})
+where not (m)-[:REGISTERED]->(:Covid_Vaccines)
+return distinct p1.Name + " " + p1.Last_Name as Positive, p2.Name + " " + p2.Last_Name as Contacted, p1.Last_Confirm, p
+
+
+
+## Query n. 7
+
+##Given two people, one positive and one negative, find the shortest path for which they could have been in contact
+##The negative person has only vaccine and he hasn't done a test in the last 2 days from the positive confirmation
+
+match (p1:Person{Positive: true}), (p2:Person{Positive:false}), p = shortestPath((p1)-[*]-(p2))
+where all(r IN relationships(p) where (p1.Last_Confirm >= r.Date and p1.Last_Confirm <= r.Date + duration({days: 15}))) 
+match (p2)-[:HAS]->(m:Medical_Record), (m)-[:REGISTERED]->(t:Covid_Tests),  (m)-[r:REGISTERED]->(v:Covid_Vaccines)
+with p1, p2, max(t.Date) as Max_Date, count(v) as nv
+where (p1.Last_Confirm >= Max_Date and p1.Last_Confirm > Max_Date + duration({days: 2})) and nv=1
+return distinct p1.Name + " " + p1.Last_Name as Positive, p2.Name + " " + p2.Last_Name as Negative, p1.Last_Confirm, Max_Date as Latest_Test
