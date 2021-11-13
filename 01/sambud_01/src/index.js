@@ -4,17 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Neo4jProvider, createDriver } from 'use-neo4j'
+import AppThemeProvider from './theme';
+import CssBaseline from '@mui/material/CssBaseline';
 
-const driver = createDriver('neo4j+s', '7d26a3c2.databases.neo4j.io', '7687', 'neo4j', 'Nem13r3dWbn5lfzs-kKdV8W7OplReDksuaB8X_aahqk')
+const driver = createDriver('neo4j+s', '61208074.databases.neo4j.io', '7687', 'neo4j', 'E0hYQi0OjKRI3CPz4wpN8I5PGVgSyw1JCBaJ2sUdZz8')
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Neo4jProvider
-      driver={driver}
-    >
+  <AppThemeProvider>
+    <Neo4jProvider driver={driver}>
+      <CssBaseline />
       <App />
-    </Neo4jProvider>
-  </React.StrictMode>,
+    </Neo4jProvider >
+  </AppThemeProvider>
+  ,
   document.getElementById('root')
 );
 

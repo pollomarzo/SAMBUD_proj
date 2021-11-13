@@ -1,31 +1,97 @@
+// inspired by https://github.dev/its-hmny/M-and-M
+// i wrote that one too so no copying here :)
+
 import logo from './logo.svg';
-import './App.css';
-import { useState, useEffect } from 'react';
 import { Button } from '@mui/material';
-import { useReadCypher, useLazyWriteCypher } from 'use-neo4j'
+import React, { useEffect, useState, useMemo } from 'react';
+import ReactFlow from 'react-flow-renderer';
+import {
+  List,
+  ListItem,
+  ListItemText,
+  ListItemSecondaryAction,
+  IconButton,
+  Divider,
+  Fab,
+  Tooltip,
+  Box,
+  Container,
+  Typography,
+  Paper
+} from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+
+import QueryList from './QueryList';
+
 
 function App() {
   const [message, setMessage] = useState("");
-  const query = `Match (m:Movie) where m.released > 2000 RETURN m limit 5`
-  const params = { title: 'The Matrix' }
+  const [elements, setElements] = useState([
+    {
+      id: '1',
+      type: 'input', // input node
+      data: { label: 'Input Node' },
+      position: { x: 250, y: 25 },
+    },
+    // default node
+    {
+      id: '2',
+      // you can also pass a React component as a label
+      data: { label: <div>Default Node</div> },
+      position: { x: 100, y: 125 },
+    },
+    {
+      id: '3',
+      type: 'output', // output node
+      data: { label: 'Output Node' },
+      position: { x: 250, y: 250 },
+    },
+    // animated edge
+    { id: 'e1-2', source: '1', target: '2', animated: true },
+    { id: 'e2-3', source: '2', target: '3' },
+  ]);
+  const [selected, setSelected] = useState(undefined);
+  const [result, setResult] = useState(undefined);
 
-
-  const { cypher, error, loading, result, records, first } = useReadCypher(query, params)
-
-  if (loading || !result) return (<div>Loading...</div>)
-  if (error) return (<div>ERROR</div>)
-
-  // Get `m` from the first row
-  const movie = first.get('m')
-  console.log(cypher, error, !loading, result, records, first, movie)
+  console.log("CIAO MI STO RIRENDERIZZANDO")
 
   return (
-    <div className="App">
-      {movie.properties.title} was retrieved from database
-      {/* <Button onClick={handleSubmit}>
-        Carica dati
-      </Button> */}
-    </div >
+    <Container>
+      <Typography variant="h3">
+        Database explorer
+      </Typography>
+      <Paper>
+        <Box sx={{
+          height: '80vh',
+          width: '90vw',
+          marginTop: '10vh',
+          // marginLeft: '5vh',
+          display: 'flex',
+          flexDirection: 'row',
+          overflow: 'hidden',
+          bgColor: 'paper.background'
+        }}>
+          <QueryList setResult={setResult} setElements={setElements} />
+          <Box sx={{
+            position: 'relative',
+            flexGrow: 1,
+            flexDirection: 'column',
+            display: 'flex',
+          }}>
+            <Typography variant='body1'>content gang?</Typography>
+            <div style={{
+              width: 1500,
+              height: '100%',
+            }}>
+              <ReactFlow
+                nodesConnectable={false}
+                elements={elements}
+              />
+            </div>
+          </Box>
+        </Box >
+      </Paper>
+    </Container>
   );
 }
 
