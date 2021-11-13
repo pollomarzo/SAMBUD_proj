@@ -15,30 +15,28 @@ import {
 } from '@mui/material';
 import { useReadCypher, useLazyReadCypher } from 'use-neo4j'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import * as QUERIES from './queries.json'
 
 const QueryList = ({ setResult, setElements }) => {
     // initialize all queries to be run on button press
-    const [positives, dataPositives] = useLazyReadCypher(`MATCH(p:Person)-[:HAS]->(m:Medical_Record)
-    WHERE
-        p.Positive and
-        m.Risky_Subject and
-        p.Last_Confirm > date() - duration({days:15})
-    RETURN p LIMIT 5`)
+    const [positives, dataPositives] = useLazyReadCypher(QUERIES.CONTACT_POSITIVES);
     console.log(dataPositives)
+
     const handlePositives = e => {
         e.preventDefault()
         console.log("running query...")
         positives()
             .then(res => {
                 res && console.log(`result is `, res)
-                setElements([...res.records.map(record => {
-                    const item = record.get('p');
-                    return {
-                        id: item.identity.low,
-                        data: { label: item.properties.Name },
-                        position: { x: 100, y: 125 },
-                    }
-                })])
+                setResult(res.records)
+                // setElements([...res.records.map(record => {
+                //     const item = record.get('p');
+                //     return {
+                //         id: item.identity.low,
+                //         data: { label: item.properties.Name },
+                //         position: { x: 100, y: 125 },
+                //     }
+                // })])
             })
             .catch(e => console.error(e))
     }

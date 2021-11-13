@@ -1,0 +1,3 @@
+{
+    "CONTACT_POSITIVES": "MATCH (p1:Person)-[c:CONTACTS]-(p2:Person) WITH p1, p2, p1.Last_Confirm as positiveness_date, c.Date as contact_date  WHERE positiveness_date > contact_date and      positiveness_date < contact_date + duration({days: 5}) and     p1.Positive = True RETURN DISTINCT p1.Name + \" \" + p1.Last_Name as Positive,      p2.Name + \" \" + p2.Last_Name as Contacted, positiveness_date, contact_date,          duration.inDays(contact_date, positiveness_date).days  as days_passed             LIMIT 25"
+}

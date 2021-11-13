@@ -6,8 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import { Neo4jProvider, createDriver } from 'use-neo4j'
 import AppThemeProvider from './theme';
 import CssBaseline from '@mui/material/CssBaseline';
+import {
+  NEO4J_HOST_URI,
+  NEO4J_USER,
+  NEO4J_PASSWORD,
+  NEO4J_PROTOCOL} from './secrets';
 
-const driver = createDriver('neo4j+s', '61208074.databases.neo4j.io', '7687', 'neo4j', 'E0hYQi0OjKRI3CPz4wpN8I5PGVgSyw1JCBaJ2sUdZz8')
+const driver = createDriver(NEO4J_PROTOCOL, NEO4J_HOST_URI, '7687', NEO4J_USER, NEO4J_PASSWORD);
 
 ReactDOM.render(
   <AppThemeProvider>

@@ -22,6 +22,14 @@ import {
 import AddIcon from '@mui/icons-material/Add';
 
 import QueryList from './QueryList';
+import Table from './Table';
+import { NeoGraph, ResponsiveNeoGraph } from "./NeoGraph";
+import {
+  NEO4J_HOST_URI,
+  NEO4J_USER,
+  NEO4J_PASSWORD,
+  NEO4J_PROTOCOL,
+  NEO4J_FULL_URI} from './secrets';
 
 
 function App() {
@@ -53,8 +61,6 @@ function App() {
   const [selected, setSelected] = useState(undefined);
   const [result, setResult] = useState(undefined);
 
-  console.log("CIAO MI STO RIRENDERIZZANDO")
-
   return (
     <Container>
       <Typography variant="h3">
@@ -68,7 +74,7 @@ function App() {
           // marginLeft: '5vh',
           display: 'flex',
           flexDirection: 'row',
-          overflow: 'hidden',
+          // overflow: 'hidden',
           bgColor: 'paper.background'
         }}>
           <QueryList setResult={setResult} setElements={setElements} />
@@ -78,8 +84,7 @@ function App() {
             flexDirection: 'column',
             display: 'flex',
           }}>
-            <Typography variant='body1'>content gang?</Typography>
-            <div style={{
+            {/* <div style={{
               width: 1500,
               height: '100%',
             }}>
@@ -87,7 +92,13 @@ function App() {
                 nodesConnectable={false}
                 elements={elements}
               />
-            </div>
+            </div> */}
+            <ResponsiveNeoGraph
+              containerId={"id0"}
+              neo4jUri={"neo4j+s://61208074.databases.neo4j.io"}
+              neo4jUser={NEO4J_USER}
+              neo4jPassword={NEO4J_PASSWORD}/>
+            <Table data={result} />
           </Box>
         </Box >
       </Paper>
