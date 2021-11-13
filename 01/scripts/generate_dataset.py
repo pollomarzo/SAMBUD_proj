@@ -15,11 +15,11 @@ from math import floor
 #########   Settings   #########
 
 # number of nodes and arcs
-NUMBER_OF_PEOPLE = 1000
-NUMBER_OF_CONTACTS = 3000
-NUMBER_OF_PLACES = 100
-NUMBER_OF_ROOMS = 50
-NUMBER_OF_VISITS = 2000
+NUMBER_OF_PEOPLE = 8000
+NUMBER_OF_CONTACTS = 30000
+NUMBER_OF_PLACES = 1000
+NUMBER_OF_ROOMS = 500
+NUMBER_OF_VISITS = 20000
 
 # datetime related to COVID
 min_datetime = datetime(2020, 1, 1, 0, 0, 0)
@@ -31,7 +31,7 @@ birth_min_datetime = datetime(1950, 1, 1, 0, 0, 0)
 birth_max_datetime = datetime.now() - relativedelta(years=18)
 
 # probability ratio
-positive_ratio = 0.8
+positive_ratio = 0.5
 risky_ratio = 0.1
 tested_ratio = 0.7
 
@@ -113,7 +113,7 @@ def getEntities() -> (list, list, list, list, list, list):
         first_name = names.get_first_name(gender=sex)
         last_name = names.get_last_name()
         positive = random.choice([True, False], p=[positive_ratio, 1 - positive_ratio])
-        birth = (birth_min_datetime + (birth_max_datetime - birth_min_datetime) * random.random()).strftime('%d/%m/%Y')
+        birth = (birth_min_datetime + (birth_max_datetime - birth_min_datetime) * random.random()).strftime('%Y-%m-%d')
         phone_number = randomPhone()
         mail_provider  = random.choice(['gmail.com','outlook.it','icloud.com','hotmail.it','yahoo.it'])
         email = f'{first_name.lower()}.{last_name.lower()}@{mail_provider}'

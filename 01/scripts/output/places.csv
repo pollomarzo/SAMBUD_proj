@@ -1,101 +1,1000 @@
 Code,Name,Lat,Long,CAP,State,Region,District,Type,Type_Desc
-2522948,Fermata di Terrenove,37.73333,12.48333,81024,IT,Sicily,Trapani,railroad stop,a place lacking station facilities where trains stop to pick up and unload passengers and freight
-2523131,Punta del Sevo,39.9,8.38333,-1,IT,Sardinia,nan,point,"a tapering piece of land projecting into a body of water, less prominent than a cape"
-2524528,Il Catalano,39.88333,8.28333,-1,IT,Sardinia,nan,rock,"a conspicuous, isolated rocky mass"
-2525364,Pizzo Carbonara,37.9,14.03333,82042,IT,Sicily,Palermo,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
-3164450,Vezzano sul Crostolo,44.60241,10.54469,35043,IT,nan,nan,seat of a third-order administrative division,nan
-3165293,Traversella,45.50907,7.74938,1278,IT,Piedmont,Torino,seat of a third-order administrative division,nan
-3165736,Torrente Terzona,43.63333,11.18333,-1,IT,Tuscany,nan,stream,a body of running water moving to a lower level in a channel on land
-3165934,Tapogliano,45.87601,13.39965,30138,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3167144,Saragiolo,42.835440000000006,11.64362,52020,IT,Tuscany,Provincia di Siena,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3168220,San Giuliano Vecchio,44.88902,8.76057,6003,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3169202,Rocca,45.95435,11.75195,25004,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3169263,Rivalta,45.85,13.1,30075,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3170817,Pietracamela,42.52344,13.55431,67034,IT,nan,nan,seat of a third-order administrative division,nan
-3172542,Moruzzo,46.11967,13.124,30063,IT,nan,nan,seat of a third-order administrative division,nan
-3174706,Linaro,43.99658,12.10855,40020,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3175603,Casale,41.56463,14.343179999999998,94010,IT,Molise,Provincia di Isernia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3177891,Monte Costara,42.93333,12.91667,54018,IT,Umbria,Provincia di Perugia,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
-3178423,Fermata Colleborano,41.78333,13.2,60002,IT,nan,nan,railroad station,"a facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight"
-3178947,Cesolo,43.26091,13.19334,43047,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3183224,Alpe Forno,46.03333,9.45,97015,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-3207311,Masseria Santa Chiara,40.49583,17.19528,73027,IT,Apulia,Provincia di Taranto,farm,a tract of land with associated buildings devoted to agriculture
-3217778,Torricella,45.98111,12.86056,93053,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-6299593,Treviso Airport,45.6484,12.19442,26086,IT,Veneto,Provincia di Treviso,airport,"a place where aircraft regularly land and take off, with runways, navigational aids, and major facilities for the commercial handling of passengers and cargo"
-6487462,Residenza del Granduca,43.85858,10.80651,47009,IT,Tuscany,Provincia di Pistoia,hotel,a building providing lodging and/or meals for the public
-6537720,San Giovanni di Gerace,38.36508,16.2777,80072,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
-6538502,Saltara,43.75366,12.89726,41050,IT,The Marches,Provincia di Pesaro e Urbino,historical third-order administrative division,a former third-order administrative division
-6540033,Ginestra,40.92982,15.73456,76099,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
-6540854,Avola,36.91134,15.1395,89002,IT,Sicily,Provincia di Siracusa,third-order administrative division,a subdivision of a second-order administrative division
-6541078,Pontremoli,44.37515,9.87888,45014,IT,Tuscany,Provincia di Massa-Carrara,third-order administrative division,a subdivision of a second-order administrative division
-6541464,Alessandria,44.91245,8.61895,6003,IT,Piedmont,Provincia di Alessandria,third-order administrative division,a subdivision of a second-order administrative division
-6542079,Montegrotto Terme,45.33149,11.79121,28057,IT,Veneto,Provincia di Padova,third-order administrative division,a subdivision of a second-order administrative division
-6542214,Montecatini Val di Cecina,43.39284,10.74882,50019,IT,Tuscany,Province of Pisa,third-order administrative division,a subdivision of a second-order administrative division
-6542295,Osio Sotto,45.61608,9.58905,16153,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
-6621109,Novaglie,39.8613,18.39171,75002,IT,Apulia,Provincia di Lecce,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-6697736,Madone,46.23868,8.91698,-1,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
-6933445,Cime di Musella,46.33319,9.91909,14036,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
-6945024,Hotel Petra Bianca,41.09805,9.54098,90006,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
-7289460,Modesti,40.9891,16.40703,72038,IT,Apulia,Bari,abandoned airfield,nan
-7303538,Monte Ercole,43.86504,12.23525,-1,IT,The Marches,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
-8030019,Ottana 220 kV Substation,40.24443,9.00098,91010,IT,Sardinia,Provincia di Nuoro,power station,a facility for generating electric power
-8199505,Stazione Bari Parco Nord (RFI),41.12435,16.8369,72006,IT,Apulia,Bari,railroad yard,"a system of tracks used for the making up of trains, and switching and storing freight cars"
-8260210,Monte Corvo,43.85981,12.12273,40044,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
-8354453,Lago di Vizze,46.72795,11.10168,21101,IT,Trentino-Alto Adige,Bolzano,lake,a large inland body of standing water
-8504596,Santuario di Conche,45.62148,10.28518,17117,IT,nan,nan,monastery,a building and grounds where a community of monks lives in seclusion
-8948840,Marina di Davoli,38.66361,16.54825,79042,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8950154,San Giorgio,37.64035,14.46822,86003,IT,Sicily,Enna,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8950859,San Filippo,41.76771,13.14605,60006,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8952193,Località Poggio Olivo,43.02219,11.89317,52011,IT,Tuscany,Provincia di Siena,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8952732,Colle Cedro,41.4294,13.87977,60019,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8953415,Capo d'Elci,40.07621,15.74819,76068,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8953518,Mezzane-Massette,39.68691,15.871670000000002,78020,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8954283,Belprato,45.72472,10.37049,17139,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8954653,Santa Maria,42.75745,12.30736,54052,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8954977,Fabbiano,44.9741,9.44294,33006,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8956432,Ponte Pio,43.49837,13.21372,42029,IT,The Marches,Provincia di Ancona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8959183,Ca' dell'Ora Alta,45.3495,11.16276,23097,IT,Veneto,Provincia di Verona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8961264,Tetti Chiaramelli,44.60669,7.766889999999999,4065,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8961730,Groppo,45.33301,12.00388,28082,IT,Veneto,Provincia di Padova,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8962673,Marciano,43.74098,11.83487,51004,IT,Tuscany,Province of Arezzo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2522762,Villafranca Sicula,37.58761,13.29048,84043,IT,Sicily,Agrigento,seat of a third-order administrative division,nan
+2522820,Ussaramanna,39.6925,8.9085,111094,IT,Sardinia,Provincia del Sud Sardegna,seat of a third-order administrative division,nan
+2522842,Fiumara Turbido,38.28333,16.35,-1,IT,nan,nan,stream,a body of running water moving to a lower level in a channel on land
+2522850,Trodio,38.38333,15.86667,80057,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2523008,Stazione di Squillace,38.78333,16.566670000000002,79142,IT,nan,nan,railroad station,"a facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight"
+2523041,Spadafora,38.223490000000005,15.38178,83096,IT,Sicily,Messina,seat of a third-order administrative division,nan
+2523105,Silì,39.91789,8.621939999999999,95038,IT,Sardinia,Provincia di Oristano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2523255,San Sperate,39.35758,9.00814,111065,IT,Sardinia,Provincia del Sud Sardegna,seat of a third-order administrative division,nan
+2523401,San Paolo,36.8388,15.0259,89013,IT,Sicily,Provincia di Siracusa,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2523563,Sa Cora de Zoddias,40.0,8.53333,-1,IT,Sardinia,nan,stream,a body of running water moving to a lower level in a channel on land
+2523597,Roccavaldina,38.18296,15.374020000000002,83073,IT,Sicily,Messina,seat of a third-order administrative division,nan
+2523607,Rizzuti,39.12447,16.38111,78043,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2523810,Pezzolo,38.08527,15.45844,83048,IT,Sicily,Messina,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2524011,Fiumara di Niceto,38.21667,15.316670000000002,-1,IT,Sicily,nan,stream,a body of running water moving to a lower level in a channel on land
+2524113,Moladi,38.58333,16.0,102019,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2524163,Mezzojuso,37.86509,13.46509,82047,IT,Sicily,Palermo,seat of a third-order administrative division,nan
+2524188,Melicucco,38.43298,16.057479999999998,80049,IT,nan,nan,seat of a third-order administrative division,nan
+2524284,Marcazzo,37.96667,15.183329999999998,83023,IT,Sicily,Messina,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2524602,Girasole,39.95205,9.66098,91031,IT,Sardinia,Provincia di Nuoro,seat of a third-order administrative division,nan
+2524701,Frasso di Nive,38.83855,16.57328,79011,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2524772,Ferraud,39.53333,16.316670000000002,78017,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2524832,Donnici Superiore,39.2484,16.30351,78045,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2524843,Domanico,39.21693,16.20721,78050,IT,nan,nan,seat of a third-order administrative division,nan
+2524872,Curinga,38.82811,16.31344,79039,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2525038,Celico,39.31009,16.33989,78034,IT,nan,nan,seat of a third-order administrative division,nan
+2525045,Fermata di Cavorà,38.95,16.55,79058,IT,nan,nan,railroad station,"a facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight"
+2525070,Castrovillari,39.816320000000005,16.201829999999998,78033,IT,nan,nan,seat of a third-order administrative division,nan
+2525152,Case Levito,38.13333,15.35,83035,IT,Sicily,Messina,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2525189,Casa Serra Piani,39.25,17.01667,101025,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2525417,Campoli Cerasara,38.45191,16.3911,80025,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2525573,Belmonte Mezzagno,38.04653,13.39207,82009,IT,Sicily,Palermo,seat of a third-order administrative division,nan
+2525687,Archi,38.14296,15.661270000000002,80063,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+2525714,Andrano,39.98546,18.38232,75005,IT,Apulia,Provincia di Lecce,seat of a third-order administrative division,nan
+2567550,Punta Molinazzo,38.16667,13.08333,-1,IT,Sicily,nan,point,"a tapering piece of land projecting into a body of water, less prominent than a cape"
+3163895,Zelo,45.5,12.21667,27042,IT,Veneto,Provincia di Venezia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3164039,Viterbo,42.41937,12.1056,56059,IT,nan,nan,seat of a second-order administrative division,nan
+3164173,Villa Nuova,43.95,12.36667,-1,IT,The Marches,Provincia di Pesaro e Urbino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3164214,Villamaggiore,45.3206,9.19003,15115,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3164240,Villafranca in Lunigiana,44.29844,9.95347,45016,IT,Tuscany,Provincia di Massa-Carrara,seat of a third-order administrative division,nan
+3164343,Vignola,44.38835,9.85567,45014,IT,Tuscany,Provincia di Massa-Carrara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3164636,Fiume Vella,42.01667,13.933329999999998,-1,IT,nan,nan,stream,a body of running water moving to a lower level in a channel on land
+3164740,Monte Vanclava,44.43016,6.9474800000000005,4001,IT,Piedmont,Provincia di Cuneo,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+3164874,Valle Benedetta,43.52199,10.40633,49009,IT,Tuscany,Provincia di Livorno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3164918,Valeriano,46.16714,12.92159,93030,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3165325,Tramuschio,44.958870000000005,11.0864,36022,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3165379,Torrone,43.15755,13.10253,43007,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3165476,Torre a Mare,41.08333,17.0,72006,IT,Apulia,Bari,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3165608,Tofana di Mezzo,46.55123,12.06554,25016,IT,Veneto,Provincia di Belluno,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3165653,Monte Tinzosu,40.01667,8.71667,95062,IT,Sardinia,Provincia di Oristano,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3165724,Texelspitze - Cima Tessa,46.7198,10.97167,21091,IT,Trentino-Alto Adige,Bolzano,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3165900,Taurasi,41.0108,14.9598,64107,IT,nan,nan,seat of a third-order administrative division,nan
+3166133,Stio,40.3102,15.25153,65145,IT,nan,nan,seat of a third-order administrative division,nan
+3166151,Stezzano,45.64968,9.65192,16207,IT,nan,nan,seat of a third-order administrative division,nan
+3166267,Lago di Spigno,40.26667,15.73333,-1,IT,nan,nan,lake,a large inland body of standing water
+3166664,Serramezzana,40.2446,15.03246,65139,IT,nan,nan,seat of a third-order administrative division,nan
+3166948,Scauri,41.25703,13.70321,59014,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3167043,Fiume Sava,41.46667,14.1,-1,IT,nan,nan,stream,a body of running water moving to a lower level in a channel on land
+3167110,Sarsina,43.91981,12.14255,40044,IT,nan,nan,seat of a third-order administrative division,nan
+3167197,San Vito,42.54233,13.26359,66056,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3167201,San Vitale di Reno,44.55,11.36667,37006,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3167292,Santissima Annunziata,44.36667,9.9,45014,IT,Tuscany,Provincia di Massa-Carrara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3167318,Sant'Eusanio del Sangro,42.16908,14.32776,69085,IT,nan,nan,seat of a third-order administrative division,nan
+3167522,Santa Marina,40.1052,15.541529999999998,65127,IT,nan,nan,seat of a third-order administrative division,nan
+3167591,Santa Maria Coghinas,40.90423,8.86383,90087,IT,Sardinia,Provincia di Sassari,seat of a third-order administrative division,nan
+3167742,San Sebastiano al Vesuvio,40.84344,14.36428,63070,IT,nan,nan,seat of a third-order administrative division,nan
+3167786,San Quirico,44.92687,10.25765,34049,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3167884,San Patrignano,43.98333,12.55,99003,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3167921,Isola San Nicolicchio,40.47722,17.1975,-1,IT,Apulia,nan,island,"a tract of land, smaller than a continent, surrounded by water at high water"
+3167978,San Mauro Torinese,45.10359,7.76803,1249,IT,Piedmont,Torino,seat of a third-order administrative division,nan
+3168053,San Martino,43.8,12.63333,41030,IT,The Marches,Provincia di Pesaro e Urbino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3168105,San Luigi,42.27632,12.66258,57053,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3168146,San Lorenzo,42.42526,13.320620000000002,66072,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3168285,San Giovanni,41.23333,15.78333,71020,IT,Apulia,Provincia di Foggia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3168825,Rubbiano,42.9288,13.30886,109015,IT,The Marches,Province of Fermo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3168861,Rovere,44.202740000000006,11.9771,40012,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3168979,Rontagnano,43.95385,12.2294,40046,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169118,Rocchetta,42.65639,13.28666,57002,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169120,Roccavivi,41.81214,13.53662,66092,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169124,Roccatederighi,43.02802,11.08109,53021,IT,Tuscany,Provincia di Grosseto,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169139,Rocca San Felice,40.950140000000005,15.16656,64079,IT,nan,nan,seat of a third-order administrative division,nan
+3169204,Rocca,44.58333,8.73333,6169,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169316,Ripabianca,42.9397,12.40323,54017,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169555,Ravigliano,43.01431,12.02781,54012,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169667,Quindici,40.86497,14.646629999999998,64077,IT,nan,nan,seat of a third-order administrative division,nan
+3169675,Querciola,44.19379,10.88674,37033,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169786,Punta sa Pruna,40.18333,9.43333,91062,IT,Sardinia,Provincia di Nuoro,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3169830,Pretoro,42.21923,14.14248,69069,IT,nan,nan,seat of a third-order administrative division,nan
+3169865,Prelaz,45.73333,7.58333,7051,IT,Aosta Valley,Valle d'Aosta,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3169873,Predonico,46.5,11.23333,21004,IT,Trentino-Alto Adige,Bolzano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3170006,Pozzilli,41.51142,14.06252,94038,IT,Molise,Provincia di Isernia,seat of a third-order administrative division,nan
+3170296,Ponte Blaize,44.93333,6.83333,1258,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3170516,Poderi Ravaglia,44.5,12.1,39014,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3170615,Pitigliano,42.63582,11.67462,53019,IT,Tuscany,Provincia di Grosseto,seat of a third-order administrative division,nan
+3170675,Torrente Piomba,42.5318,14.13717,-1,IT,nan,nan,stream,a body of running water moving to a lower level in a channel on land
+3170709,Pilastri,44.94672,11.28829,38003,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3170850,Piedigrotta,40.98333,14.2,61005,IT,nan,nan,section of populated place,nan
+3170869,Picenengo,45.15219,9.98362,19036,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3170894,Poggio Piazza dei Tori,42.6,11.56667,53019,IT,Tuscany,Provincia di Grosseto,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3170982,Pianello,44.21667,10.9,36026,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3171074,Peveragno,44.3206,7.618589999999999,4163,IT,Piedmont,Provincia di Cuneo,seat of a third-order administrative division,nan
+3171210,Torrente Pergola,40.53333,15.6,-1,IT,nan,nan,stream,a body of running water moving to a lower level in a channel on land
+3171225,Perca,46.79343,11.98339,21063,IT,Trentino-Alto Adige,Bolzano,seat of a third-order administrative division,nan
+3171234,Monte Pentime,41.18333,14.63333,62077,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3171334,Pedraces,46.6,11.88333,21006,IT,Trentino-Alto Adige,Bolzano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3171415,Val Passiria,46.81667,11.25,-1,IT,Trentino-Alto Adige,nan,valley,an elongated depression usually traversed by a stream
+3171504,Punta Pantenecianni,40.73333,17.71667,74002,IT,Apulia,Provincia di Brindisi,point,"a tapering piece of land projecting into a body of water, less prominent than a cape"
+3171739,Naviglio di Paderno,45.68333,9.45,-1,IT,nan,nan,canal,an artificial watercourse
+3171835,Ospedaletto,45.66194,12.07884,26035,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3172170,Novi Ligure,44.76246,8.787,6114,IT,Piedmont,Provincia di Alessandria,seat of a third-order administrative division,nan
+3172215,None,44.93645,7.54015,1168,IT,Piedmont,Torino,seat of a third-order administrative division,nan
+3172354,Canale Naviglio,44.83333,11.68333,-1,IT,nan,nan,canal,an artificial watercourse
+3172435,Monte Murone,40.60861,8.23528,90003,IT,Sardinia,Provincia di Sassari,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+3172521,Motella,45.34497,10.01043,17020,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3172667,Serra Montillo,41.95,14.2,-1,IT,nan,nan,mountains,a mountain range or a group of mountains or high ridges
+3172947,Montedinove,42.97262,13.589720000000002,44034,IT,The Marches,Provincia di Ascoli Piceno,seat of a third-order administrative division,nan
+3173109,Montagnana,43.95415,10.82616,47007,IT,Tuscany,Provincia di Pistoia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3173157,Monestirolo,44.73489,11.68883,38008,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3173166,Bric Mondo,44.55,8.66667,10051,IT,nan,nan,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+3173235,Molino di San Costanzo,43.71667,13.08333,41038,IT,The Marches,Provincia di Pesaro e Urbino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3173262,Poggio del Molino,43.01667,10.51667,-1,IT,Tuscany,nan,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+3173543,Merli,43.85143,7.727939999999999,8055,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3173706,Monte Mattanieddu,40.33333,8.5,95079,IT,Sardinia,Provincia di Oristano,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3173733,Monte Massimo,41.85,12.78333,58119,IT,nan,nan,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+3173825,Monte Marzano,40.73884,15.30529,65043,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3173931,Marina di Massa,44.0038,10.10674,45010,IT,Tuscany,Provincia di Massa-Carrara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3173986,Marcoiano,44.05219,11.30497,48053,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3174003,Marche,45.9,11.9,25002,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3174045,Manzano,45.98843,13.37674,30055,IT,nan,nan,seat of a third-order administrative division,nan
+3174058,Riu Mannu de Pattada,40.61667,9.11667,-1,IT,Sardinia,nan,stream,a body of running water moving to a lower level in a channel on land
+3174092,Manfredonia,41.63065,15.91876,71029,IT,Apulia,Provincia di Foggia,seat of a third-order administrative division,nan
+3174114,Manarola,44.10712,9.72899,11024,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3174163,Malga Pasubio di Sotto,45.78333,11.2,-1,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3174275,Rio Maggiore,43.71667,13.1,-1,IT,The Marches,nan,stream,a body of running water moving to a lower level in a channel on land
+3174414,Maccabei Centro,41.08809,14.777079999999998,62060,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3174699,Monte Linnalzos,40.48333,8.9,90013,IT,Sardinia,Provincia di Sassari,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3175039,Laureana Cilento,40.3011,15.03876,65060,IT,nan,nan,seat of a third-order administrative division,nan
+3175097,Larzano-Campignana Sotto,44.96651,9.62533,33038,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3175204,La Martina,44.21592,11.37739,37040,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3175525,Incisa in Val d'Arno,43.6548,11.44901,48052,IT,Tuscany,Province of Florence,seat of a third-order administrative division,nan
+3175739,Fiume Guà,45.25,11.46667,-1,IT,Veneto,nan,stream,a body of running water moving to a lower level in a channel on land
+3175833,Greve in Chianti,43.58514,11.31712,48021,IT,Tuscany,Province of Florence,seat of a third-order administrative division,nan
+3175862,Torrente la Gravina,40.6,16.566670000000002,-1,IT,nan,nan,stream,a body of running water moving to a lower level in a channel on land
+3176086,Giomici,43.19365,12.61311,54057,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3176112,Gimigliano-Galleggiano,42.86618,13.52846,44073,IT,The Marches,Provincia di Ascoli Piceno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3176132,Giaugo,45.95,11.38333,24089,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3176144,Gianona,45.55,8.65,3016,IT,Piedmont,Provincia di Novara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3176155,Lago di Giacopiane,44.45,9.38333,-1,IT,nan,nan,lake,a large inland body of standing water
+3176328,Ganna,45.90212,8.82606,12131,IT,nan,nan,seat of a third-order administrative division,nan
+3176462,Laghi di Fusine,46.47972,13.67056,-1,IT,nan,nan,lakes,large inland bodies of standing water
+3176532,Riu Frigiano,40.9,8.71667,-1,IT,Sardinia,nan,stream,a body of running water moving to a lower level in a channel on land
+3176595,Franconi,40.26667,18.25,75013,IT,Apulia,Provincia di Lecce,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3176604,Francavilla d'Ete,43.18837,13.54033,109007,IT,The Marches,Province of Fermo,seat of a third-order administrative division,nan
+3176668,Fortogna,46.2302,12.2895,25071,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3177047,Fiano,45.21631,7.52603,1104,IT,Piedmont,Torino,seat of a third-order administrative division,nan
+3177068,Punta Ferru,40.77861,8.208060000000001,90064,IT,Sardinia,Provincia di Sassari,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+3177624,De Nardis,42.6,13.75,67005,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3177631,Deiva Marina,44.21931,9.52064,11012,IT,nan,nan,seat of a third-order administrative division,nan
+3177711,Monte Cugurutu,40.28333,8.8,91008,IT,Sardinia,Provincia di Nuoro,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3177776,Crocetta,44.91667,8.01667,5117,IT,Piedmont,Provincia di Asti,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3177832,Crescenzago,45.507670000000005,9.24791,15146,IT,nan,nan,section of populated place,nan
+3177965,Corti,43.56667,11.35,48021,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3178228,Lago di Como,46.00793,9.26079,13113,IT,nan,nan,lake,a large inland body of standing water
+3178444,Collamato,43.29143,12.94918,42017,IT,The Marches,Provincia di Ancona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3178629,Citerna,43.49882,12.11376,54011,IT,Umbria,Provincia di Perugia,seat of a third-order administrative division,nan
+3178712,Cifelli,41.56667,14.316670000000002,94010,IT,Molise,Provincia di Isernia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3178928,Cevo,46.08089,10.36952,17051,IT,nan,nan,seat of a third-order administrative division,nan
+3179055,Cerreggio,44.44188,10.27642,35046,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3179082,Cergnago,45.19826,8.77164,18045,IT,nan,nan,seat of a third-order administrative division,nan
+3179145,Ceppaloni,41.04523,14.761020000000002,62022,IT,nan,nan,seat of a third-order administrative division,nan
+3179148,Cepino,45.8,9.53333,16252,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3179165,Centegnano,45.3924,11.08522,23073,IT,Veneto,Provincia di Verona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3179237,Monte Cece,41.78333,14.833329999999998,70011,IT,Molise,Provincia di Campobasso,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3179294,Cavarzere,45.13518,12.08453,27006,IT,Veneto,Provincia di Venezia,seat of a third-order administrative division,nan
+3179367,Cataeggio,46.21447,9.63781,14074,IT,nan,nan,seat of a third-order administrative division,nan
+3179476,Castel Sant'Angelo,42.39373,13.02738,57015,IT,nan,nan,seat of a third-order administrative division,nan
+3179611,Chateau,45.03263,6.77312,1175,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3179812,Casoni di Romagna,44.25,11.43333,37012,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3179954,Casciolino,42.76667,13.13333,54035,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3180006,Lacona,42.76151,10.30123,49004,IT,Tuscany,Provincia di Livorno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3180152,Casalvolone,45.39966,8.46472,3041,IT,Piedmont,Provincia di Novara,seat of a third-order administrative division,nan
+3180285,Franciana,42.98468,10.63095,49012,IT,Tuscany,Provincia di Livorno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3180564,Monte Carbone,40.71667,16.53333,77014,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3180770,Lago di Canterno,41.74967,13.2514,60033,IT,nan,nan,lake,a large inland body of standing water
+3180784,Cansano,42.0035,14.01341,66018,IT,nan,nan,seat of a third-order administrative division,nan
+3181572,Brendola,45.47849,11.43947,24015,IT,Veneto,Provincia di Vicenza,seat of a third-order administrative division,nan
+3181629,Fosso di Braccano,43.25,13.0,-1,IT,The Marches,nan,stream,a body of running water moving to a lower level in a channel on land
+3181816,Borgo alla Collina,43.74861,11.72678,51010,IT,Tuscany,Province of Arezzo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3181947,Boffalora,45.42481,9.16461,15146,IT,nan,nan,section of populated place,nan
+3181983,Blera,42.27293,12.03016,56007,IT,nan,nan,seat of a third-order administrative division,nan
+3182059,Bibbiena,43.69876,11.81474,51004,IT,Tuscany,Province of Arezzo,seat of a third-order administrative division,nan
+3182088,Beverone,44.23579,9.78342,11025,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3182223,Bellimadore,45.4963,11.33105,24068,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3182356,Barge,44.72786,7.322830000000001,4012,IT,Piedmont,Provincia di Cuneo,seat of a third-order administrative division,nan
+3182521,Bagno di Piano,44.65258,11.27852,37050,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3182544,Bagni,42.78471,12.11191,55023,IT,Umbria,Provincia di Terni,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3182951,Aquara,40.44391,15.25386,65008,IT,nan,nan,seat of a third-order administrative division,nan
+3182995,Valle d'Aosta,45.75,7.33333,-1,IT,Aosta Valley,nan,valley,an elongated depression usually traversed by a stream
+3183010,Anzano del Parco,45.77006,9.19752,13009,IT,nan,nan,seat of a third-order administrative division,nan
+3183096,Ancaiano,42.64681,12.77319,54051,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3183265,Allumiere,42.15751,11.90361,58004,IT,nan,nan,seat of a third-order administrative division,nan
+3183443,Aggius,40.92995,9.06517,90001,IT,Sardinia,Provincia di Sassari,seat of a third-order administrative division,nan
+3183514,Acquarica,40.30639,18.31584,75093,IT,Apulia,Provincia di Lecce,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3183531,Acquacanina,43.02859,13.175999999999998,43001,IT,The Marches,Provincia di Macerata,historical third-order administrative division,a former third-order administrative division
+3183550,Accio,40.88333,15.816670000000002,76033,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3207286,Masseria Palmieri,40.54667,17.125,73015,IT,Apulia,Provincia di Taranto,farm,a tract of land with associated buildings devoted to agriculture
+3207469,Le Fornaci,40.57417,17.024720000000002,73021,IT,Apulia,Provincia di Taranto,building(s),"a structure built for permanent use, as a house, factory, etc."
+3208883,Masseria Mazzarella,40.4425,18.11333,75035,IT,Apulia,Provincia di Lecce,farm,a tract of land with associated buildings devoted to agriculture
+3208942,Masseria Terenzano,40.42556,18.02833,75087,IT,Apulia,Provincia di Lecce,farm,a tract of land with associated buildings devoted to agriculture
+3214779,San Lorenzo,44.11306,12.03694,40019,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3215639,Borgata Caprile,44.86278,12.17417,38005,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3215857,Tenuta Ariolo,44.95667,12.185,29002,IT,Veneto,Provincia di Rovigo,farm,a tract of land with associated buildings devoted to agriculture
+3216493,Rudavoi,46.53667,12.25333,-1,IT,Veneto,nan,stream,a body of running water moving to a lower level in a channel on land
+3217444,Medea,45.91751,13.42444,31011,IT,nan,nan,seat of a third-order administrative division,nan
+3217767,Puia-Villanova,45.86222,12.57139,93034,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3218223,Santa Maria di Campagna,45.70244,12.59875,26015,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3218529,Valmareno,45.96651,12.12954,26027,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3218799,Federavecchia,46.54889,12.25167,25005,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3219336,Porto di Caleri,45.09056,12.33028,-1,IT,Veneto,nan,inlet,"a narrow waterway extending into the land, or connecting a bay or lagoon with a larger body of water"
+3219562,Valle di Calt,46.01444,12.09417,-1,IT,Veneto,nan,valley,an elongated depression usually traversed by a stream
+3219611,Valle Grassabó,45.52528,12.55667,-1,IT,Veneto,nan,lagoon,"a shallow coastal waterbody, completely or partly separated from a larger body of water by a barrier island, coral reef or other depositional feature"
+3219679,Monte Beccola,46.21917,12.24611,25071,IT,Veneto,Provincia di Belluno,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3219684,Villanova,46.25401,12.30143,25071,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3219691,Casso,46.27197,12.33184,93019,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3219738,Cadin di Toro,46.391000000000005,12.45682,93014,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3219757,Val Rio del Lago,46.40639,13.53667,-1,IT,nan,nan,valley,an elongated depression usually traversed by a stream
+3219856,Sella Carnizza,46.3378,13.31586,30092,IT,nan,nan,pass,"a break in a mountain range or other high obstruction, used for transportation from one side to the other [See also gap]"
+3219877,Nongruella,46.22833,13.33639,30065,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3219893,Partistagno,46.18028,13.32389,30007,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3219921,Monte Piccat,46.149440000000006,13.39833,30036,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3219940,Clastra,46.13298,13.52048,30102,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3220068,Maniaglia,46.26444,13.15361,30043,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3220227,Monte Castello,46.23076,12.62981,93024,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+3220693,Bagaggiolo,45.56701,12.41268,26069,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+3223758,Torre d'Ayala,40.45417,17.254170000000002,73027,IT,Apulia,Provincia di Taranto,tower,"a high conspicuous structure, typically much higher than its diameter"
+3224099,Molo Cesario Console,40.83333,14.2725,63049,IT,nan,nan,pier,a structure built out into navigable water on piles providing berthing for ships and recreation
+3224107,Diga Foranea Emanuele Filiberto Duca D'Aosta,40.833,14.28995,-1,IT,nan,nan,dike,an earth or stone embankment usually constructed for flood or stream control
+6299581,Monte Bisbino,45.86667,9.06667,13065,IT,nan,nan,meteorological station,a station at which weather elements are recorded
+6464894,Cristal Palace Hotel,38.1241,13.359000000000002,82053,IT,Sicily,Palermo,hotel,a building providing lodging and/or meals for the public
+6468533,Park Hotel Helios,37.0855,15.2916,89017,IT,Sicily,Provincia di Siracusa,hotel,a building providing lodging and/or meals for the public
+6469840,San Giusto,41.9142,12.5211,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6470606,Villa Romita,40.62,14.366,63080,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6471786,Palazzo La Scala,45.43552,12.33643,27042,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
+6471854,Cala Rossa,38.1515,13.0831,82071,IT,Sicily,Palermo,hotel,a building providing lodging and/or meals for the public
+6471981,Villaggio Ala Birdi,39.7721,8.5823,95006,IT,Sardinia,Provincia di Oristano,hotel,a building providing lodging and/or meals for the public
+6483862,Jolly Hotel Touring,45.4768,9.197,15146,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6484326,Atlante Garden Hotel,41.9058,12.4624,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6485323,Hotel Il Podere,37.03336,15.23091,89017,IT,Sicily,Provincia di Siracusa,hotel,a building providing lodging and/or meals for the public
+6486640,Hotel Posta,44.6986,10.63074,35033,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6486713,Piccolo Hotel Chianti,43.33277,11.26041,52032,IT,Tuscany,Provincia di Siena,hotel,a building providing lodging and/or meals for the public
+6486798,Hotel Residence Le Acacie,42.74584,10.36959,49004,IT,Tuscany,Provincia di Livorno,hotel,a building providing lodging and/or meals for the public
+6486996,Hotel Commercio & Pellegrino,45.43756,12.33888,27042,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
+6487293,Hotel San Domenico,41.69927,15.73618,71046,IT,Apulia,Provincia di Foggia,hotel,a building providing lodging and/or meals for the public
+6487383,San Paolo della Croce,43.72694,11.22186,48022,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+6488048,Domus Open Space,40.40248,17.94984,75034,IT,Apulia,Provincia di Lecce,hotel,a building providing lodging and/or meals for the public
+6488406,Agriturismo Capuano,37.75286,14.22473,82036,IT,Sicily,Palermo,hotel,a building providing lodging and/or meals for the public
+6488897,Casa del Melograno  - Locanda,45.4433,12.32954,27042,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
+6489189,B&B Janis,41.88932,12.51512,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6489636,B & B La Casa degli Artisti,40.06002,17.99495,75031,IT,Apulia,Provincia di Lecce,hotel,a building providing lodging and/or meals for the public
+6490146,Albergo Casalta,43.38481,11.13538,52016,IT,Tuscany,Provincia di Siena,hotel,a building providing lodging and/or meals for the public
+6490516,Sporting Club,38.0288,13.9757,82027,IT,Sicily,Palermo,hotel,a building providing lodging and/or meals for the public
+6490969,Hotel Europa,44.0656,12.5829,99014,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6491376,Hotel Incanto,40.7319,17.563,74012,IT,Apulia,Provincia di Brindisi,hotel,a building providing lodging and/or meals for the public
+6494681,Venice Resort,45.5037,12.3248,27042,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
+6496898,Hotel Stockholm,45.4867,12.5957,27019,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
+6497222,Hotel Dei Mellini,41.9076,12.4723,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6501294,Duodo Palace Hotel,45.4346,12.3341,27042,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
+6503136,Best Western Hotel Cristoforo Colombo,45.4751,9.2056,15146,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6507756,Hotel Umbra,43.0622,12.6203,54001,IT,Umbria,Provincia di Perugia,hotel,a building providing lodging and/or meals for the public
+6517408,Hotel Montebianco,45.47853,9.14449,15146,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6517530,Hotel Agnello D'Oro,44.41531,8.92382,10025,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6521253,Hotel Continental,40.6254,14.3769,63080,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6525256,Villa Le Scale,40.5566,14.2233,63004,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6533314,La Rosa dei Venti,43.8145,7.7564,8055,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6534482,Schignano,45.92978,9.10214,13211,IT,nan,nan,seat of a third-order administrative division,nan
+6534483,Trezzone,46.17159,9.35184,13226,IT,nan,nan,seat of a third-order administrative division,nan
+6534500,Peia,45.799490000000006,9.89926,16161,IT,nan,nan,seat of a third-order administrative division,nan
+6534608,Pedemonte,45.9084,11.30859,24076,IT,Veneto,Provincia di Vicenza,seat of a third-order administrative division,nan
+6534621,Brione,45.89488,10.58975,22238,IT,Trentino-Alto Adige,Provincia autonoma di Trento,seat of a third-order administrative division,nan
+6534729,Castel di Sasso,41.19242,14.277729999999998,61024,IT,nan,nan,seat of a third-order administrative division,nan
+6534747,Puegnago sul Garda,45.566790000000005,10.50977,17158,IT,nan,nan,seat of a third-order administrative division,nan
+6535056,Rivalta Bormida,44.70975,8.55175,6144,IT,Piedmont,Provincia di Alessandria,seat of a third-order administrative division,nan
+6535093,Brunello,45.76497,8.79533,12023,IT,nan,nan,seat of a third-order administrative division,nan
+6535445,Maggiora,45.68937,8.42233,3088,IT,Piedmont,Provincia di Novara,seat of a third-order administrative division,nan
+6535531,Camagna Monferrato,45.01765,8.429739999999999,6026,IT,Piedmont,Provincia di Alessandria,seat of a third-order administrative division,nan
+6535554,Pareto,44.51644,8.38185,6125,IT,Piedmont,Provincia di Alessandria,seat of a third-order administrative division,nan
+6535889,Campo Tures/Sand in Taufers,46.92033,11.95448,21017,IT,Trentino-Alto Adige,Bolzano,third-order administrative division,a subdivision of a second-order administrative division
+6536150,Monasterolo del Castello,45.76319,9.93166,16137,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6536210,Zavattarello,44.86746,9.26516,18184,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6536274,Ospitale di Cadore,46.32692,12.322,25035,IT,Veneto,Provincia di Belluno,third-order administrative division,a subdivision of a second-order administrative division
+6536515,Magenta,45.46457,8.882639999999999,15130,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6536573,Cumignano sul Naviglio,45.35577,9.83476,19039,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6536769,Orciano di Pesaro,43.68666,12.96316,41040,IT,The Marches,Provincia di Pesaro e Urbino,historical third-order administrative division,a former third-order administrative division
+6536839,Pontedera,43.661640000000006,10.63171,50029,IT,Tuscany,Province of Pisa,third-order administrative division,a subdivision of a second-order administrative division
+6536844,Laterina,43.50835,11.71814,51019,IT,Tuscany,Province of Arezzo,historical third-order administrative division,a former third-order administrative division
+6536851,Monteroni d'Arbia,43.22934,11.42093,52017,IT,Tuscany,Provincia di Siena,third-order administrative division,a subdivision of a second-order administrative division
+6536861,Roccalbegna,42.78613,11.50914,53020,IT,Tuscany,Provincia di Grosseto,third-order administrative division,a subdivision of a second-order administrative division
+6536999,Vallecorsa,41.44461,13.4052,60082,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6537040,Lucinasco,43.96602,7.96005,8033,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6537187,Bastida de' Dossi,45.03976,8.92155,18010,IT,nan,nan,historical third-order administrative division,a former third-order administrative division
+6537606,Albano di Lucania,40.58462,16.036170000000002,76003,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6537660,Cetraro,39.5166,15.941579999999998,78040,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6537698,Miglierina,38.95199,16.4712,79077,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6537755,Capizzi,37.84785,14.47817,83008,IT,Sicily,Messina,third-order administrative division,a subdivision of a second-order administrative division
+6537857,Lotzorai,39.96966,9.66455,91042,IT,Sardinia,Provincia di Nuoro,third-order administrative division,a subdivision of a second-order administrative division
+6538385,Precenicco,45.78891,13.07743,30082,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6538387,Ravascletto,46.52293,12.92211,30088,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6538446,Vezzano sul Crostolo,44.60216,10.54899,35043,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6538523,Pioraco,43.17905,12.98567,43039,IT,The Marches,Provincia di Macerata,third-order administrative division,a subdivision of a second-order administrative division
+6538595,Buonconvento,43.13364,11.48344,52003,IT,Tuscany,Provincia di Siena,third-order administrative division,a subdivision of a second-order administrative division
+6538626,Polino,42.58423,12.84437,55027,IT,Umbria,Provincia di Terni,third-order administrative division,a subdivision of a second-order administrative division
+6538645,Cantalupo in Sabina,42.30613,12.64728,57010,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6538671,Carpineto Romano,41.604420000000005,13.0851,58020,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6538885,Pollutri,42.13784,14.59172,69068,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6539210,Francofonte,37.22645,14.88059,89010,IT,Sicily,Provincia di Siracusa,third-order administrative division,a subdivision of a second-order administrative division
+6539257,Ilbono,39.89265,9.54894,91032,IT,Sardinia,Provincia di Nuoro,third-order administrative division,a subdivision of a second-order administrative division
+6539272,Lodine,40.14926,9.21873,91104,IT,Sardinia,Provincia di Nuoro,third-order administrative division,a subdivision of a second-order administrative division
+6539633,Mezzano,46.15471,11.80799,22115,IT,Trentino-Alto Adige,Provincia autonoma di Trento,third-order administrative division,a subdivision of a second-order administrative division
+6539817,Montefusco,41.03762,14.85494,64056,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6539927,Montagnana,45.23271,11.46346,28056,IT,Veneto,Provincia di Padova,third-order administrative division,a subdivision of a second-order administrative division
+6540093,Chiavenna,46.32159,9.39864,14018,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6540145,Diano Marina,43.91032,8.07925,8027,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6540196,Rivarolo del Re ed Uniti,45.02797,10.46978,19083,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6540307,Trinità,44.50854,7.75703,4232,IT,Piedmont,Provincia di Cuneo,third-order administrative division,a subdivision of a second-order administrative division
+6540329,Domaso,46.15289,9.33344,13089,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6540440,Savignano sul Rubicone,44.08837,12.39414,40045,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6540649,Suzzara,44.99187,10.74309,20065,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6540955,Montechiaro d'Asti,45.00725,8.11143,5075,IT,Piedmont,Provincia di Asti,third-order administrative division,a subdivision of a second-order administrative division
+6541018,San Pietro al Natisone,46.12673,13.48523,30103,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6541070,Belmonte Piceno,43.09175,13.53938,109003,IT,The Marches,Province of Fermo,third-order administrative division,a subdivision of a second-order administrative division
+6541076,Petritoli,43.06855,13.66309,109031,IT,The Marches,Province of Fermo,third-order administrative division,a subdivision of a second-order administrative division
+6541190,Sacco,40.37811,15.37796,65113,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6541292,Lappano,39.319790000000005,16.31269,78065,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6541392,Morciano di Romagna,43.91406,12.65055,99011,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6541419,Fusine,46.14949,9.74975,14030,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6541507,Sauris,46.46813,12.68291,30107,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6541524,Pozzaglio ed Uniti,45.20027,10.05057,19077,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6541720,Germagnano,45.26385,7.46951,1113,IT,Piedmont,Torino,third-order administrative division,a subdivision of a second-order administrative division
+6541853,Frosinone,41.64002,13.3401,60038,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6541992,Casnigo,45.81599,9.86856,16060,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6542093,Ardea,41.60871,12.51938,58117,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6542161,Pino sulla Sponda del Lago Maggiore,46.10078,8.73873,12112,IT,nan,nan,historical third-order administrative division,a former third-order administrative division
+6542210,Granarolo dell'Emilia,44.55327,11.44291,37030,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6542300,Romano d'Ezzelino,45.7964,11.7563,24086,IT,Veneto,Provincia di Vicenza,third-order administrative division,a subdivision of a second-order administrative division
+6542639,Ton,46.26531,11.08798,22200,IT,Trentino-Alto Adige,Provincia autonoma di Trento,third-order administrative division,a subdivision of a second-order administrative division
+6542748,Onzo,44.07013,8.05225,9043,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6542770,Monticelli Brusati,45.63478,10.10026,17112,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6542800,Montecorvino Pugliano,40.67921,14.94475,65072,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6542844,Albugnano,45.07755,7.97113,5002,IT,Piedmont,Provincia di Asti,third-order administrative division,a subdivision of a second-order administrative division
+6542996,Montegalda,45.446090000000005,11.675,24064,IT,Veneto,Provincia di Vicenza,third-order administrative division,a subdivision of a second-order administrative division
+6543199,Monticelli Pavese,45.11107,9.51276,18099,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6543267,Rossa,45.83327,8.124319999999999,2121,IT,Piedmont,Provincia di Vercelli,third-order administrative division,a subdivision of a second-order administrative division
+6543372,Castiglione Torinese,45.11905,7.807119999999999,1068,IT,Piedmont,Torino,third-order administrative division,a subdivision of a second-order administrative division
+6543434,Battifollo,44.31983,8.01094,4015,IT,Piedmont,Provincia di Cuneo,third-order administrative division,a subdivision of a second-order administrative division
+6543719,Cassano Valcuvia,45.93238,8.76843,12041,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6543738,Lovero,46.2314,10.22856,14038,IT,nan,nan,third-order administrative division,a subdivision of a second-order administrative division
+6544509,Caldana di Sopra,43.3003,11.23802,52032,IT,Tuscany,Provincia di Siena,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+6545144,Parione,41.89905,12.47412,58091,IT,nan,nan,section of populated place,nan
+6615555,Sant'Andrea in Caprile,43.89869,10.61312,46007,IT,Tuscany,Provincia di Lucca,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+6619776,Cima dell'Omet,46.28408,10.92115,22062,IT,Trentino-Alto Adige,Provincia autonoma di Trento,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6619797,Campanile Stek,46.14857,10.874,22231,IT,Trentino-Alto Adige,Provincia autonoma di Trento,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6621611,Lago di Traiano,41.78053,12.26212,-1,IT,nan,nan,lake,a large inland body of standing water
+6640207,Monte Denervo,45.72205,10.66826,17076,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+6640333,Punta del Venerocolo,46.18268,10.51956,17148,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6691969,Doss di Paion,46.17032,11.06928,22081,IT,Trentino-Alto Adige,Provincia autonoma di Trento,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+6693040,Oscivart,46.07803,11.34686,22090,IT,Trentino-Alto Adige,Provincia autonoma di Trento,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6694409,Monte Calmoreggio,45.82171,11.95808,26039,IT,Veneto,Provincia di Treviso,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+6694723,Monte Colla,45.8981,9.27574,13015,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6695035,Sega,45.79426,11.1006,22210,IT,Trentino-Alto Adige,Provincia autonoma di Trento,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+6695114,Cima del Costone,45.91253,9.22101,13139,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6695277,Monte del Pantano,43.55483,12.52755,-1,IT,Umbria,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6695858,Cauriol,46.23548,11.59623,-1,IT,Veneto,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6696180,Bedole,46.1841,11.80228,-1,IT,Veneto,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6697057,Porto Badisco,40.07991,18.48338,75057,IT,Apulia,Provincia di Lecce,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+6697073,Nebida,39.31418,8.43784,111035,IT,Sardinia,Provincia del Sud Sardegna,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+6697948,Palazzo Vecchio,43.7694,11.25605,48017,IT,Tuscany,Province of Florence,palace,"a large stately house, often a royal or presidential residence"
+6931002,Roggia Macillare,45.90503,13.10899,-1,IT,nan,nan,stream,a body of running water moving to a lower level in a channel on land
+6932041,Testa del Parise,46.06911,8.35705,103068,IT,Piedmont,Provincia Verbano-Cusio-Ossola,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6932048,Pizzo Rotondo,46.07121,9.49171,97069,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6932673,Dosso S. Giacomo,46.20985,10.26499,14038,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6933339,Piz della Forcola,46.31657,9.29387,14032,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6933957,Corni di Nefelgiù,46.39625,8.37942,103031,IT,Piedmont,Provincia Verbano-Cusio-Ossola,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6933993,Punta del Ghiacciaio di Ban,46.4021,8.357289999999999,103031,IT,Piedmont,Provincia Verbano-Cusio-Ossola,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6934662,Motto del Belvedere,46.49327,9.30433,14035,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6942289,Cinque Terre,44.126000000000005,9.709,-1,IT,nan,nan,area,a tract of land without homogeneous character or boundaries
+6943966,Don Pedro,40.74387,13.93126,63037,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6944148,Express By Holiday Inn Bologna Fiera,44.51658,11.39968,37006,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6944467,Novotel Bologna Fiera,44.50933,11.37031,37006,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6944650,Prime Area,41.84573,12.4738,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6944789,Vibel,41.89769,12.5197,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6944856,Antey St Andre,45.80767,7.59002,7002,IT,Aosta Valley,Valle d'Aosta,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+6945459,Country House Le Calvie,43.135740000000006,13.0744,43007,IT,The Marches,Provincia di Macerata,hotel,a building providing lodging and/or meals for the public
+6945631,Hotel Cairoli,44.41288,8.929860000000001,10025,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6945974,Kalaonda Plemmirio,37.01678,-15.30006,89017,IT,Sicily,Provincia di Siracusa,hotel,a building providing lodging and/or meals for the public
+6947086,Zona Industriale,45.84076,10.56499,22183,IT,Trentino-Alto Adige,Provincia autonoma di Trento,section of populated place,nan
+6947362,Casa Felciano Apt Giglio,43.54431,11.31809,48021,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+6948045,La Casa Di Rosy,41.89754,12.50109,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+6948851,Tavola Dei Cavalieri Il Borgo,43.07,12.61737,54001,IT,Umbria,Provincia di Perugia,hotel,a building providing lodging and/or meals for the public
+6949591,Monte Purga,45.61371,11.09776,23090,IT,Veneto,Provincia di Verona,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6949594,Monte Bellocca,45.5393,11.19909,23087,IT,Veneto,Provincia di Verona,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+6955565,fiume Chiese,45.85741,10.5689,22183,IT,Trentino-Alto Adige,Provincia autonoma di Trento,stream,a body of running water moving to a lower level in a channel on land
+7279778,margherita,44.1479,9.65494,11019,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+7280190,west florence,43.82512,11.12454,48006,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+7282281,Torre Faro Tower,38.26589,15.65095,83048,IT,Sicily,Messina,tower,"a high conspicuous structure, typically much higher than its diameter"
+7289342,Stazione Sesto San Giovanni,45.54132,9.23892,15209,IT,nan,nan,railroad station,"a facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight"
+7290086,Cima Dosegù,46.383790000000005,10.55485,14073,IT,nan,nan,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+7303151,Monte Tre Abati,44.75844,9.4403,33016,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+7303292,Bric del Dente,44.48291,8.67543,10032,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+7521458,Ospedale di Cattinara,45.63376,13.826670000000002,32006,IT,nan,nan,hospital,"a building in which sick or injured, especially those confined to bed, are medically treated"
+7535611,Dos de le Grave,46.12342,11.17471,22061,IT,Trentino-Alto Adige,Provincia autonoma di Trento,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+7626838,La Piadineria - Via Quinzano 23A - Flero,45.48835,10.15252,17072,IT,nan,nan,restaurant,A place where meals are served to the public
+7627889,Kesselscharte,47.03933,11.96887,21108,IT,Trentino-Alto Adige,Bolzano,pass,"a break in a mountain range or other high obstruction, used for transportation from one side to the other [See also gap]"
+7644854,Monte Fratta,45.56042,10.33042,17023,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+7647938,"Speccia Mediumwave Transmitter, Mast South",39.92714,18.28474,75077,IT,Apulia,Provincia di Lecce,tower,"a high conspicuous structure, typically much higher than its diameter"
+7733095,Frachey,45.85283,7.73418,7007,IT,Aosta Valley,Valle d'Aosta,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+7874308,Canale di scolo Quarto,45.63751,12.61381,27033,IT,Veneto,Provincia di Venezia,drainage canal,an artificial waterway carrying water away from a wetland or from drainage ditches
+7910755,Giardini Pubblici,45.42953,12.35645,27042,IT,Veneto,Provincia di Venezia,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+7910769,Biennale Pavilion - France,45.42814,12.35878,27042,IT,Veneto,Provincia di Venezia,building(s),"a structure built for permanent use, as a house, factory, etc."
+7932149,Cima del Bonom,45.67926,8.0171,96086,IT,Piedmont,Provincia di Biella,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+7932284,Monte Rosso del Croso,45.71811,7.95625,96066,IT,Piedmont,Provincia di Biella,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+8014981,Porticato di S. Giovanni,46.06367,13.2361,30129,IT,nan,nan,building(s),"a structure built for permanent use, as a house, factory, etc."
+8015065,Serapide,40.82615,14.12054,63060,IT,nan,nan,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+8114541,Monte Pietena,46.10162,11.85256,25021,IT,Veneto,Provincia di Belluno,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+8128740,Porto Ottiolu,40.74002,9.70791,90091,IT,Sardinia,Provincia di Sassari,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8133644,Duomo di Como,45.81176,9.08359,13075,IT,nan,nan,church,a building for public Christian worship
+8199517,O.M.R. Taranto,40.48223,17.19649,73027,IT,Apulia,Provincia di Taranto,railroad yard,"a system of tracks used for the making up of trains, and switching and storing freight cars"
+8199535,Bari Lamasinata (RFI),41.127590000000005,16.822879999999998,72006,IT,Apulia,Bari,railroad yard,"a system of tracks used for the making up of trains, and switching and storing freight cars"
+8199616,Monte Cupolicchio,40.61291,16.033,76003,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+8351457,Lucca cathedral,43.84062,10.50632,46017,IT,Tuscany,Provincia di Lucca,church,a building for public Christian worship
+8379288,Castra,43.7715,10.99065,48008,IT,Tuscany,Province of Florence,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8658816,Vallinsù,42.36397,13.24893,66095,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8659124,Casarini II,43.37176,13.1142,43002,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8659129,Costamartina,43.30898,13.69549,43013,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8659142,Sant'Andrea Ionio Marina,38.62001,16.54927,79118,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8948972,Arino,45.43854,12.05443,27012,IT,Veneto,Provincia di Venezia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949022,Bottega,43.84523,12.74999,41068,IT,The Marches,Provincia di Pesaro e Urbino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949095,Pontegradella,44.83813,11.6628,38008,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949288,Petrosino,37.88392,14.799120000000002,87057,IT,Sicily,Catania,seat of a third-order administrative division,nan
+8949328,Badia al Pino,43.40424,11.77228,51016,IT,Tuscany,Province of Arezzo,seat of a third-order administrative division,nan
+8949336,Ronco,45.52668,9.35921,15070,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949539,Crocemosso,45.64363,8.15357,96088,IT,Piedmont,Provincia di Biella,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949676,Colli di Cicerone,41.6565,12.73443,58043,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949794,Marcellise,45.46135,11.1067,23073,IT,Veneto,Provincia di Verona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949859,Vico,40.87342,14.5685,63052,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949880,Villarazzo,45.68012,11.90404,26012,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949942,Rotabile,41.66093,13.46405,60014,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8949961,Grole,45.37471,10.52819,20017,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8950045,Piosina,43.48867,12.19957,54013,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8950143,Serra,40.60412,15.69185,76089,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8950288,Sant'Ansovino,43.88342,12.65312,99015,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8950312,Centro Urbano,40.81986,15.31953,65033,IT,nan,nan,seat of a third-order administrative division,nan
+8950787,Lobia,45.58198,11.79076,28076,IT,Veneto,Provincia di Padova,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8951150,Greti,43.6064,11.30534,48021,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8951214,Fosse,45.64545,10.93788,23078,IT,Veneto,Provincia di Verona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8951229,Bagni,44.66319,8.47199,6001,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8951355,Cominello,45.43458,10.47713,17092,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8951461,Case Devesio,45.02721,7.46926,1241,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8951577,San Lorenzo della Pioppa,44.76061,11.00379,36039,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8951609,Zuppino,40.57828,15.28271,65143,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8951990,Frazione Prima,44.43949,12.1723,39014,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952077,Sasso,46.06756,8.22442,103047,IT,Piedmont,Provincia Verbano-Cusio-Ossola,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952111,Lago Sirino I,40.09307,15.80781,76054,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952126,Generala,45.08487,7.50133,1219,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952153,Iardino,41.02969,14.691070000000002,64083,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952362,Carifano-Mastralessio,41.10735,15.29149,71003,IT,Apulia,Provincia di Foggia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952484,Barco,45.37904,9.90003,17125,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952560,Gosi-Planaval,44.33644,7.778119999999999,4091,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952726,Molinetto,43.27946,13.61429,43033,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952759,Acciaiolo,43.55098,10.50725,50014,IT,Tuscany,Province of Pisa,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8952798,Arro,45.44596,8.150030000000001,96058,IT,Piedmont,Provincia di Biella,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953012,Case Ballarini Verdoni,44.20415,12.12347,40013,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953023,Granero,45.684540000000005,8.17992,96048,IT,Piedmont,Provincia di Biella,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953068,Piano Vomano,42.61811,13.83476,67016,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953071,Piana,39.60926,16.0614,78073,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953195,Maccareccia-Spinaceta,41.78508,12.96383,58042,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953263,Colbassano,43.29233,12.73171,54019,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953268,Santo Spirito,41.7389,12.62547,58022,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953331,Case Trentin,45.7503,12.33313,26040,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953484,Fallavecchia,45.32342,8.96787,15150,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953593,Fornaci,45.59966,11.54017,24018,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953689,Sparvasile,39.57311,15.87056,78019,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8953953,Pianomarotta,40.92579,15.088,64109,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954111,Porto,43.06982,11.94195,54009,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954257,Anson,45.26904,11.32787,23048,IT,Veneto,Provincia di Verona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954294,Selva-Casa Martini,44.39638,10.79299,36042,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954447,Verroni,41.11513,14.52231,62070,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954560,Barengo,45.31801,7.924889999999999,1148,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954604,Luni,46.11201,12.06211,25045,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954630,San Luca,45.03248,7.73623,1183,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954644,Comugne,45.80207,12.74406,27030,IT,Veneto,Provincia di Venezia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954671,Spianzana,45.48688,11.51727,24006,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954730,Caporumiatti,44.98947,11.6618,29036,IT,Veneto,Provincia di Rovigo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954731,Lungis,46.41033,12.82425,30110,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954736,Petrara,43.50581,12.74425,41061,IT,The Marches,Provincia di Pesaro e Urbino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954761,Santa Maria,46.74395,12.20311,21028,IT,Trentino-Alto Adige,Bolzano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8954858,Toriello,40.95613,15.159020000000002,64079,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8955091,Casacce,45.29158,10.15902,17172,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8955346,Curti,41.32472,14.4415,61041,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8955373,Torchio,44.84231,10.18624,34016,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8955639,Castelluccio,41.46331,13.73248,60052,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8955729,Cascina del Sole,45.54483,9.14453,15157,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8955779,Tempa del Corvo,40.66318,15.26215,65046,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956088,Vallicella Bassa,44.97197,11.44062,29021,IT,Veneto,Provincia di Rovigo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956148,Postumia,45.66785,12.1818,26064,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956180,Trifari Alto,39.65635,15.889,78015,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956185,Sile,45.94631,12.79934,93010,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956264,San Martino,45.6598,8.488010000000001,3066,IT,Piedmont,Provincia di Novara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956296,Saturnana,43.99502,10.88102,47014,IT,Tuscany,Provincia di Pistoia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956305,Colle Santa Lucia,41.70154,13.76212,60004,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956440,Persignano,43.59926,11.57278,51039,IT,Tuscany,Province of Arezzo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956609,Fornaci,45.19368,9.51833,98004,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8956923,Tetti Varetti - Rogliatti,45.08573,7.82563,1180,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957027,Sasso,45.23678,12.02269,28035,IT,Veneto,Provincia di Padova,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957042,Torre del Padiglione,41.57684,12.70172,59001,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957108,Valerisce,45.96802,13.57716,31019,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957197,Vettori-Caporale,43.83635,10.64647,46021,IT,Tuscany,Provincia di Lucca,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957198,Bussotto-La Torre,43.97695,10.94495,47014,IT,Tuscany,Provincia di Pistoia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957513,Villa San Pietro,44.40149,7.31071,4139,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957536,Zona Artigianale,45.14208,10.73998,20030,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957635,Case Cazzaro,45.58475,11.9977,28093,IT,Veneto,Provincia di Padova,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957807,Tetti Cambiano,45.04061,7.92028,1153,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957895,Tetti Pianca-Parsè,44.31373,7.570180000000001,4028,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8957978,Cagnacci,41.55383,14.37814,94045,IT,Molise,Provincia di Isernia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8958179,Signore,40.79688,15.72979,76007,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8958278,Mola la Corte-Pozzo Marinaro-Decignano,41.76174,13.33145,60087,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8958399,Starza,41.06377,14.4057,61097,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8958402,Capasso,40.90738,14.47407,63077,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8958435,Vene,44.21672,8.28127,9053,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8958500,Chierica-Iacuccio,41.65296,13.71154,60018,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8958671,Coiromonte,45.833090000000006,8.47085,3006,IT,Piedmont,Provincia di Novara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8959129,Camera I,37.27398,15.16981,89001,IT,Sicily,Provincia di Siracusa,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8959168,Ronco,46.16978,10.24961,17063,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8959421,Profinni,36.93248,14.57585,88003,IT,Sicily,Ragusa,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8959580,Massa,45.23464,7.67886,1240,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8960015,Santa Caterina,41.29644,14.70959,62054,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8960045,Quartero,46.09846,8.28155,103028,IT,Piedmont,Provincia Verbano-Cusio-Ossola,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8960589,Rivette,45.82912,12.04985,26025,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8960607,Tre Rii,44.55573,10.16488,34012,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8960632,Limite,43.83322,11.1572,48006,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8960682,Ca' Rastelli,43.96337,12.66659,99005,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8961125,Valpegara,45.87866,11.35787,24112,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8961331,Scuole,44.526,10.70232,35014,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8961771,Benano,42.73505,12.00669,55023,IT,Umbria,Provincia di Terni,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8961777,Le Selve,41.96452,13.05916,58028,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8961894,Bosine,45.65827,10.06876,17085,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8961950,Il Piano,43.48611,12.61413,41008,IT,The Marches,Provincia di Pesaro e Urbino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8962239,Malivindi,38.32102,16.18126,80020,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8962385,Volpina,44.198240000000006,11.97083,40012,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8962526,San Pietro,44.63516,7.39435,4180,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8962896,Castelletta,43.40317,13.00715,42017,IT,The Marches,Provincia di Ancona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8962911,Case Fantozzi,43.86065,10.69421,47012,IT,Tuscany,Provincia di Pistoia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8963103,Muttona,45.5617,11.64199,24083,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
 8963120,Bozzato,45.35269,12.11569,27002,IT,Veneto,Provincia di Venezia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8963948,Seuza,46.16136,13.59651,30045,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8966253,Muratella,41.65152,12.55529,58117,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8967523,Mallamo,39.54362,16.06145,78051,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8967778,Ca' Poggi,44.92273,9.82031,33011,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8969613,Rosa,45.75098,11.5077,24053,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8972661,Bottega,44.3813,11.17459,37036,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8978194,Valle Pernigo,45.54834,11.12736,23005,IT,Veneto,Provincia di Verona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8978564,Le Piane,41.99564,14.07185,66015,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8982241,Calci,43.95214,11.87426,40043,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-8982854,Madonna della Neve,44.41073,8.193719999999999,4201,IT,Piedmont,Provincia di Cuneo,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
-8984890,Salerna,37.75323,14.10081,82012,IT,Sicily,Palermo,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
-9031193,Porri,44.44738,8.35346,9027,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-9032354,San Lorenzo,42.83598,12.63928,54008,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-9033794,Rovere Scuole,44.20115,11.96862,40012,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-9033810,Verdefiore II,43.38388,13.37065,43003,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-9034008,Monte Grande I,44.102990000000005,12.1468,40007,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8963379,Novella,45.66203,11.31638,24111,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8963530,Manche,39.51566,15.96178,78040,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964076,Motta,39.31057,16.28586,78155,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964141,Collodri,45.76536,8.80464,12047,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964163,Fane,45.82584,10.15281,17142,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964396,Cascine Trebietta,44.69636,7.699730000000001,4059,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964453,San Michele,46.57956,11.60243,21019,IT,Trentino-Alto Adige,Bolzano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964707,Foi,44.558890000000005,8.43558,6136,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964713,Vallepiana,44.44442,9.43394,10005,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964724,Gnallo,46.04644,9.14775,13047,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964834,Case Ricci,44.11894,12.37655,40016,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964863,Parrino,43.66349,10.85041,50032,IT,Tuscany,Province of Pisa,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8964992,Tetti,45.3556,7.623019999999999,1206,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965097,Cappello,45.57993,11.24991,24094,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965141,Pieve di Gusaliggio,44.57969,9.86923,34044,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965158,Monte Grande,44.103,12.14193,40007,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965345,Santo Stefano,45.139590000000005,7.03022,1114,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965352,Mondrezza,45.23766,7.38525,1313,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965374,Perleto,44.80047,8.91375,6032,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965422,Ponteventuno,45.08384,10.73581,20021,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965622,Cantoniera,40.09133,15.93298,76042,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965663,Casali Lago Sirio,45.48969,7.881839999999999,1077,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965920,Abbondanza,41.18841,15.0487,64052,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965923,Picone,40.32816,15.01897,65002,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965948,Grieco,40.70086,17.49194,74012,IT,Apulia,Provincia di Brindisi,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8965951,Gianturco,40.81376,15.7219,76032,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966009,Corno,44.62608,7.86602,4067,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966089,Prandi,45.47654,11.27379,23063,IT,Veneto,Provincia di Verona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966125,Case Scapin,45.73335,12.1047,26085,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966215,Morcone,43.60703,11.04581,48030,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966327,Corazzo-Ficarella,38.89276,16.34036,79069,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966360,Casa Porta,45.14843,8.032210000000001,1069,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966618,Pievecchia,43.795390000000005,11.44707,48033,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966856,Magnani,45.34512,10.66382,20070,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966880,Kaberlaba,45.85582,11.50083,24009,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966901,Floriani,45.71455,11.22432,24084,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8966988,Molini,43.5185,13.60984,42048,IT,The Marches,Provincia di Ancona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967073,Grotta Parrelle,40.76896,14.492020000000002,63008,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967126,Fornace Laterizi e Ind.Ittico-Cons.,37.53012,13.0638,84041,IT,Sicily,Agrigento,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967139,Piandremo,45.57934,8.01404,96046,IT,Piedmont,Provincia di Biella,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967152,Polverella,43.99303,12.39171,99028,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967445,Ranuccio,41.75977,13.10935,60006,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967475,Lappierti,41.00883,15.08894,64035,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967646,Cascina Ingurate,45.51297,9.81717,16087,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967672,Tusele,46.56966,11.07098,21084,IT,Trentino-Alto Adige,Bolzano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8967889,Roccatamburo,42.73661,12.93607,54042,IT,Umbria,Provincia di Perugia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8968115,Zona Produttiva Sud,45.49248,8.85942,15144,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8968193,Debbio,45.7402,12.94489,27029,IT,Veneto,Provincia di Venezia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8968482,Ferrere Soprana,44.70325,8.09342,4230,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8968770,Spicciano,44.219840000000005,10.13314,45007,IT,Tuscany,Provincia di Massa-Carrara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8968987,Molineri Nuovi,44.99994,8.83387,6151,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8969080,Perara,46.697590000000005,11.63427,21011,IT,Trentino-Alto Adige,Bolzano,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8969288,Casa del Corto,42.82038,11.73278,52020,IT,Tuscany,Provincia di Siena,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8969424,Cascina Bruseè,45.6956,9.32614,97049,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8969682,Ca' Marignane,45.7771,13.35489,30004,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8969842,Santarello,42.46176,12.21273,56048,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8969927,Callipo (P.I.P),38.83997,16.257379999999998,79039,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8970008,Boschetti,44.5123,7.55452,4061,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8970022,Mompiano,44.65427,8.10722,4231,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8970119,Crotesi,44.99373,9.13507,18037,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8970278,Marzonago,44.8724,9.40424,33049,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8970570,Villa,44.3371,7.81825,4126,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8971004,San Martino,42.34434,14.04555,68035,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8971191,Fregarie,44.38112,9.30647,10053,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8971459,Antico,43.0407,13.0595,43038,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8971590,Bellifico,38.79517,16.3433,79039,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8971646,Rongeno-La Crosa,45.97403,8.53452,103015,IT,Piedmont,Provincia Verbano-Cusio-Ossola,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8971704,Scalagrano,44.45047,7.725160000000001,4189,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8971902,Tretti,45.63665,11.59973,24091,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8972059,Casone,43.41266,13.42665,43029,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8972081,Brica,44.23795,10.34239,46037,IT,Tuscany,Provincia di Lucca,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8972236,Pozzo Secco,38.38232,16.04289,80093,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8972506,Vanzi,45.67162,11.36801,24063,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8972621,Ca' Bajoli,44.57452,10.33038,34024,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8972674,Rossetti,44.89851,11.97734,38010,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8972882,Policarette,39.54901,16.06974,78051,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973066,Ponte Zocco,45.48829,10.44273,17014,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973096,Buffalora,45.11392,9.26872,18133,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973338,Cave,43.27307,13.64115,43028,IT,The Marches,Provincia di Macerata,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973451,Alvano,40.95939,15.30805,64003,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973458,Cuorno,41.05666,14.91492,64116,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973462,Caselle,40.51666,14.931,65050,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973488,Frantoio Pietre,40.97842,17.09979,72019,IT,Apulia,Bari,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973617,San Giovenale,44.31858,7.599069999999999,4163,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973701,Aplecchio,45.843720000000005,9.65917,16190,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973717,Pavarola I,44.97056,9.13363,18016,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973727,Barisonzo,44.95656,9.10964,18155,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8973973,Asti,44.88852,11.9972,38010,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8974515,Triva,46.09637,12.11839,25053,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8974643,Baj,44.92473,11.38635,38003,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8974709,Mulino di Sugana,43.69169,11.1661,48038,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8974758,Poggio Casoli,42.68737,13.27373,57001,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8974851,Villaggio del Sole,40.37992,18.26082,75035,IT,Apulia,Provincia di Lecce,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8974878,Giachindi-Placanica,37.94422,15.76287,80050,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8974898,Poiana,45.8545,12.96835,93028,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8975240,Campigotto,45.57724,12.15829,27037,IT,Veneto,Provincia di Venezia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8975287,Oppiazzi,45.08565,9.97631,33014,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8975506,Sacro Cuore,42.55153,11.89888,56013,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8975604,Quote Barile,38.90567,16.4014,79069,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8975614,Baglio Papuzze,38.04982,12.60485,81022,IT,Sicily,Trapani,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8975771,Case Turini,45.09878,8.14284,6113,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8975958,Via I Maggio,45.91256,11.29889,24076,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976084,L. P. la Fornace,44.67751,10.3364,34042,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976155,Casa Giannino,44.2819,10.19841,45007,IT,Tuscany,Provincia di Massa-Carrara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976206,Cignanbianco,43.42297,11.25828,52005,IT,Tuscany,Provincia di Siena,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976333,Case Scafarelli,40.70492,15.78269,76063,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976374,Is Argiddas,39.37281,9.0483,111041,IT,Sardinia,Provincia del Sud Sardegna,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976392,Cascina Brusada,45.23972,9.66126,98002,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976610,Cascina Ca' Bianca,45.14454,9.07384,18151,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976757,Poiana di Sotto,46.16115,13.33671,30007,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976852,Corte Bella,44.91345,12.07375,38005,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8976938,La Rinsacca,42.985690000000005,10.54547,49012,IT,Tuscany,Provincia di Livorno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8977004,Pennacchia,41.67455,13.68397,60037,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8977061,Colletti,42.36021,14.24826,69072,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8977244,Serravalle,44.56749,7.42558,4166,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8977273,Valeria,44.82941,8.94162,6058,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8977645,Tenuta Prati II,44.87069,12.12989,38005,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8977835,Molino Vecchio,40.21127,15.41694,65109,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978001,Ciapè,44.36202,7.741569999999999,4245,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978006,San Giuseppe,44.86057,7.99811,5053,IT,Piedmont,Provincia di Asti,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978029,San Pietro,45.01762,8.83312,6087,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978037,Correnti,44.53939,8.295060000000001,6165,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978111,Odiago,45.7332,9.46192,16171,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978219,Frizzi,45.55151,11.34069,24008,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978487,Selvapiana,43.27774,11.63856,52026,IT,Tuscany,Provincia di Siena,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978716,Cascina Bettola,45.52442,8.64144,3016,IT,Piedmont,Provincia di Novara,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978727,Tetti Pol,44.31402,7.575060000000001,4028,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8978728,Campolungo,44.42375,8.154589999999999,4035,IT,Piedmont,Provincia di Cuneo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8979632,Rori,46.11297,11.30607,22168,IT,Trentino-Alto Adige,Provincia autonoma di Trento,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8979845,Cupe,43.54123,12.73989,41018,IT,The Marches,Provincia di Pesaro e Urbino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8979869,Cervara,42.77725,13.473679999999998,44007,IT,The Marches,Provincia di Ascoli Piceno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8979918,Calbuffa,43.72057,12.21275,51035,IT,Tuscany,Province of Arezzo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8980414,Ponte Casino,45.54476,12.08124,27032,IT,Veneto,Provincia di Venezia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8980474,Tordenaso,44.63292,10.21282,34018,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8980693,Maiorana,42.06207,13.42774,66006,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8980861,Bosino,44.79854,8.225530000000001,5076,IT,Piedmont,Provincia di Asti,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8980881,Mompaiato,45.08569,8.17212,6116,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8980931,Cascina Sant'Antonio,45.47164,8.95828,15243,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8980934,Rivierasca,45.61361,9.53744,16037,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8981224,Lucchese Est,43.72093,10.91555,48014,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8981238,Maestà dei Mori,43.26931,11.72297,51021,IT,Tuscany,Province of Arezzo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8981476,Orbregno,44.64805,8.5263,6139,IT,Piedmont,Provincia di Alessandria,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8981686,Molinazzo,44.896370000000005,9.67829,33036,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8981854,Case Muzi,42.70995,13.92669,67025,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8982146,Maias,46.41844,12.37368,25039,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+8982425,Picatti,45.52827,7.55642,1288,IT,Piedmont,Torino,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8982441,Cascine Moioli,45.61902,8.654589999999999,3108,IT,Piedmont,Provincia di Novara,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8982645,Castellaro,44.59918,9.84322,34044,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8982700,Tavella,44.23004,9.88538,45015,IT,Tuscany,Provincia di Massa-Carrara,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8982770,Santa Barbara-Ripa,41.92571,15.8628,71043,IT,Apulia,Provincia di Foggia,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8982786,Cozzi,37.71177,15.20287,87039,IT,Sicily,Catania,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8982834,Area Industriale,45.43104,8.28127,2059,IT,Piedmont,Provincia di Vercelli,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8982946,Padana,45.06788,9.1393,18023,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8983142,Masseria Langone,40.424240000000005,15.756620000000002,76045,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8983194,Banda,45.11206,7.212999999999999,1305,IT,Piedmont,Torino,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8983337,Schirati,45.79937,11.67135,24012,IT,Veneto,Provincia di Vicenza,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8983503,Biglio Inferiore,45.76877,9.40215,97082,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8983723,Montetto,41.62445,15.097170000000002,71013,IT,Apulia,Provincia di Foggia,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8983895,Casa Zacchi-Casa Evangelisti,44.094840000000005,10.94407,37062,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8983909,Villa Lazzarini,43.28838,13.32782,43054,IT,The Marches,Provincia di Macerata,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8983947,Masserie Tedeschi,41.5826,14.51869,70012,IT,Molise,Provincia di Campobasso,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8984308,Coronini,46.06473,11.68212,22048,IT,Trentino-Alto Adige,Provincia autonoma di Trento,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8984596,Cagno,39.23807,16.63351,78119,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8984675,Valcona Soprana,44.09078,7.741619999999999,8034,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8984786,Bech,45.47117,7.5931,1121,IT,Piedmont,Torino,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8984954,Ilva - Lare - Profilmec,44.792190000000005,7.687239999999999,4179,IT,Piedmont,Provincia di Cuneo,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8985004,Località Merlese,45.762170000000005,9.0821,13053,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8985042,La Piazza,46.16736,9.4572,14027,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8985251,Frantoio Coop. Muratori Reggiolo,44.71829,10.44986,35027,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8985257,Zona Artigianale Funo,44.58701,11.37799,37002,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8985383,Pagliarone,40.97632,14.39056,63001,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8985535,Ravaschiera,38.67181,16.54063,79123,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+8985610,Zona Industriale Monteli,46.20417,12.79476,93026,IT,nan,nan,populated locality,an area similar to a locality but with a small group of dwellings or other buildings
+9031144,Capponello,43.8213,12.7352,41068,IT,The Marches,Provincia di Pesaro e Urbino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9031651,Costa d'Unghia-Unghia Sotto,44.70802,9.58298,33019,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9031975,Ferraro,38.33253,16.367720000000002,80067,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032110,Ciardelli Superiore,41.00627,14.728929999999998,64073,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032162,Località del Bosco,46.12436,13.15253,30063,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032339,Chiesa Albinea,44.61481,10.58697,35001,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032386,Tetti Ronchi,45.0821,7.787669999999999,1018,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032426,Case Barp,46.16503,12.1153,25056,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032456,Greppo I,43.14996,11.81765,52015,IT,Tuscany,Provincia di Siena,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032545,Vigliano,43.56244,11.14567,48054,IT,Tuscany,Province of Florence,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032689,Quore,45.03123,11.67727,29049,IT,Veneto,Provincia di Rovigo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9032993,Contrada Biancari,45.63442,11.02957,23011,IT,Veneto,Provincia di Verona,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033058,Saretti,44.95005,7.104360000000001,1186,IT,Piedmont,Torino,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033084,Cave Carta,45.66809,11.52321,24062,IT,Veneto,Provincia di Vicenza,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033145,Area Insediamenti Produttivi Lovera,45.84415,12.26884,26075,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033278,Tufo Varaccani-Verdesca,41.60069,13.2534,60048,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033335,Gessi,44.46829,11.2161,37060,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033472,Santa Iusta San Matteo,41.53265,14.41929,94026,IT,Molise,Provincia di Isernia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033476,Piana Bassa,45.70126,9.52754,16132,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033906,Breccelle,41.57793,14.19645,94023,IT,Molise,Provincia di Isernia,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9033971,Col di Osigo,46.00345,12.36131,26030,IT,Veneto,Provincia di Treviso,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9034022,Ruvari,38.34978,16.2623,80040,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9034192,Stazione Cavezzo Villafranca,44.833290000000005,11.05225,36021,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9034254,Seghe di Villa I,46.13005,12.09364,25053,IT,Veneto,Provincia di Belluno,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9034275,Ca' Bella I,45.86647,8.93929,12052,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9034337,Casa di Loreto I,42.022290000000005,12.62136,58122,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9034524,Zona Industriale 1,40.38261,18.12881,75083,IT,Apulia,Provincia di Lecce,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
 9035450,Boscone,45.80081,8.98321,13165,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
-9225063,Best Western Hl Hotel,45.53437,9.10461,15250,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
-9412867,Santa Maria della Vittoria,41.90501,12.49446,58091,IT,nan,nan,church,a building for public Christian worship
-9612285,Ròseo Hotel Leon D'Oro,45.427,10.987,23091,IT,Veneto,Provincia di Verona,hotel,a building providing lodging and/or meals for the public
-9612605,Valeria,46.537290000000006,10.13425,14037,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
-9612931,Vinegia,43.76852,11.25844,48017,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
-9613262,Villa Maria Hotel Spa,42.43776,14.24959,69035,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
-10114711,Diana Jesolo,45.50283,12.63673,27019,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
-10234509,Hotel Exagon,41.06043,13.92784,61052,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
-10286317,Palazzo Maggi di Gradella,45.539640000000006,10.22476,17029,IT,nan,nan,palace,"a large stately house, often a royal or presidential residence"
-10292350,Villamadau,39.01154,9.00196,92050,IT,Sardinia,Provincia di Cagliari,hotel,a building providing lodging and/or meals for the public
-10376048,Parco Avventura Bosco d'Alcamo,37.95899,12.95862,81001,IT,Sicily,Trapani,amusement park,"Amusement Park are theme parks, adventure parks offering entertainment, similar to funfairs but with a fix location"
-10401364,Cascata delle Due Rocche,37.80965,13.31019,82034,IT,Sicily,Palermo,waterfall(s),a perpendicular or very steep descent of the water of a stream
-10626188,Piazza del Duomo,42.34889,13.39819,66049,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
-10627265,"Museo Naturalistico ""n. de Leone""",42.45393,13.92484,68027,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
-11126481,Centro Commerciale Mongolfiera Lecce,40.37625,18.14448,75083,IT,Apulia,Provincia di Lecce,mall,"A large, often enclosed shopping complex containing various stores, businesses, and restaurants usually accessible by common passageways."
-11126910,Tempio della Beata Vergine della Ghiara,44.69905,10.62633,35033,IT,nan,nan,church,a building for public Christian worship
-11127383,Plaja degli Uccelli,38.01837,14.07319,82027,IT,Sicily,Palermo,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
-11127622,Spiaggia Seccione,42.81879,10.29706,49014,IT,Tuscany,Provincia di Livorno,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
-11127880,Punta dell'Ufala LANTIERI,38.37164,15.00136,83041,IT,Sicily,Messina,veterinary facility,a building or camp at which veterinary services are available
-11128077,Spiaggia di Lignano Pineta,45.66598,13.113129999999998,-1,IT,nan,nan,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
-11153961,Chiesa di San Paolo di Peltuinum,42.28325,13.62117,66074,IT,nan,nan,church,a building for public Christian worship
-11857076,Torre del Duomo di Teramo,42.65881,13.70335,67041,IT,nan,nan,tower,"a high conspicuous structure, typically much higher than its diameter"
-11874131,Alteta,43.16466,13.55959,109017,IT,The Marches,Province of Fermo,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9035457,Piazze,46.15816,11.28986,22011,IT,Trentino-Alto Adige,Provincia autonoma di Trento,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9035458,Marconia-San Basilio,40.34923,16.6916,77020,IT,nan,nan,populated place,"a city, town, village, or other agglomeration of buildings where people live and work"
+9173354,Antica Residenza Del Gallo,43.84177,10.50475,46017,IT,Tuscany,Provincia di Lucca,hotel,a building providing lodging and/or meals for the public
+9174358,Casa Leonori,43.0611,12.58942,54001,IT,Umbria,Provincia di Perugia,hotel,a building providing lodging and/or meals for the public
+9174437,Chalet Del Sole,45.02485,6.86464,1259,IT,Piedmont,Torino,hotel,a building providing lodging and/or meals for the public
+9174499,Colosseum Classic Apartment,41.89159,12.50028,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9174551,Country Resort Guadalupe,42.86612,11.05826,53011,IT,Tuscany,Provincia di Grosseto,hotel,a building providing lodging and/or meals for the public
+9174757,Europa Hotel,45.5326,9.22865,15209,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9174827,Fonzari,45.67548,13.38543,31009,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9174953,Il Molino Del Ponte,43.65533,11.08709,48030,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+9175035,La Casa In Collina,42.33207,13.99449,68026,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9175042,La Coccinella Affittacamere,43.72893,10.39854,50026,IT,Tuscany,Province of Pisa,hotel,a building providing lodging and/or meals for the public
+9175085,La Repubblica,43.77114,11.25371,48017,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+9175159,Locanda Milano 1873,45.81806,9.09611,13032,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9175562,Park Asinara,40.94565,8.22601,90089,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
+9175585,Passetto,43.61336,13.53498,42002,IT,The Marches,Provincia di Ancona,hotel,a building providing lodging and/or meals for the public
+9175955,Royal Palace Luxury Hotel,41.90588,12.48094,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9176080,Spanish Steps Monet,41.90614,12.48082,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9176082,Splendido,44.3064,9.21056,10044,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9176118,Sun Moon,41.90178,12.50561,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9176338,Villa Nettuno,37.83448,15.27065,83032,IT,Sicily,Messina,hotel,a building providing lodging and/or meals for the public
+9188220,Agriturismo La Sorgente,41.5576,14.42835,94026,IT,Molise,Provincia di Isernia,hotel,a building providing lodging and/or meals for the public
+9192654,Hostel Souvenir/Maya,43.77931,11.25504,48017,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+9197106,Hotel Le Palme,45.73337,8.57342,3062,IT,Piedmont,Provincia di Novara,hotel,a building providing lodging and/or meals for the public
+9197378,Hotel Mediterraneo,43.91174,12.92084,41044,IT,The Marches,Provincia di Pesaro e Urbino,hotel,a building providing lodging and/or meals for the public
+9229043,Grand Capodimonte,40.86578,14.24776,63049,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9238880,Residenza Favaro,45.43404,12.33903,27042,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
+9252861,Hotel Patrizia,43.77322,11.24372,48017,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+9255537,Meridiana,45.49628,10.60574,17179,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9587430,Ocriculum,42.41486,12.46603,55024,IT,Umbria,Provincia di Terni,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+9596595,Albatros Letojanni,37.8828,15.3107,83038,IT,Sicily,Messina,hotel,a building providing lodging and/or meals for the public
+9610216,Corona,44.03917,12.61184,99014,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9610220,Corso 281 Luxury Suites,41.90333,12.47931,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9610744,Grand Relais Baja Hotels Villas,39.61586,9.10829,111026,IT,Sardinia,Provincia del Sud Sardegna,hotel,a building providing lodging and/or meals for the public
+9610759,Green Park Bologna & Congressi,44.504,11.365,37006,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9611211,Locanda Senatorum,41.89791,12.4747,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9611385,Morris,44.06597,12.58082,99014,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9611535,Palazzo Ravizza,43.3141,11.3277,52032,IT,Tuscany,Provincia di Siena,hotel,a building providing lodging and/or meals for the public
+9611614,Poiano Resort Hotel,45.58038,10.73188,23036,IT,Veneto,Provincia di Verona,hotel,a building providing lodging and/or meals for the public
+9611876,Residence Castelvecchio,45.44012,10.98969,23091,IT,Veneto,Provincia di Verona,hotel,a building providing lodging and/or meals for the public
+9611947,Residence Sabaudia,44.03274,12.61956,99014,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9612260,Riva Degli Etruschi Hotel Wellness Resort,43.0861,10.53972,49018,IT,Tuscany,Provincia di Livorno,hotel,a building providing lodging and/or meals for the public
+9612280,Room Mate Luca,43.78028,11.25725,48017,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+9612532,Torre Dell'Orologio All Suites,45.434940000000005,12.3392,27042,IT,Veneto,Provincia di Venezia,hotel,a building providing lodging and/or meals for the public
+9612631,Victoria,41.87366,14.06979,66078,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9612985,Zone Superior,41.92582,12.43542,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9613125,Club Ringo,41.12179,9.47305,90006,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
+9853439,Arbatax Port,39.94178,9.70474,-1,IT,nan,nan,port,"a place provided with terminal and transfer facilities for loading and discharging waterborne cargo or passengers, usually located in a harbor"
+9954868,B&B Belfiore,43.78053,11.24175,48017,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+9955063,Graziana,44.014590000000005,12.6418,99013,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9955159,Villa Sirina,37.84591,15.27772,83097,IT,Sicily,Messina,hotel,a building providing lodging and/or meals for the public
+9955165,Centrale Europa,37.5,15.09,87015,IT,Sicily,Catania,hotel,a building providing lodging and/or meals for the public
+9955330,Edo,45.59422,9.36142,108050,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+9969772,Park Casimiro Village,45.5975,10.55434,17171,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10056164,Principe,46.54316,12.13637,25016,IT,Veneto,Provincia di Belluno,hotel,a building providing lodging and/or meals for the public
+10109805,Park Hotel Terme Mediterraneo,40.71715,13.86568,63031,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10110498,Hotel Don Diego,41.14816,9.52366,90006,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
+10110507,Touring,45.55237,10.50785,17145,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10123768,My One Hotel Spa Ayri Medesano,44.778290000000005,10.15552,34020,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10127931,Martin,45.02322,6.84704,1259,IT,Piedmont,Torino,hotel,a building providing lodging and/or meals for the public
+10173627,Club Hotel Angelini,44.154340000000005,12.45819,99001,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10177412,Cruise Min Stay Offer,45.7829,9.04872,13154,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10227049,Meteo Cit-Turin,45.07476,7.662839999999999,1272,IT,Piedmont,Torino,house(s),a building used as a human habitation
+10245388,Saint Nicolas,45.71553,7.16617,7061,IT,Aosta Valley,Valle d'Aosta,hotel,a building providing lodging and/or meals for the public
+10247266,Hotel Club Santa Sabina,40.752790000000005,17.71099,74002,IT,Apulia,Provincia di Brindisi,hotel,a building providing lodging and/or meals for the public
+10277517,Emma,43.96637,12.73452,99002,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10278233,Du Parc,45.47286,10.60591,17179,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10278728,Museo Nazionale degli Strumenti Musicali,41.88832,12.51699,58091,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10278746,Museum of Art and Science,45.47027,9.1824,15146,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10280889,Sport,44.03232,12.6215,99014,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10280984,Vime Hotel Venice East,43.7749,11.4384,48033,IT,Tuscany,Province of Florence,hotel,a building providing lodging and/or meals for the public
+10281831,Museo di Arte e di Ammobiliamento,44.99689,7.60556,1164,IT,Piedmont,Torino,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10282840,Museo Diocesano Bitonto,41.10641,16.69043,72011,IT,Apulia,Bari,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10283122,Stadio Erasmo Iacovone,40.45284,17.26993,73027,IT,Apulia,Provincia di Taranto,stadium,a structure with an enclosure for athletic games with tiers of seats for spectators
+10285624,Piccolo Borgo,41.83536,12.57189,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10288158,Fortezza Medicea,43.32223,11.32347,52032,IT,Tuscany,Provincia di Siena,fort,a defensive structure or earthworks
+10288174,Museo Civico Siena,43.31811,11.33197,52032,IT,Tuscany,Provincia di Siena,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10288187,Bologna Buonsignori,43.31505,11.33951,52032,IT,Tuscany,Provincia di Siena,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10288644,Teatro Comunale Flavio Vespasiano,42.403,12.8626,57059,IT,nan,nan,theater,"a building or outdoor area used for live theatrical presentations, concerts, opera or dance productions, cinema, and/or other stage productions"
+10292293,Teatro del Lido,41.73259,12.27091,58091,IT,nan,nan,theater,"a building or outdoor area used for live theatrical presentations, concerts, opera or dance productions, cinema, and/or other stage productions"
+10292358,Limone Beach Village,39.2,9.56,111011,IT,Sardinia,Provincia del Sud Sardegna,hotel,a building providing lodging and/or meals for the public
+10292361,Hotel Residence Ampurias,40.90474,8.68825,90023,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
+10292375,Hotel 3 Botti,41.13419,9.47811,90006,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
+10292500,Bedandbreakfast Ciro S House,40.92187,9.48205,90047,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
+10292714,Hotel St Michael,46.5474,10.13996,14037,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10292880,Residence Alcione,40.6285,14.4884,65100,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10292884,Marincanto,40.62843,14.48857,65100,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10292899,Hotel Parsifal,40.65,14.61,65104,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10292986,San Marco City Resort and Spa,45.440090000000005,10.97167,23091,IT,Veneto,Provincia di Verona,hotel,a building providing lodging and/or meals for the public
+10293001,Hotel Elena,45.406490000000005,11.00092,23091,IT,Veneto,Provincia di Verona,hotel,a building providing lodging and/or meals for the public
+10293083,Giardino Del Marchese Di Altavilla,38.67204,15.89964,102044,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10293180,Bandb La Casa Nel Sole,40.35038,18.18182,75035,IT,Apulia,Provincia di Lecce,hotel,a building providing lodging and/or meals for the public
+10293186,Trully Holiday,40.79,17.24,72003,IT,Apulia,Bari,hotel,a building providing lodging and/or meals for the public
+10293205,Motel Marco Polo,44.52,11.33,37006,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10293525,La Fonte,43.49,13.48,42034,IT,The Marches,Provincia di Ancona,hotel,a building providing lodging and/or meals for the public
+10293562,Hotel Enzo,43.434740000000005,13.66284,43042,IT,The Marches,Provincia di Macerata,hotel,a building providing lodging and/or meals for the public
+10293812,Big Brother Bandb,45.63956,12.16517,26064,IT,Veneto,Provincia di Treviso,hotel,a building providing lodging and/or meals for the public
+10294065,Al Larin,46.55522,12.12853,25016,IT,Veneto,Provincia di Belluno,hotel,a building providing lodging and/or meals for the public
+10294218,Bandb Ombelico Del Mondo,41.89366,12.5167,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10294287,Agriturismo Cavendo Tutus,41.85633,12.39435,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10294289,Affittacamere New York,41.9,12.5,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10303394,Ata Contessa Jolanda Residence,45.49872,9.19037,15146,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10337823,Circolo Aics Adac Grafica,44.64656,10.93012,36023,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10338537,Umberto,38.66478,15.86872,102030,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10338896,Spiaggia di Porto Ottiolu,40.73684,9.71189,90091,IT,Sardinia,Provincia di Sassari,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+10339084,Bed and Breakfast Basilica San Pietro,41.89525,12.45755,58091,IT,nan,nan,hotel,a building providing lodging and/or meals for the public
+10339992,Grand Hotel Resort Maandma,41.21261,9.38776,90035,IT,Sardinia,Provincia di Sassari,hotel,a building providing lodging and/or meals for the public
+10340168,Parco del Carmelo,40.28666,9.58951,91017,IT,Sardinia,Provincia di Nuoro,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+10344723,Chiesa del Gesù,38.11309,13.36135,82053,IT,Sicily,Palermo,church,a building for public Christian worship
+10346047,Fortress Rocca di Papa,41.76078,12.71063,58086,IT,nan,nan,fort,a defensive structure or earthworks
+10346206,Museo Nazionale di Locri,38.21008,16.24041,80043,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10346318,Piazza Roselle,41.99052,12.08896,58029,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
+10375686,Cattedrale Maria S. Delle Vittorie,37.38481,14.36429,86014,IT,Sicily,Enna,church,a building for public Christian worship
+10376047,Dispensa San Pietro,37.92261,12.87454,81003,IT,Sicily,Trapani,vineyard,a planting of grapevines
+10376057,Associazione Euploia Archeologia E Beni Culturali,38.01809,12.49842,81021,IT,Sicily,Trapani,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10376065,Museo del sale,37.983,12.49827,81013,IT,Sicily,Trapani,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10376217,Necropolis of Pantalica,37.130590000000005,15.022670000000002,89019,IT,Sicily,Provincia di Siracusa,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+10377185,Torre delle Pietre Nere,38.38882,15.86646,80057,IT,nan,nan,monument,a commemorative structure or statue
+10377284,Piazza of Popolo,43.16127,13.71832,109006,IT,The Marches,Province of Fermo,square,"a broad, open, public area near the center of a town or city"
+10377439,Correggio Beach,44.75522,10.7724,35020,IT,nan,nan,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+10377590,Parco Europa,45.49367,9.30263,15205,IT,nan,nan,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+10377893,Le Vele Acquapark,45.28497,10.1736,17004,IT,nan,nan,amusement park,"Amusement Park are theme parks, adventure parks offering entertainment, similar to funfairs but with a fix location"
+10377897,Parco del Bosco,45.57118,9.06441,15105,IT,nan,nan,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+10378232,Ducal Castle,41.68867,15.28882,71056,IT,Apulia,Provincia di Foggia,castle,a large fortified building or set of buildings
+10378503,Spiaggia Bellaria,44.15293,12.46206,99001,IT,nan,nan,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+10399536,Contratto,44.72104,8.2851,5017,IT,Piedmont,Provincia di Asti,vineyard,a planting of grapevines
+10399609,Parco della Rimembranza,43.88207,10.77701,47011,IT,Tuscany,Provincia di Pistoia,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+10399639,Melzo,45.50222,9.41955,15142,IT,nan,nan,railroad station,"a facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight"
+10399647,Piazza Eugenio Conti,41.78859,12.66694,58046,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
+10399858,Piazza I Maggio,38.35646,15.84705,80057,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
+10399939,Parco di Via della Quercia,45.55697,9.16924,15166,IT,nan,nan,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+10401084,Villa Dei Romani,42.01324,12.7388,58047,IT,nan,nan,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+10401188,Parrocchia Cristo Risorto,40.83554,8.40812,90058,IT,Sardinia,Provincia di Sassari,church,a building for public Christian worship
+10401207,Fattoria Cinciano,43.506040000000006,11.17769,52022,IT,Tuscany,Provincia di Siena,vineyard,a planting of grapevines
+10401314,Santa Maria del Collegio,38.08184,13.29053,82049,IT,Sicily,Palermo,church,a building for public Christian worship
+10401417,Piazza Aldo Moro,37.08135,15.1621,89009,IT,Sicily,Provincia di Siracusa,square,"a broad, open, public area near the center of a town or city"
+10401498,Casa Crivelli Boisio Beretta,45.46652,8.88145,15130,IT,nan,nan,palace,"a large stately house, often a royal or presidential residence"
+10401541,Chiesa di Santa Maria,45.66492,9.15511,108030,IT,nan,nan,church,a building for public Christian worship
+10401585,Museo per l'Ambiente,39.33882,16.2436,78102,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10401896,Piazza Duomo,40.92609,14.52739,63050,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
+10402013,Spiaggia di Sa Capanna,40.0831,8.49018,95019,IT,Sardinia,Provincia di Oristano,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+10402057,Auditorium Caivano Di Caccavale Francesco,40.96761,14.30361,63011,IT,nan,nan,theater,"a building or outdoor area used for live theatrical presentations, concerts, opera or dance productions, cinema, and/or other stage productions"
+10402180,Spiaggia Fiumaretta di Ameglia,44.04978,9.99241,11001,IT,nan,nan,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+10402364,Broglia,44.708,8.792769999999999,6081,IT,Piedmont,Provincia di Alessandria,vineyard,a planting of grapevines
+10402405,Museo Archeologico Nazionale,40.61891,15.05641,65050,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10402626,Parco Trapezio,45.43617,9.24306,15146,IT,nan,nan,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+10402782,Piazza Duomo,37.22999,15.22006,89001,IT,Sicily,Provincia di Siracusa,square,"a broad, open, public area near the center of a town or city"
+10528240,Chiesa della Madonna della Pace,40.73847,14.57091,65007,IT,nan,nan,church,a building for public Christian worship
+10626286,Palazzo Machin,40.55788,8.31311,90003,IT,Sardinia,Provincia di Sassari,palace,"a large stately house, often a royal or presidential residence"
+10626374,Piazza Guglielmo Marconi,40.91075,14.26686,63005,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
+10626419,Museo Regionale della Ceramica,37.2336,14.514970000000002,87011,IT,Sicily,Catania,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10626657,Piazza Goito,43.88854,8.04368,8031,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
+10626851,Cantina la Sabbiona,44.23388,11.91802,39010,IT,nan,nan,vineyard,a planting of grapevines
+10626948,Piazza Duomo,45.5664,8.05301,96004,IT,Piedmont,Provincia di Biella,square,"a broad, open, public area near the center of a town or city"
+10627044,Caserma Bruno Tofano,40.74699,14.64242,65078,IT,nan,nan,palace,"a large stately house, often a royal or presidential residence"
+10627100,Villa Ferretti,40.813,14.078220000000002,63006,IT,nan,nan,palace,"a large stately house, often a royal or presidential residence"
+10627443,Parrocchia Di Acquate,45.8603,9.40863,97042,IT,nan,nan,church,a building for public Christian worship
+10629186,Teatro Umberto,38.97472,16.3188,79160,IT,nan,nan,theater,"a building or outdoor area used for live theatrical presentations, concerts, opera or dance productions, cinema, and/or other stage productions"
+10629219,Galleria Civica,40.63968,15.80622,76063,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+10629828,Cattedrale di Santa Maria Assunta,40.82766,16.55274,72004,IT,Apulia,Bari,church,a building for public Christian worship
+10630296,Le Grotte della Valganna,45.85539,8.82243,12083,IT,nan,nan,cave(s),"an underground passageway or chamber, or cavity on the side of a cliff"
+10630507,Adriatic Arena,43.9029,12.86733,41044,IT,The Marches,Provincia di Pesaro e Urbino,stadium,a structure with an enclosure for athletic games with tiers of seats for spectators
+10700194,Chiesa di San Sebastiano,40.63593,17.94572,74001,IT,Apulia,Provincia di Brindisi,church,a building for public Christian worship
+10792611,Parco di via delle Camelie,42.04034,11.87853,58097,IT,nan,nan,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+10859017,Kursaal Village,41.71528,12.31596,58091,IT,nan,nan,amusement park,"Amusement Park are theme parks, adventure parks offering entertainment, similar to funfairs but with a fix location"
+10859036,Piazza Venzaghi Achille,45.61148,8.847760000000001,12026,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
+10859113,Gerardo Cesari,45.52943,10.76175,23023,IT,Veneto,Provincia di Verona,vineyard,a planting of grapevines
+10859129,Palazzo della Magnifica Patria,45.6071,10.52849,17170,IT,nan,nan,palace,"a large stately house, often a royal or presidential residence"
+11074337,"Evêque, Col de l'",45.95948,7.49586,-1,IT,nan,nan,pass,"a break in a mountain range or other high obstruction, used for transportation from one side to the other [See also gap]"
+11126423,Tenuta S. Zibio,45.28577,11.74868,28040,IT,Veneto,Provincia di Padova,vineyard,a planting of grapevines
+11126515,Lido Adriano,44.41364,12.31271,39014,IT,nan,nan,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+11126537,Tenuta SetteVenti,43.80463,10.51392,46007,IT,Tuscany,Provincia di Lucca,vineyard,a planting of grapevines
+11126570,Parco Salvador Allende,44.10279,9.82327,11015,IT,nan,nan,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+11126609,Fontana del Calamo,43.61807,13.513179999999998,42002,IT,The Marches,Provincia di Ancona,monument,a commemorative structure or statue
+11126694,Margherita di Savoia,41.37641,16.15355,110005,IT,Apulia,Provincia di Barletta - Andria - Trani,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+11127115,Palazzo del Monte di Pietá,45.40703,11.8725,28060,IT,Veneto,Provincia di Padova,palace,"a large stately house, often a royal or presidential residence"
+11127246,Parco di Via dei Giardini,44.53948,11.35329,37006,IT,nan,nan,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+11127625,Spiaggia della Padulella,42.8199,10.31646,49014,IT,Tuscany,Provincia di Livorno,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+11127649,Villa di San Martino,42.78545,10.28086,49014,IT,Tuscany,Provincia di Livorno,palace,"a large stately house, often a royal or presidential residence"
+11127827,Chiesa Di San Vittore,45.90026,8.52135,103064,IT,Piedmont,Provincia Verbano-Cusio-Ossola,church,a building for public Christian worship
+11128050,Tenuta Torciano,43.50981,11.08177,52028,IT,Tuscany,Provincia di Siena,vineyard,a planting of grapevines
+11128296,Parco Fucoli - PalaMontePaschi,43.04092,11.82037,52009,IT,Tuscany,Provincia di Siena,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+11128319,Chiesa di San Biagio,43.09083,11.77458,52015,IT,Tuscany,Provincia di Siena,church,a building for public Christian worship
+11135267,Parrocchia Santo Stefano,42.43913,11.1176,53016,IT,Tuscany,Provincia di Grosseto,church,a building for public Christian worship
+11139377,La Cometa Parco Commerciale,38.35916,16.02618,80093,IT,nan,nan,mall,"A large, often enclosed shopping complex containing various stores, businesses, and restaurants usually accessible by common passageways."
+11153692,Lago di Campotosto,42.534490000000005,13.38839,66016,IT,nan,nan,lake,a large inland body of standing water
+11186409,Faro di Punta Penna,42.17109,14.714579999999998,69099,IT,nan,nan,lighthouse,a distinctive structure exhibiting a major navigation light
+11204299,Museo dell'artigianato artistico abruzzese,42.19263,14.2214,69043,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+11237791,Chiesa di Santo Stefano,42.29031,14.13425,69016,IT,nan,nan,church,a building for public Christian worship
+11237812,Chiesa di San Rocco,42.19066,14.22201,69043,IT,nan,nan,church,a building for public Christian worship
+11237817,Chiesa di Sant'Onofrio,42.15965,14.41506,69046,IT,nan,nan,church,a building for public Christian worship
+11237846,Chiesa della Madonna in Basilica,41.95271,14.35607,69102,IT,nan,nan,church,a building for public Christian worship
+11280630,Croda Bassa,46.52779,12.4546,25033,IT,Veneto,Provincia di Belluno,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m
+11280663,Val Ciampeviei,46.52412,12.42996,25033,IT,Veneto,Provincia di Belluno,valley,an elongated depression usually traversed by a stream
+11287691,Borgomezzavalle,46.048,8.18935,103078,IT,Piedmont,Provincia Verbano-Cusio-Ossola,third-order administrative division,a subdivision of a second-order administrative division
+11396098,Cesano,42.065090000000005,12.32785,58091,IT,nan,nan,fifth-order administrative division,a subdivision of a fourth-order administrative division
+11396144,Acilia Nord,41.79048,12.35147,58091,IT,nan,nan,fifth-order administrative division,a subdivision of a fourth-order administrative division
+11593957,Panificio Caporale Loris,46.09411,13.36898,30060,IT,nan,nan,store,a building where goods and/or services are offered for sale
+11594362,Piana Rocks (historical),43.54376,10.29502,49009,IT,Tuscany,Provincia di Livorno,rocks,"conspicuous, isolated rocky masses"
+11612761,Basilica di San Lorenzo,43.7749,11.25416,48017,IT,Tuscany,Province of Florence,church,a building for public Christian worship
+11749560,Salumificio Tabachetti Pasquale,45.55967,8.38467,2068,IT,Piedmont,Provincia di Vercelli,vineyard,a planting of grapevines
+11789224,Chiesa di San Vito,42.79186,13.55065,67046,IT,nan,nan,church,a building for public Christian worship
+11818116,Monte Lama,40.45818,15.76937,76045,IT,nan,nan,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+11821269,OPERA BOSCO Museo di Arte nella Natura,42.22732,12.42106,56010,IT,nan,nan,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited
+11821419,Castello di Pietraperzia,37.4239,14.136020000000002,86015,IT,Sicily,Enna,ruin(s),a destroyed or decayed structure which is no longer functional
+11836443,Palazzo San Giuliano,37.50372,15.08786,87015,IT,Sicily,Catania,palace,"a large stately house, often a royal or presidential residence"
+11836788,"Scuola Secondaria di primo grado ""E. Marelli""",45.54418,9.22837,15077,IT,nan,nan,school,building(s) where instruction in one or more branches of knowledge takes place
+11839532,"Cattedrale dei Santi Nazario, Celso e Vittore",41.78511,14.55107,70081,IT,Molise,Provincia di Campobasso,church,a building for public Christian worship
+11839617,Anfiteatro romano,41.8055,14.91626,70031,IT,Molise,Provincia di Campobasso,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+11856566,Villa Wolkonsky,41.88878,12.5103,58091,IT,nan,nan,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+11862542,Cugno La Volta,40.5049,16.6743,77017,IT,nan,nan,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+11862557,Héraion de la Foce del Sele,40.48823,14.97088,65025,IT,nan,nan,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+11862865,Punta Tresino - loc. Sambuco,40.33865,14.95609,65002,IT,nan,nan,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+11902949,S. Giovanni Evangelista Church,44.418420000000005,12.20574,39014,IT,nan,nan,church,a building for public Christian worship
+11903411,Cima Moiazza Nord,46.34507,12.06171,-1,IT,Veneto,Provincia di Belluno,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more"
+11906159,Brent De L'Art,46.04026,12.14711,25074,IT,Veneto,Provincia di Belluno,gorge(s),"a short, narrow, steep-sided section of a stream valley"
+11926390,S. Maria in Cosmedin,41.88811,12.48173,58091,IT,nan,nan,church,a building for public Christian worship
+11952331,Spiaggia di Capoiale,41.91416,15.6894,71008,IT,Apulia,Provincia di Foggia,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves
+11952565,Casa Baccichetto,45.72351,12.45182,26058,IT,Veneto,Provincia di Treviso,vineyard,a planting of grapevines
+11952680,Cantine De Luca,39.30791,17.05871,101014,IT,nan,nan,vineyard,a planting of grapevines
+11952736,Stadio Giuseppe Lopresti,38.35394,15.84669,80057,IT,nan,nan,stadium,a structure with an enclosure for athletic games with tiers of seats for spectators
+11952776,Piazza Umberto I,40.99616,15.65566,76048,IT,nan,nan,square,"a broad, open, public area near the center of a town or city"
+11952805,Castello di Corbara,42.7055,12.22747,55023,IT,Umbria,Provincia di Terni,castle,a large fortified building or set of buildings
+11952946,Porto Peschici,41.94898,16.00927,71038,IT,Apulia,Provincia di Foggia,port,"a place provided with terminal and transfer facilities for loading and discharging waterborne cargo or passengers, usually located in a harbor"
+11952989,Chiesa della Madonna delle Grazie,42.06413,13.62889,66038,IT,nan,nan,church,a building for public Christian worship
+11953135,Chiesa di San Michele Arcangelo,42.26518,14.30479,69004,IT,nan,nan,church,a building for public Christian worship
+11961355,Chiesa di Sant'Elisabetta,42.29133,14.32415,69027,IT,nan,nan,church,a building for public Christian worship
+11962069,I Feudi di Romans - Lorenzon Enzo,45.80225,13.447120000000002,31018,IT,nan,nan,vineyard,a planting of grapevines
+11962163,Marinaro Marisa,43.95658,12.58579,99003,IT,nan,nan,vineyard,a planting of grapevines
+11962166,Villa Imperiale Pesaro,43.9208,12.87944,41044,IT,The Marches,Provincia di Pesaro e Urbino,palace,"a large stately house, often a royal or presidential residence"
+11963532,Monumento a Francesco di Marco Datini,43.88068,11.09677,100005,IT,Tuscany,Provincia di Prato,monument,a commemorative structure or statue
+11972603,Port of Marciana Marina,42.80837,10.1965,-1,IT,Tuscany,Provincia di Livorno,port,"a place provided with terminal and transfer facilities for loading and discharging waterborne cargo or passengers, usually located in a harbor"
+11978584,Temple of Castor and Pollux,41.89163,12.48576,58091,IT,nan,nan,archaeological/prehistoric site,"a place where archeological remains, old structures, or cultural artifacts are located"
+11978773,Parco degli Angeli,39.06776,8.64288,111028,IT,Sardinia,Provincia del Sud Sardegna,zoo,a zoological garden or park where wild animals are kept for exhibition
+12022220,bishopric of Formia,41.25575,13.60641,59008,IT,nan,nan,historical capital of a political entity,a former capital of a political entity
+12022924,Creta,45.4596,9.11337,15146,IT,nan,nan,section of populated place,nan
+12023055,Parco Dora,45.09162,7.66581,1272,IT,Piedmont,Torino,section of populated place,nan
+12070399,Monte Pellegrino,38.15471,13.35935,82053,IT,Sicily,Palermo,section of populated place,nan
+12070402,Villagrazia-Falsomiele,38.07402,13.35581,82053,IT,Sicily,Palermo,section of populated place,nan
+12110461,Gargano National Park,41.78425,15.84445,71033,IT,Apulia,Provincia di Foggia,park,"an area, often of forested land, maintained as a place of beauty, or for recreation"
+12111102,Grottelle,40.96532,13.0522,59018,IT,nan,nan,cove(s),"a small coastal indentation, smaller than a bay"
+12122380,Cima del Souffi,44.18764,7.288530000000001,4233,IT,Piedmont,Provincia di Cuneo,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+12123299,Monte Bussaia,44.21809,7.467860000000001,4239,IT,Piedmont,Provincia di Cuneo,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+12123449,Punta di Fenestrelle,44.15835,7.3567,4084,IT,Piedmont,Provincia di Cuneo,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+12123450,Caire Ciamberline,44.16328,7.35619,4084,IT,Piedmont,Provincia di Cuneo,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature"
+12188693,"Palazzo Barraco, ex monastero di Calabromaria",39.18264,16.88241,101022,IT,nan,nan,church,a building for public Christian worship
