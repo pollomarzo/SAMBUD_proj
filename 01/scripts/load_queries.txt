@@ -21,7 +21,7 @@ create(m)-[:REGISTERED]->(v)
 ## ADD COVID TEST PLUS RELATION WITH MEDICAL RECORD 
 LOAD CSV WITH HEADERS FROM "file:///covid_tests.csv" as CSV 
 match(m:Medical_Record{CIF: CSV.CIF})
-merge(t:Covid_Tests{CIF: m.CIF, Date: Date(CSV.Date), Result: CSV.Result})
+merge(t:Covid_Tests{CIF: m.CIF, Date: Date(CSV.Date), Result: toBoolean(CSV.Result)})
 create(m)-[:REGISTERED]->(t)
 
 ## ADD ROOMS PLUS RELATION WITH PLACE

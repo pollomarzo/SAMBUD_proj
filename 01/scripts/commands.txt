@@ -4,7 +4,7 @@ set m.Vaccinated=True
 return distinct m, v
 
 
-##If a person results negative in his latest test then set is Positive attribute to false (non funziona)
+##If a person results negative in his latest test then set is Positive attribute to false
 match (p:Person)-[:HAS]->(m:Medical_Record), (m)-[:REGISTERED]->(t:Covid_Tests)
 with p, max(t.Date) as Max_Date
 match(p)-[:HAS]->(m:Medical_Record), (m)-[:REGISTERED]->(t:Covid_Tests)
