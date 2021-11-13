@@ -10,9 +10,9 @@ import {
   NEO4J_HOST_URI,
   NEO4J_USER,
   NEO4J_PASSWORD,
-  NEO4J_PROTOCOL} from './secrets';
+  NEO4J_SCHEME} from './secrets';
 
-const driver = createDriver(NEO4J_PROTOCOL, NEO4J_HOST_URI, '7687', NEO4J_USER, NEO4J_PASSWORD);
+const driver = createDriver(NEO4J_SCHEME, NEO4J_HOST_URI, '7687', NEO4J_USER, NEO4J_PASSWORD);
 
 ReactDOM.render(
   <AppThemeProvider>

@@ -95,7 +95,7 @@ function App() {
             </div> */}
             <ResponsiveNeoGraph
               containerId={"id0"}
-              neo4jUri={"neo4j+s://61208074.databases.neo4j.io"}
+              neo4jUri={"neo4j+s://61208074.databases.neo4j.io:7678"}
               neo4jUser={NEO4J_USER}
               neo4jPassword={NEO4J_PASSWORD}/>
             <Table data={result} />

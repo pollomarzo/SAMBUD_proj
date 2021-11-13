@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import useResizeAware from "react-resize-aware";
-import Neovis from "neovis.js/dist/neovis.js";
+import Neovis from "./NeoVis/neovis";
 
 const NeoGraph = (props) => {
   const {
@@ -43,7 +43,7 @@ const NeoGraph = (props) => {
             m.Risky_Subject and
             p.Last_Confirm > date() - duration({days:15})
         RETURN p LIMIT 5`,
-      encrypted: "ENCRYPTION_ON",
+      encrypted: "ENCRYPTION_OFF",
     };
     const vis = new Neovis(config);
     vis.render();
@@ -70,7 +70,6 @@ NeoGraph.defaultProps = {
 
 const ResponsiveNeoGraph = (props) => {
   const [resizeListener, sizes] = useResizeAware();
-  console.log(props)
 
   const side = Math.max(sizes.width, sizes.height) / 2;
   const neoGraphProps = { ...props, width: side, height: side };
