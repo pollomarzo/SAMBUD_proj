@@ -1,6 +1,6 @@
 ##If a person has done at least 1 vaccine, set his Vaccinated attribute to true
 match (p:Person)-[:HAS]->(m:Medical_Record), (m)-[:REGISTERED]->(v:Covid_Vaccines) 
-set m.Vaccinated=True
+set m.Covid_Vaccinated=True
 return distinct m, v
 
 
