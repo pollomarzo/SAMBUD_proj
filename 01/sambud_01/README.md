@@ -17,7 +17,7 @@ it'll take a while:
   "NEO4J_PASSWORD": "*******",
   "NEO4J_SCHEME": "bolt",
   "NEO4J_FULL_URI": "bolt://localhost:7687"
-}```
+}
 
 
 ````
