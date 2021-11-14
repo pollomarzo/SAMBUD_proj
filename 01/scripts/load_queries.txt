@@ -1,0 +1,50 @@
+## ADD PEOPLE 
+LOAD CSV WITH HEADERS FROM "file:///people.csv" as CSV 
+CREATE(p:Person{CIF: CSV.CIF, First_Name: CSV.First_Name, Last_Name: CSV.Last_Name, Birth: CSV.Birth, Sex: CSV.Sex, Birthplace: CSV.Birthplace, Phone_Number: CSV.Phone_Number, eMail: CSV.Email, Positive: toBoolean(CSV.Positive), Last_Confirm: Date(CSV.Last_Confirm)})
+
+## ADD PLACES 
+LOAD CSV WITH HEADERS FROM "file:///places.csv" as CSV 
+CREATE(p:Place{Code: ToInteger(CSV.Code), Name: CSV.Name, Lat: ToFloat(CSV.Lat), Long: ToFloat(CSV.Long), CAP: ToInteger(CSV.CAP), State: CSV.State, Region: CSV.Region, District: CSV.District, Type: CSV.Type, Type_Desc: CSV.Type_Desc})
+
+## ADD MEDICAL RECORDS PLUS RELATION WITH PERSON 
+LOAD CSV WITH HEADERS FROM "file:///medical_records.csv" as CSV 
+MATCH(p:Person{CIF: CSV.CIF})
+MERGE(m:Medical_Record{CIF: p.CIF, Covid_Vaccinated: toBoolean(CSV.Covid_Vaccinated), Risky_Subject: toBoolean(CSV.Risky_Subject), Health_Status: CSV.Health_Status})
+create(p)-[:HAS]->(m)
+
+## ADD COVID VACCINES PLUS RELATION WITH MEDICAL RECORD 
+LOAD CSV WITH HEADERS FROM "file:///covid_vaccines.csv" as CSV 
+MATCH(m:Medical_Record{CIF: CSV.CIF})
+MERGE(v:Covid_Vaccines{CIF: m.CIF, Date: Date(CSV.Date), Type: CSV.Type})
+CREATE(m)-[:REGISTERED]->(v)
+
+## ADD COVID TEST PLUS RELATION WITH MEDICAL RECORD 
+LOAD CSV WITH HEADERS FROM "file:///covid_tests.csv" as CSV 
+MATCH(m:Medical_Record{CIF: CSV.CIF})
+MERGE(t:Covid_Tests{CIF: m.CIF, Date: Date(CSV.Date), Result: toBoolean(CSV.Result)})
+CREATE(m)-[:REGISTERED]->(t)
+
+## ADD ROOMS PLUS RELATION WITH PLACE
+LOAD CSV WITH HEADERS FROM "file:///rooms.csv" as CSV 
+MATCH(p:Place{Code: ToInteger(CSV.Code)})
+MERGE(r:Rooms{Code: ToInteger(p.Code), Name: CSV.Name, Capience: ToInteger(CSV.Capience)})
+CREATE(p)-[:HAS]->(r)
+
+## ADD BOTH CONTACTS 
+LOAD CSV WITH HEADERS FROM "file:///contacts.csv" as CSV 
+MATCH(p1:Person{CIF: CSV.CIF1}),(p2:Person{CIF: CSV.CIF2}) 
+MERGE(p1)-[:CONTACTS{Date: Date(CSV.Date), Duration: Time(CSV.Duration)}]-(p2)
+
+## ADD LIVES RELATION
+LOAD CSV WITH HEADERS FROM "file:///lives.csv" as CSV
+MATCH(p1:Person{CIF: CSV.CIF1}), (p2:Person{CIF: CSV.CIF2})
+MERGE (p1)-[:LIVES]-(p2)
+
+## ADD VISIT RELATION WITH ROOM
+LOAD CSV WITH HEADERS FROM "file:///visits.csv" as CSV with CSV where CSV.Room is not null
+MATCH(p:Person{CIF: CSV.CIF}),(r:Rooms{Code: ToInteger(CSV.Place), Name: CSV.Room}) MERGE(p)-[v:VISITS{Date: Date(CSV.Date), Duration: Time(CSV.Duration)}]->(r)
+
+## ADD VISIT WITHOUT ROOM
+LOAD CSV WITH HEADERS FROM "file:///visits.csv" as CSV with CSV where CSV.Room is null
+MATCH(p:Person{CIF: CSV.CIF}),(pl:Place{Code: ToInteger(CSV.Place)}) 
+MERGE(p)-[v:VISITS{Date: Date(CSV.Date), Duration: Time(CSV.Duration)}]->(pl)

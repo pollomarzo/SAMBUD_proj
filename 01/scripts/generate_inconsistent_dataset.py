@@ -13,14 +13,20 @@ from codicefiscale import codicefiscale
 from math import floor
 from itertools import combinations
 
+### Inconsistenence
+# All people have Vaccinated = False
+# All people have Positive = False
+# Not every people have Medical Records
+# Not every room have been visited
+
 #########   Settings   #########
 
 # number of nodes and arcs
-NUMBER_OF_PEOPLE = 8000
-NUMBER_OF_CONTACTS = 30000
-NUMBER_OF_PLACES = 500
-NUMBER_OF_ROOMS = 500
-NUMBER_OF_VISITS = 20000
+NUMBER_OF_PEOPLE = 200
+NUMBER_OF_CONTACTS = 3000
+NUMBER_OF_PLACES = 50
+NUMBER_OF_ROOMS = 1000
+NUMBER_OF_VISITS = 200
 
 
 # datetime related to COVID
@@ -60,7 +66,7 @@ places_filepath = './data/Luoghi-Italiani.csv'
 def saveCSV(toCSV, filename) -> None:
 
     keys = toCSV[0].keys()
-    with open(f'output/{filename}', 'w', newline='')  as output_file:
+    with open(f'output/inconsistent/{filename}', 'w', newline='')  as output_file:
         dict_writer = csv.DictWriter(output_file, keys)
         dict_writer.writeheader()
         dict_writer.writerows(toCSV)
@@ -114,7 +120,7 @@ def getEntities() -> (list, list, list, list, list, list):
         sex = random.choice(['male','female'])
         first_name = names.get_first_name(gender=sex)
         last_name = names.get_last_name()
-        positive = random.choice([True, False], p=[positive_ratio, 1 - positive_ratio])
+        positive = False
         birth = (birth_min_datetime + (birth_max_datetime - birth_min_datetime) * random.random()).strftime('%Y-%m-%d')
         phone_number = randomPhone()
         mail_provider  = random.choice(['gmail.com','outlook.it','icloud.com','hotmail.it','yahoo.it'])
@@ -132,7 +138,7 @@ def getEntities() -> (list, list, list, list, list, list):
         except:
             continue
 
-        covid_vaccinated = random.choice([True, False])
+        covid_vaccinated = False
         risky_subject = random.choice([True, False], p=[risky_ratio, 1 - risky_ratio])
         health_status = random.choice(["bad", "average", "good"])
         
@@ -151,22 +157,24 @@ def getEntities() -> (list, list, list, list, list, list):
             'Sex': sex
             })
 
-        medical_records.append({
-                'CIF': CIF,
-                'Covid_Vaccinated': covid_vaccinated,
-                'Risky_Subject': risky_subject,
-                'Health_Status': health_status,
-            })
+        do = random.choice([True,False], p = [0.7, 0.3])
+        if(do):
+            medical_records.append({
+                    'CIF': CIF,
+                    'Covid_Vaccinated': covid_vaccinated,
+                    'Risky_Subject': risky_subject,
+                    'Health_Status': health_status,
+                })
 
 
         # Max 2 Vaccines per person
-        if (covid_vaccinated):
-                for i in range(random.randint(1,3)):
-                    covid_vaccines.append({
-                        'CIF': CIF,
-                        'Date': (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%Y-%m-%d'),
-                        'Type': random.choice(["Pfizer", "Moderna", "Astrazeneca", "Johnson & Johnson"])
-                    })
+        
+        for i in range(random.randint(0,3)):
+            covid_vaccines.append({
+                'CIF': CIF,
+                'Date': (min_datetime + (max_datetime - min_datetime) * random.random()).strftime('%Y-%m-%d'),
+                'Type': random.choice(["Pfizer", "Moderna", "Astrazeneca", "Johnson & Johnson"])
+            })
 
         # At leats one test if last_confirm (with the same result as Person.Positive)
         if (last_confirm):
