@@ -33,8 +33,7 @@ CREATE(p)-[:HAS]->(r)
 ## ADD BOTH CONTACTS 
 LOAD CSV WITH HEADERS FROM "file:///contacts.csv" as CSV 
 MATCH(p1:Person{CIF: CSV.CIF1}),(p2:Person{CIF: CSV.CIF2}) 
-MERGE(p1)-[:CONTACTS{Date: Date(CSV.Date), Duration: Time(CSV.Duration)}]->(p2)
-MERGE(p2)-[:CONTACTS{Date: Date(CSV.Date), Duration: Time(CSV.Duration)}]->(p1)
+MERGE(p1)-[:CONTACTS{Date: Date(CSV.Date), Duration: Time(CSV.Duration)}]-(p2)
 
 ## ADD LIVES RELATION
 LOAD CSV WITH HEADERS FROM "file:///lives.csv" as CSV

@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from codicefiscale import codicefiscale
 from math import floor
-
+from itertools import combinations
 
 #########   Settings   #########
 
@@ -297,11 +297,13 @@ def getRelations(people, places, rooms):
         if number_of_familiars >= len(people_copy):
             number_of_familiars = len(people_copy) -1
 
-        for i in range(0,number_of_familiars + 1):
+        comb = list(combinations(range(number_of_familiars), 2))
+        for i in range(0,len(comb)):
+            p1, p2 = comb[i]
             lives.append(
             {
-                'CIF1': people_copy[0]['CIF'],
-                'CIF2': people_copy[i]['CIF'],
+                'CIF1': people_copy[p1]['CIF'],
+                'CIF2': people_copy[p2]['CIF'],
             })
         people_copy = people_copy[number_of_familiars + 1:]
 
