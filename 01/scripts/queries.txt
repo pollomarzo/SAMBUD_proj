@@ -65,11 +65,10 @@ ORDER BY p1.CIF
 
 ##Track all the people who were in contact with a positive in the last 15 days from his confirmation and find all their familiars
 
-match (p1:Person{Positive:true})-[c:CONTACTS]-(p2:Person), 
-	(p1)-[:LIVES]->(:Place)<-[:LIVES]-(p3:Person),
-	(p2)-[:LIVES]->(:Place)<-[:LIVES]-(p4:Person)
+match (p1:Person{Positive:true})-[c:CONTACTS]-(p2:Person)
 where p1.Last_Confirm >= c.Date and p1.Last_Confirm <= c.Date + duration({days: 15})
-return distinct p1.First_Name + " " + p1.Last_Name as Positive, p2.First_Name + " " + p2.Last_Name as Contacted, p1.Last_Confirm, c.Date as Contact_Date, p3.First_Name as Familiar1, p4.First_Name as Familiar2
+match (p2)-[:LIVES*]-(p4:Person), (p1)-[:LIVES*]-(p3:Person)
+return distinct p1, p2, p3, p4
 
 
 
@@ -98,8 +97,8 @@ return distinct p1.First_Name + " " + p1.Last_Name as Positive, p2.First_Name + 
 
 ## Query n. 7
 
-##Given two people, one positive and one negative, find the shortest path for which they could have been in contact
-##The negative person has only vaccine and he hasn't done a test in the last 2 days from the positive confirmation
+##Given two people, one positive and one negative, find the shortest path for which they could have been in contact in the last 15 days from the positive confirmation
+##The negative person has only one vaccine and he hasn't done a test in the last 2 days from the positive confirmation
 
 match (p1:Person{Positive: true}), (p2:Person{Positive:false}), p = shortestPath((p1)-[*]-(p2))
 where all(r IN relationships(p) where (p1.Last_Confirm >= r.Date and p1.Last_Confirm <= r.Date + duration({days: 15}))) 
