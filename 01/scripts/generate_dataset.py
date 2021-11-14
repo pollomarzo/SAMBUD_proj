@@ -4,6 +4,7 @@ import pandas as pd
 import csv
 import string
 
+  
 from numpy import arange, zeros
 from numpy import random as random
 from datetime import datetime, timedelta
@@ -17,9 +18,10 @@ from math import floor
 # number of nodes and arcs
 NUMBER_OF_PEOPLE = 8000
 NUMBER_OF_CONTACTS = 30000
-NUMBER_OF_PLACES = 1000
+NUMBER_OF_PLACES = 500
 NUMBER_OF_ROOMS = 500
 NUMBER_OF_VISITS = 20000
+
 
 # datetime related to COVID
 min_datetime = datetime(2020, 1, 1, 0, 0, 0)
@@ -192,7 +194,7 @@ def getEntities() -> (list, list, list, list, list, list):
     n = len(places_df)
     idxs = zeros(n)
 
-    # Get #NUMBER_OF_PLACES random places
+    # Get #NUMBER_OF_PLACES random places from bigger dataset
     for i in range (NUMBER_OF_PLACES):
       l = random.randint(0,n)
       idxs[l] = places_df['Code'][l]
@@ -286,16 +288,22 @@ def getRelations(people, places, rooms):
             })
         
     # Generate Lives
-    for i in range(NUMBER_OF_PEOPLE):
+    people_copy = people.copy()
+    random.shuffle(people_copy)
 
-        place = places[random.randint(0,len(places))]
+    while(len(people_copy) > 0):
 
-        lives.append(
+        number_of_familiars = random.randint(0,6)
+        if number_of_familiars >= len(people_copy):
+            number_of_familiars = len(people_copy) -1
+
+        for i in range(0,number_of_familiars + 1):
+            lives.append(
             {
-                'CIF': people[i]['CIF'],
-                'Code': place['Code']
+                'CIF1': people_copy[0]['CIF'],
+                'CIF2': people_copy[i]['CIF'],
             })
-
+        people_copy = people_copy[number_of_familiars + 1:]
 
     return contacts, visits, lives
 
