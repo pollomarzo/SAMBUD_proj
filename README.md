@@ -1,23 +1,37 @@
 ## Systems and Methods for Big and Unstructured Data Project #1 ##
-# Neo4j Database
+# Neo4j Database for Tracing People Contacts
 
 Neo4j is a graph database management system developed by Neo4j, Inc. Described by its developers as an ACID-compliant transactional database with native graph storage and processing.
 
 Neo4j is implemented in Java and accessible from software written in other languages using the Cypher query language through a transactional HTTP endpoint, or through the binary "Bolt" protocol.
 
 ## Installation
-
+In [scripts](01/scripts/) you can find some useful tools to generate CSV file that can be imported into Neo4J. 
 To launch 'generate_dataset.py', make sure to install the dependencies first:
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all thats needed.
-
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all that's needed.
 ```bash
 pip -r 01/scripts/requirements.txt
 ```
+Run [generate_dataset.py](01/scripts/generate_dataset.py) and copy the output files in the Neo4J import folder.
+```bash
+python 01/scripts/generate_dataset.py
+```
+Afterwards, use the Cypher Load Queries found in [load_queries.txt](01/scripts/load_queries.txt) to populate the dataset.
+You can also use some .dump example files in this folder:
+## UI
 
-## Dataset Information
+...
 
-The **Person** dataset is made by: **First Name** and **Last Name** retrieve by a function of names package, **Sex**/ by a random choice between the two values, **Phone Number**/**Mail**/**Birth** by a random function, **Positive** is random define by positive ratio variable. **Last Confirm** by two random function: if Positive is true the function range is from fourty-five days before now to now else the function range is from 1/1/2020 to now, **Birthplace** by extraction of a value from CSV file and **CIF** by a function of codicefiscale package. 
-The **Medical Records** dataset is made: **CIF** of the current person, **Risky Subject**/**Covid Vaccinated** by a random choice between ("True","False") **Health Status** by a random choice between ("bad","average","good"). 
+## ER-Model
+To visualize the Entity-Relation model, go [here](https://www.diagrams.net)
+
+## Datasets Information
+Following some information about how nodes are generated.
+### People
+**People** dataset is made by: **First Name** and **Last Name** retrieve by a function of names package, **Sex**/ by a random choice between the two values, **Phone Number**/**Mail**/**Birth** by a random function, **Positive** is randomly defined by a positive ratio variable. **Last Confirm** by two random function: if Positive is true Last Confirm is within the last fourty-five days, otherwise the function range is from 1/1/2020 to now, **Birthplace** is retrieved from CSV file of Italian Cities and **CIF** is calculated via a function imported from codicefiscale package. 
+
+### Medical Records
+The **Medical Records** dataset has **CIF** of the related person, **Risky Subject**/**Covid Vaccinated** by a random choice between ("True","False") **Health Status** by a random choice between ("bad","average","good"). 
 
 ### Covid vaccines
 The **Covid vaccines** dataset is made with **CIF** of the current person,**Date** by a random function and **Type** by a random choice between ("Pfizer", "Moderna", "Astrazeneca", "Johnson e Johnson") with a restriction of at most 2 vaccines per person.
