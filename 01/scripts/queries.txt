@@ -45,7 +45,7 @@ WHERE
     p1.Positive = True and
     v1.Duration > time({hour:0,minute:50})
 
-RETURN DISTINCT p1.CIF as CIF, p1.First_Name as Name, pl.Code as Place, pl.Room as Room, v1.Date as Date,p1.Last_Confirm as Positiveness_Date, count(v1) as Count
+RETURN DISTINCT p1.CIF as CIF, p1.First_Name as Name, pl.Code as Place, pl.Room as Room, v1.Date as Date,p1.Last_Confirm as Positiveness_Date
 ORDER BY p1.CIF
 UNION
 MATCH (p1:Person)-[v1:VISITS]->(r:Rooms)
@@ -56,7 +56,7 @@ WHERE
     p1.Positive = True and
     v1.Duration > time({hour:0,minute:50})
 
-RETURN DISTINCT p1.CIF as CIF, p1.First_Name as Name, r.Code as Place, r.Name as Room, v1.Date as Date, p1.Last_Confirm as Positiveness_Date, count(v1) as Count
+RETURN DISTINCT p1.CIF as CIF, p1.First_Name as Name, r.Code as Place, r.Name as Room, v1.Date as Date, p1.Last_Confirm as Positiveness_Date
 ORDER BY p1.CIF
 
 
