@@ -6,7 +6,7 @@ Neo4j is a graph database management system developed by Neo4j, Inc. Described b
 Neo4j is implemented in Java and accessible from software written in other languages using the Cypher query language through a transactional HTTP endpoint, or through the binary "Bolt" protocol.
 
 ## Installation
-The DB Dump file on the database we based all our queries can be found [here](01/dump/Database_Tested_Dump.zip)
+The DB Dump file on the database we based all our queries can be found [here](01/dump/Database_Tested_Dump.zip).
 You can also generate new datasets in the following way:
 In [scripts](01/scripts/) you can find some useful tools to generate CSV file that can be imported into Neo4J. 
 To launch 'generate_dataset.py', make sure to install the dependencies first:
