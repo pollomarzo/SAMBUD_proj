@@ -1,6 +1,6 @@
 // lifted straight from https://github.com/jackdbd/react-neovis-example
 
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import useResizeAware from "react-resize-aware";
 import Neovis from "neovis.js/dist/neovis.js";
 
@@ -13,45 +13,25 @@ const NeoGraph = (props) => {
     neo4jUri,
     neo4jUser,
     neo4jPassword,
-    driver
+    cypher,
   } = props;
+  console.log(cypher);
 
   const visRef = useRef();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const config = {
       container_id: visRef.current.id,
       server_url: neo4jUri,
       server_user: neo4jUser,
       server_password: neo4jPassword,
-      labels: {
-        Troll: {
-          caption: "user_key",
-          size: "pagerank",
-          community: "community",
-        },
-      },
-      relationships: {
-        RETWEETS: {
-          caption: false,
-          thickness: "count",
-        },
-      },
-      initial_cypher:"MATCH (n)-[r:VISITS]->(m) RETURN * LIMIT 5",
-      // encrypted: "ENCRYPTION_OFF",
-      // neo4j: {
-      //   serverUrl: neo4jUri,
-      //   serverUser: neo4jUser,
-      //   serverPassword: neo4jPassword,
-      //   driverConfig:{
-      //     encrypted: false,
-      //   }
-      // }
-      
+      labels: {},
+      relationships: {},
+      initial_cypher: cypher,
     };
     const vis = new Neovis(config);
     vis.render();
-  }, [neo4jUri, neo4jUser, neo4jPassword]);
+  }, [neo4jUri, neo4jUser, neo4jPassword, cypher]);
 
   return (
     <div

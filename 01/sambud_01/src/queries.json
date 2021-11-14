@@ -1,3 +1,30 @@
-{
-    "CONTACT_POSITIVES": "MATCH (p1:Person)-[c:CONTACTS]-(p2:Person) WITH p1, p2, p1.Last_Confirm as positiveness_date, c.Date as contact_date  WHERE positiveness_date > contact_date and      positiveness_date < contact_date + duration({days: 5}) and     p1.Positive = True RETURN DISTINCT p1.Name + \" \" + p1.Last_Name as Positive,      p2.Name + \" \" + p2.Last_Name as Contacted, positiveness_date, contact_date,          duration.inDays(contact_date, positiveness_date).days  as days_passed             LIMIT 25"
-}
+[
+  {
+    "name": "CONTACT_POSITIVES",
+    "displayName": "CONTACT_POSITIVES",
+    "description": "CONTACT_POSITIVES",
+    "cypher": "MATCH (p1:Person)-[c:CONTACTS]-(p2:Person) WITH p1, p2, p1.Last_Confirm as positiveness_date, c.Date as contact_date  WHERE positiveness_date > contact_date and      positiveness_date < contact_date + duration({days: 5}) and p1.Positive = True RETURN DISTINCT p1.Name + \" \" + p1.Last_Name as Positive, p2.Name + \" \" + p2.Last_Name as Contacted, positiveness_date, contact_date, duration.inDays(contact_date, positiveness_date).days  as days_passed LIMIT 25",
+    "view": "table"
+  },
+  {
+    "name": "POSITIVE_VACCINE_RATIO",
+    "displayName": "POSITIVE_VACCINE_RATIO",
+    "description": "POSITIVE_VACCINE_RATIO",
+    "cypher": "MATCH (m)-[:REGISTERED]->(c:Covid_Vaccines) WITH c.Type as Type, count(*) as TotalNumber ORDER BY c.Type  MATCH (p:Person)-[:HAS]-(m:Medical_Record), (m)-[:REGISTERED]->(c:Covid_Vaccines) WHERE p.Positive = True and Type = c.Type RETURN  Type, count(*) as Positives, TotalNumber, round(ToFloat(count(*)) / ToFloat(TotalNumbe *100, 2) + \"%\" as Percent  ORDER BY Percent DESC",
+    "view": "table"
+  },
+  {
+    "name": "PLACES_POSITIVE",
+    "displayName": "PLACES_POSITIVE",
+    "description": "PLACES_POSITIVE",
+    "cypher": "MATCH (p1:Person)-[v1:VISITS]->(pl:Place) WHERE     p1.Last_Confirm > v1.Date and      p1.Last_Confirm < v1.Date + duration({days:5})     and     p1.Positive = True and     v1.Duration > time({hour:0,minute:50}) RETURN DISTINCT p1.CIF as CIF, p1.First_Name as Name, pl.Code as Place, pl.Room as Room, v1.Date Date,p1.Last_Confirm as Positiveness_Date, count(v1) as Count ORDER BY p1.CIF UNION MATCH (p1:Person)-[v1:VISITS]->(r:Rooms) WHERE     p1.Last_Confirm > v1.Date and      p1.Last_Confirm < v1.Date + duration({days:5})     and     p1.Positive = True and     v1.Duration > time({hour:0,minute:50}) RETURN DISTINCT p1.CIF as CIF, p1.First_Name as Name, r.Code as Place, r.Name as Room, v1.Date Date, p1.Last_Confirm as Positiveness_Date, count(v1) as Count ORDER BY p1.CIF",
+    "view": "table"
+  },
+  {
+    "name": "CONTACT_NODES",
+    "displayName": "CONTACT_NODES",
+    "description": "CONTACT_NODES",
+    "cypher": "match(p:Person) with p, p.Last_Confirm as P_Date, duration({days:50}) as TimeElapsed match  relation_1 = (p)-[v1:VISITS]->(pl:Place)<-[v3:VISITS]-(:Person) where  (P_Date > v1.Date and P_Date < v1.Date + TimeElapsed) and  (P_Date > v3.Date and P_Date < v3.Date + TimeElapsed) and (v1.Date >  v3.Date and v1.Date  < v3.Date + TimeElapsed) with p, P_Date, relation_1, TimeElapsed match relation_2 = (p)-[v2:VISITS]->(r:Rooms)<-[v4:VISITS]-(:Person) where (P_Date > v2.Date and P_Date < v2.Date + TimeElapsed) and  (P_Date > v4.Date and P_Date < v4.Date + TimeElapsed) and (v2.Date >  v4.Date and v2.Date  < v4.Date + TimeElapsed) with p, P_Date, relation_1, relation_2, TimeElapsed match relation_3 = (p)-[c:CONTACTS]->(:Person) where (P_Date > c.Date and P_Date < c.Date + TimeElapsed) with p, P_Date, relation_1, relation_2, relation_3, TimeElapsed match relation_4 = (p)-[:LIVES]->(:Person) return relation_1, relation_2, relation_3, relation_4",
+    "view": "graph"
+  }
+]
