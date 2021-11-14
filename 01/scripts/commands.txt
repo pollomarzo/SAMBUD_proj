@@ -13,9 +13,9 @@ set p.Positive = False
 return p, m, t
 
 
-##Delete all rooms never visited from any person  (da controllare)
-match (p:Person), (r:Room)
-where not exists ((p)-[:VISITS]->(r))
+##Delete all rooms never visited from any person  
+match (r:Rooms)
+where not (:Person)-[:VISITS]-(r)
 detach delete r
 
 
