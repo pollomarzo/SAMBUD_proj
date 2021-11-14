@@ -32,7 +32,7 @@ import {
   NEO4J_FULL_URI} from './secrets';
 
 
-function App() {
+function App({driver}) {
   const [message, setMessage] = useState("");
   const [elements, setElements] = useState([
     {
@@ -94,10 +94,13 @@ function App() {
               />
             </div> */}
             <ResponsiveNeoGraph
+              driver={driver}
               containerId={"id0"}
-              neo4jUri={"neo4j+s://61208074.databases.neo4j.io:7678"}
+              neo4jUri={"bolt://localhost:7687"}
               neo4jUser={NEO4J_USER}
-              neo4jPassword={NEO4J_PASSWORD}/>
+              neo4jPassword={"mamoud"}
+              height={'100%'}
+              width={'100%'}/>
             <Table data={result} />
           </Box>
         </Box >

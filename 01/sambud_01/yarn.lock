@@ -8098,7 +8098,7 @@ neo4j-driver-core@^4.4.0:
   resolved "https://registry.yarnpkg.com/neo4j-driver-core/-/neo4j-driver-core-4.4.0.tgz#b9d3a6ca53f2aa8705b387e3e0660742e7c57efa"
   integrity sha512-Ft4g1jJXXnnXemdCMETUG/e6iY7yfGwH0n0aaUVkgr8yovEXTBEz98rFct4nso3zyqPVKVN8FeCYDA37vmT8Jw==
 
-neo4j-driver@^4.1.0, neo4j-driver@^4.1.2:
+neo4j-driver@^4.1.0, neo4j-driver@^4.1.2, neo4j-driver@^4.3.4:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/neo4j-driver/-/neo4j-driver-4.4.0.tgz#f3b39818d14140aedf39abfdb44961abea39bc73"
   integrity sha512-6im3OYhwyG87O0nV/7HATo/vlOQaqGqnAsrYJ4Sw0czHgv/qJJ7qMheFGTXHqNoQsn376DBKda+ikFKTfnadDA==
@@ -8108,7 +8108,7 @@ neo4j-driver@^4.1.0, neo4j-driver@^4.1.2:
     neo4j-driver-core "^4.4.0"
     rxjs "^6.6.3"
 
-neovis.js@^1.6.0:
+neovis.js@^1.4.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/neovis.js/-/neovis.js-1.6.0.tgz#099867f1fd649f093248adaeb38263c4dffca02d"
   integrity sha512-SqDilnR9A5T5F+34u/az7PII79Bb3mCoa9ERYYiIzfGeLkWnAQZuOYaf3Xo5yeUNC6yixFm5DQH+430LS7N7Wg==

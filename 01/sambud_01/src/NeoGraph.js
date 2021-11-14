@@ -1,8 +1,8 @@
 // lifted straight from https://github.com/jackdbd/react-neovis-example
 
-import React, { useEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import useResizeAware from "react-resize-aware";
-import Neovis from "./NeoVis/neovis";
+import Neovis from "neovis.js/dist/neovis.js";
 
 const NeoGraph = (props) => {
   const {
@@ -13,11 +13,12 @@ const NeoGraph = (props) => {
     neo4jUri,
     neo4jUser,
     neo4jPassword,
+    driver
   } = props;
 
   const visRef = useRef();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const config = {
       container_id: visRef.current.id,
       server_url: neo4jUri,
@@ -36,14 +37,17 @@ const NeoGraph = (props) => {
           thickness: "count",
         },
       },
-      initial_cypher:
-        `MATCH(p:Person)-[:HAS]->(m:Medical_Record)
-        WHERE
-            p.Positive and
-            m.Risky_Subject and
-            p.Last_Confirm > date() - duration({days:15})
-        RETURN p LIMIT 5`,
-      encrypted: "ENCRYPTION_OFF",
+      initial_cypher:"MATCH (n)-[r:VISITS]->(m) RETURN * LIMIT 5",
+      // encrypted: "ENCRYPTION_OFF",
+      // neo4j: {
+      //   serverUrl: neo4jUri,
+      //   serverUser: neo4jUser,
+      //   serverPassword: neo4jPassword,
+      //   driverConfig:{
+      //     encrypted: false,
+      //   }
+      // }
+      
     };
     const vis = new Neovis(config);
     vis.render();
