@@ -16,14 +16,8 @@ import {
 import Neo4j from "neo4j-driver";
 
 const driver = Neo4j.driver(
-  "bolt://localhost:7687",
-  Neo4j.auth.basic(NEO4J_USER, "mamoud")
-);
-console.log(
-  "driver is ",
-  driver,
-  "and is it a neo4jdriver?",
-  driver instanceof Neo4j.driver
+  NEO4J_HOST_URI,
+  Neo4j.auth.basic(NEO4J_USER, NEO4J_PASSWORD)
 );
 
 console.log(driver);

@@ -12,7 +12,7 @@ const Table = ({ data }) => {
   const keys = data[0].keys;
   var columns = [];
   for (const key of keys) {
-    columns.push({ field: key });
+    columns.push({ field: key, flex: 1, minWidth: 100 });
   }
   var rows = [];
 
@@ -29,12 +29,14 @@ const Table = ({ data }) => {
   }
 
   return (
-    <DataGrid
-      rows={rows}
-      columns={columns}
-      pageSize={25}
-      rowsPerPageOptions={[25]}
-    />
+    <div style={{ height: "95%", width: "100%" }}>
+      <DataGrid
+        rows={rows}
+        columns={columns}
+        pageSize={25}
+        rowsPerPageOptions={[25]}
+      />
+    </div>
   );
 };
 

@@ -62,14 +62,16 @@ function App({ driver }) {
   const [result, setResult] = useState(undefined);
 
   return (
-    <Container>
-      <Typography variant="h3">Database explorer</Typography>
-      <Paper style={{ backgroundColor: "rgb(211, 211, 211)" }}>
+    <div style={{ padding: "50px 100px" }}>
+      <Typography style={{ paddingBottom: 30 }} variant="h3">
+        EXPLORER
+      </Typography>
+      <Paper elevation={4}>
         <Box
           sx={{
             height: "80vh",
             width: "90vw",
-            marginTop: "10vh",
+            padding: 2,
             // marginLeft: '5vh',
             display: "flex",
             flexDirection: "row",
@@ -77,14 +79,16 @@ function App({ driver }) {
             bgColor: "paper.background",
           }}
         >
-          <QueryList setResult={setResult} setElements={setElements} />
+          {" "}
+          <div style={{ width: "25vw" }}>
+            <QueryList setResult={setResult} setElements={setElements} />
+          </div>
           <Box
             sx={{
               position: "relative",
-              flexGrow: 1,
-              flexDirection: "column",
-              display: "flex",
+              width: "55vw",
               overflow: "hidden",
+              backgroundColor: "rgb(211, 211, 211)",
             }}
           >
             {result ? (
@@ -108,7 +112,7 @@ function App({ driver }) {
           </Box>
         </Box>
       </Paper>
-    </Container>
+    </div>
   );
 }
 

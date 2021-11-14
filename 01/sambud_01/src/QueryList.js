@@ -69,6 +69,7 @@ const QueryList = ({ setResult, setElements }) => {
 
   const runPersonalQuery = () => {
     console.log("running personal query...");
+    console.log(personalQuery);
     driver
       .session()
       .run(personalQuery)
@@ -77,7 +78,7 @@ const QueryList = ({ setResult, setElements }) => {
         setResult({
           records: res.records,
           view: graphSwitch ? "graph" : "table",
-          query: personalQuery,
+          cypher: personalQuery,
         });
       })
       .catch((e) => {
@@ -115,7 +116,7 @@ const QueryList = ({ setResult, setElements }) => {
                 <Typography>{query.displayName}</Typography>
               </ListItemText>
               <ListItemSecondaryAction>
-                <Tooltip title="run query">
+                <Tooltip title="run query" placement="right">
                   <IconButton
                     edge="end"
                     aria-label="run"
@@ -129,7 +130,7 @@ const QueryList = ({ setResult, setElements }) => {
               </ListItemSecondaryAction>
             </ListItem>
             <Collapse in={open === idx} timeout="auto" unmountOnExit>
-              <div style={{ marginLeft: 10 }}>YOYO</div>
+              <div style={{ marginLeft: 10 }}>{query.description}</div>
             </Collapse>
           </div>
         ))}
@@ -138,13 +139,14 @@ const QueryList = ({ setResult, setElements }) => {
         style={{
           display: "flex",
           flexDirection: "row",
-          paddingLeft: "2vh",
+          padding: "0px 20px",
+          marginTop: "5vh",
         }}
       >
         <TextField
           multiline
           minRows={5}
-          placeholder="enter your own query"
+          placeholder="Enter your own query..."
           value={personalQuery}
           onChange={(e) => setPersonalQuery(e.target.value)}
         />

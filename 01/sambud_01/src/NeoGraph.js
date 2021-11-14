@@ -55,7 +55,7 @@ NeoGraph.defaultProps = {
 const ResponsiveNeoGraph = (props) => {
   const [resizeListener, sizes] = useResizeAware();
 
-  const side = Math.max(sizes.width, sizes.height) / 2;
+  const side = Math.max(sizes.width, sizes.height);
   const neoGraphProps = { ...props, width: side, height: side };
   return (
     <div style={{ position: "relative" }}>
