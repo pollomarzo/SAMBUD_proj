@@ -1,31 +1,114 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState, useEffect } from 'react';
-import { Button } from '@mui/material';
-import { useReadCypher, useLazyWriteCypher } from 'use-neo4j'
+// inspired by https://github.dev/its-hmny/M-and-M
+// i wrote that one too so no copying here :)
 
-function App() {
+import logo from "./logo.svg";
+import { Button } from "@mui/material";
+import React, { useEffect, useState, useMemo } from "react";
+import ReactFlow from "react-flow-renderer";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  ListItemSecondaryAction,
+  IconButton,
+  Divider,
+  Fab,
+  Tooltip,
+  Box,
+  Container,
+  Typography,
+  Paper,
+} from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
+
+import QueryList from "./QueryList";
+import Table from "./Table";
+import { NeoGraph, ResponsiveNeoGraph } from "./NeoGraph";
+import {
+  NEO4J_HOST_URI,
+  NEO4J_USER,
+  NEO4J_PASSWORD,
+  NEO4J_PROTOCOL,
+  NEO4J_FULL_URI,
+} from "./secrets";
+
+function App({ driver }) {
   const [message, setMessage] = useState("");
-  const query = `Match (m:Movie) where m.released > 2000 RETURN m limit 5`
-  const params = { title: 'The Matrix' }
-
-
-  const { cypher, error, loading, result, records, first } = useReadCypher(query, params)
-
-  if (loading || !result) return (<div>Loading...</div>)
-  if (error) return (<div>ERROR</div>)
-
-  // Get `m` from the first row
-  const movie = first.get('m')
-  console.log(cypher, error, !loading, result, records, first, movie)
+  const [elements, setElements] = useState([
+    {
+      id: "1",
+      type: "input", // input node
+      data: { label: "Input Node" },
+      position: { x: 250, y: 25 },
+    },
+    // default node
+    {
+      id: "2",
+      // you can also pass a React component as a label
+      data: { label: <div>Default Node</div> },
+      position: { x: 100, y: 125 },
+    },
+    {
+      id: "3",
+      type: "output", // output node
+      data: { label: "Output Node" },
+      position: { x: 250, y: 250 },
+    },
+    // animated edge
+    { id: "e1-2", source: "1", target: "2", animated: true },
+    { id: "e2-3", source: "2", target: "3" },
+  ]);
+  const [selected, setSelected] = useState(undefined);
+  const [result, setResult] = useState(undefined);
 
   return (
-    <div className="App">
-      {movie.properties.title} was retrieved from database
-      {/* <Button onClick={handleSubmit}>
-        Carica dati
-      </Button> */}
-    </div >
+    <Container>
+      <Typography variant="h3">Database explorer</Typography>
+      <Paper style={{ backgroundColor: "rgb(211, 211, 211)" }}>
+        <Box
+          sx={{
+            height: "80vh",
+            width: "90vw",
+            marginTop: "10vh",
+            // marginLeft: '5vh',
+            display: "flex",
+            flexDirection: "row",
+            overflow: "hidden",
+            bgColor: "paper.background",
+          }}
+        >
+          <QueryList setResult={setResult} setElements={setElements} />
+          <Box
+            sx={{
+              position: "relative",
+              flexGrow: 1,
+              flexDirection: "column",
+              display: "flex",
+              overflow: "hidden",
+            }}
+          >
+            {result ? (
+              result.view === "graph" ? (
+                <ResponsiveNeoGraph
+                  driver={driver}
+                  containerId={"id0"}
+                  neo4jUri={"bolt://localhost:7687"}
+                  neo4jUser={NEO4J_USER}
+                  neo4jPassword={"mamoud"}
+                  height={"100%"}
+                  width={"100%"}
+                  cypher={result.cypher}
+                />
+              ) : (
+                <Table data={result} />
+              )
+            ) : (
+              <div>Select a query to see the result</div>
+            )}
+          </Box>
+        </Box>
+      </Paper>
+    </Container>
   );
 }
 

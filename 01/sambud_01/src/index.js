@@ -1,21 +1,41 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { Neo4jProvider, createDriver } from 'use-neo4j'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Neo4jProvider, createDriver } from "use-neo4j";
+import AppThemeProvider from "./theme";
+import CssBaseline from "@mui/material/CssBaseline";
+import {
+  NEO4J_HOST_URI,
+  NEO4J_USER,
+  NEO4J_PASSWORD,
+  NEO4J_SCHEME,
+  NEO4J_FULL_URI,
+} from "./secrets";
+import Neo4j from "neo4j-driver";
 
-const driver = createDriver('neo4j+s', '7d26a3c2.databases.neo4j.io', '7687', 'neo4j', 'Nem13r3dWbn5lfzs-kKdV8W7OplReDksuaB8X_aahqk')
+const driver = Neo4j.driver(
+  "bolt://localhost:7687",
+  Neo4j.auth.basic(NEO4J_USER, "mamoud")
+);
+console.log(
+  "driver is ",
+  driver,
+  "and is it a neo4jdriver?",
+  driver instanceof Neo4j.driver
+);
+
+console.log(driver);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Neo4jProvider
-      driver={driver}
-    >
+  <AppThemeProvider>
+    <Neo4jProvider driver={driver}>
+      <CssBaseline />
       <App />
     </Neo4jProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </AppThemeProvider>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
