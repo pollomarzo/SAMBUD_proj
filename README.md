@@ -17,10 +17,10 @@ Run [generate_dataset.py](01/scripts/generate_dataset.py) and copy the output fi
 python 01/scripts/generate_dataset.py
 ```
 Afterwards, use the Cypher Load Queries found in [load_queries.txt](01/scripts/load_queries.txt) to populate the dataset.
-You can also use some .dump example files in this folder:
-## UI
+You can also use some .dump example files in this folder: [dump](01/dump)
 
-...
+## UI
+More info [here](01/sambud_01/README.md)
 
 ## ER-Model
 To visualize the Entity-Relation model, go [here](https://www.diagrams.net)
