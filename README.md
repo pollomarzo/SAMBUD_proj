@@ -4,5 +4,5 @@
 user: mamoud
 password: mamoud1
 
-mongodb+srv://mamoud:<mamoud1>@smbud-2.2dbjr.mongodb.net/test
+mongodb+srv://mamoud:mamoud1@smbud-2.2dbjr.mongodb.net/test
 
