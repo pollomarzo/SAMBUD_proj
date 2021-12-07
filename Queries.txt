@@ -41,3 +41,10 @@ db.people100.aggregate([
 db.Places.find({
       $text:{"$search":"Presidio Ospedaliero"}
 }).limit(50)
+
+
+### QUERY 6
+# Find all the hospitals and order them with the text search score
+db.Places.aggregate([
+        {$match:{$text:{$search:"ospedale"}}}, {$sort:{score:{$meta:"textScore"}}}
+])
