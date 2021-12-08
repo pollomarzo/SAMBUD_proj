@@ -5,6 +5,7 @@
 ### react trash
 node_modules
 
+build
 ### LaTeX ###
 ## Core latex/pdflatex auxiliary files:
 *.aux
