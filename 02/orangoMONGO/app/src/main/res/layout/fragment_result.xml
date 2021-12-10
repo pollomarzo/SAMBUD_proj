@@ -7,23 +7,15 @@
     tools:context=".ResultFragment">
 
     <TextView
-        android:id="@+id/textview_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/previous"
+        android:id="@+id/personCode"
+        android:layout_width="125dp"
+        android:layout_height="72dp"
+        android:text="valid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <TextView
         android:id="@+id/result"
@@ -31,8 +23,10 @@
         android:layout_height="98dp"
         android:layout_marginBottom="223dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/button_second"
+        app:layout_constraintBottom_toTopOf="@+id/personCode"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

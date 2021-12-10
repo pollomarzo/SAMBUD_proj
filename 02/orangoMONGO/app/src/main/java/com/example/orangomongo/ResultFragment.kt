@@ -19,7 +19,9 @@ class ResultFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-    private val model: QRViewModel by activityViewModels()
+    private val model: QRViewModel by activityViewModels {
+        QRViewModelFactory((activity?.application as DocumentsApplication).repository)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,19 +29,16 @@ class ResultFragment : Fragment() {
     ): View? {
 
         _binding = FragmentResultBinding.inflate(inflater, container, false)
-        model.fetchDocument()
         return binding.root
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.result.text = model.personID
-
-
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-        }
+        binding.result.text = if(model.valid)
+            "Nice! Your covid certification works!"
+        else "Sorry, your covid thingy isn't valid :("
+        binding.personCode.text = model.personID
     }
 
     override fun onDestroyView() {

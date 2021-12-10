@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/ScanFragment"
         android:name="com.example.orangomongo.ScanFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/scan_fragment_label"
         tools:layout="@layout/fragment_scan">
 
         <action
@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/ResultFragment"
         android:name="com.example.orangomongo.ResultFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/result_fragment_label"
         tools:layout="@layout/fragment_result">
 
         <action

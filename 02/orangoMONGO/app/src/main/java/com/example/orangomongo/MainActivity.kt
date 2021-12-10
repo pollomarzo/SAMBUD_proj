@@ -21,9 +21,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-    private val model: QRViewModel by viewModels{
-        QRViewModelFactory((this.application as DocumentsApplication).repository)
-    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,28 +53,12 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         Log.d("CAMERA", "mainActivity onActivityResult called")
-        val cameraResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
-        Log.d("CAMERA", "SCANNED")
-        if (cameraResult != null){
-            if (cameraResult.contents == null) {
-                Toast.makeText(
-                    this,
-                    "cancelled",
-                    Toast.LENGTH_SHORT).show()
-            } else {
-                Log.d("CAMERA", "SCANNED CORRECTLY")
-                val code = cameraResult.contents
-                model.setID(code)
-                Toast.makeText(this,
-                    "Scanned correctly! Result: $code",
-                    Toast.LENGTH_SHORT)
-                    .show()
-                val fragment = supportFragmentManager.findFragmentById(R.id.ScanFragment)
-                Log.d("FRAGMENT", fragment.toString())
-                fragment?.onActivityResult(requestCode, resultCode, data)
-            }
-        }
+        // need this to have onActivityResult in "nested" fragments called
+        val navHostFragment = supportFragmentManager.findFragmentById(
+            R.id.nav_host_fragment_content_main)
+        val childFragments = navHostFragment?.childFragmentManager?.fragments
 
+        childFragments?.forEach { it.onActivityResult(requestCode, resultCode, data) }
         super.onActivityResult(requestCode, resultCode, data)
 
     }
