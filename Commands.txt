@@ -1,6 +1,6 @@
 ### COMMAND 1
 # For all certificates with version "v1", set the expiration date to: 31/12/2021
-db.people2.updateMany(
+db.Certificates.updateMany(
       {"Validity.Version":"v1"}, 
       {$set:{"Expiration_Date":"2021-12-31"}}
 )
@@ -8,14 +8,14 @@ db.people2.updateMany(
 
 ### COMMAND 2
 # For all the people who did a vaccine in the place $168, set the doctor id to "null", doctor first name as "Flavio" and doctor last name as "Manna"
-db.people2.updateMany(
-      {"Vaccines.Place":"$168"}, 
+db.Certificates.updateMany(
+      {"Vaccines.Place_ID":168}, 
       {$set:{"Vaccines.$.Doctor.0._id":"null", "Vaccines.$.Doctor.0.First_Name":"Flavio", "Vaccines.$.Doctor.0.Last_Name":"Manna"}}
 )
 
 
 ### COMMAND 3
 # Delete all certificates without vaccine
-db.people2.deleteMany(
+db.Certificates.deleteMany(
       {Vaccines:{$size:0}}
 )

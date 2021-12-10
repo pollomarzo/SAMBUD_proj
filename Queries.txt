@@ -1,6 +1,6 @@
 ### QUERY 1
 # Count how many people have an expired certificate
-db.people100.aggregate([
+db.Certificates.aggregate([
     {$match:{"Validity.Expiration_Date":{$lte:"2021-12-12"}}}, 
     {$count:"Expired_certificates"}
 ])
@@ -8,13 +8,13 @@ db.people100.aggregate([
 
 ### QUERY 2
 # Count how many people did at least one mRna vaccine
-db.people100.find(
+db.Certificates.find(
     {Vaccines:{$elemMatch:{Type:"mRNA"}}}).count()
     
     
 ### QUERY 3
 # Find the people who had two doses of Pfizer
-db.people100.aggregate([
+db.Certificates.aggregate([
     {$project:{
                 CIF:1, 
                 Vaccines: {$filter:{input:"$Vaccines", as:"v", cond:{$eq:["$$v.Brand", "Pfizer"]}}}}}, 
@@ -24,7 +24,7 @@ db.people100.aggregate([
 
 ### QUERY 4
 # Find the people who had a positive result in the last test they did
-db.people100.aggregate([
+db.Certificates.aggregate([
      {$project:{
                 _id:1, 
                 Tests:{$reduce:{
