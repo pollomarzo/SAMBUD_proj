@@ -35,7 +35,7 @@ class QRViewModel(): ViewModel() {
             StringRequest(Request.Method.GET, reqURL,
                 { response ->
                     Log.d("NETWORK", "received response: $response")
-                    valid = !valid
+                    valid = isValid(response)
                     update()
                     Log.d("RESULT", "based on response $response, date is $valid")
                     onComplete()
