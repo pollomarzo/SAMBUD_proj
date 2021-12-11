@@ -24,14 +24,18 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 import javax.security.auth.login.LoginException
 
-val middlewareURL = "http://192.168.20.64:80/valid/"
+val middlewareURL = "http://192.168.1.192:81/valid/"
 
 class QRViewModel(private val repository: DocumentsRepository): ViewModel() {
     var personID: String = ""
     private lateinit var document: String
     var loading: Boolean = true
     var valid: Boolean = false
-    private lateinit var realm: Realm
+    var result: String = ""
+    var color: String = "#FF0000"
+    var check: Boolean = false
+
+
 
     /*fun login(onLoginError: (String)->Unit, onLoginSuccess: ()->Unit ){
         repository.login(
@@ -78,6 +82,7 @@ class QRViewModel(private val repository: DocumentsRepository): ViewModel() {
                 { response ->
                     Log.d("NETWORK", "received response: $response")
                     valid = isValid(response)
+                    update()
                     Log.d("RESULT", "based on response $response, date is $valid")
                     onComplete()
                 },
@@ -93,6 +98,16 @@ class QRViewModel(private val repository: DocumentsRepository): ViewModel() {
         }
         return date_parsed != null && Calendar.getInstance().time > date_parsed
 
+    }
+    private fun update(){
+        if(valid){
+            result="Nice! Your covid certification works!"
+            color = "#00FF00"
+        }
+        else{
+            result = "Sorry, your covid thingy isn't valid :("
+            color = "#E06666"
+        }
     }
 
     override fun onCleared() {

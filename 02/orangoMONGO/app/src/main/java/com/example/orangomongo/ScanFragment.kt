@@ -42,13 +42,14 @@ class ScanFragment : Fragment() {
 
         binding.buttonFirst.setOnClickListener {
             binding.buttonFirst.isEnabled = false
+            binding.loading.visibility = View.VISIBLE
             val intentIntegrator = IntentIntegrator(activity)
             intentIntegrator.setBeepEnabled(false)
             intentIntegrator.setCameraId(0)
             intentIntegrator.setPrompt("SCAN")
             intentIntegrator.setBarcodeImageEnabled(false)
             intentIntegrator.initiateScan()
-            binding.loading.visibility = View.VISIBLE
+
         }
     }
 

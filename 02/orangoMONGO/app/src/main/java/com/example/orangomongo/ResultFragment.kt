@@ -1,13 +1,18 @@
 package com.example.orangomongo
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils.loadAnimation
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.orangomongo.databinding.FragmentResultBinding
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -35,10 +40,12 @@ class ResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.result.text = if(model.valid)
-            "Nice! Your covid certification works!"
-        else "Sorry, your covid thingy isn't valid :("
+        binding.result.setTextColor(Color.parseColor(model.color))
+        binding.result.text = model.result
         binding.personCode.text = model.personID
+        binding.checkMark2.visibility = if (model.check) View.VISIBLE else View.INVISIBLE
+        binding.checkMark.visibility = if (model.check) View.INVISIBLE else View.VISIBLE
+
     }
 
     override fun onDestroyView() {
