@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 const DBUri =
-  "mongodb://mamoud:mamoud1@smbud-2-shard-00-00.2dbjr.mongodb.net:27017,smbud-2-shard-00-01.2dbjr.mongodb.net:27017,smbud-2-shard-00-02.2dbjr.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-kgahg5-shard-0&authSource=admin&retryWrites=true&w=majority";
+  "mongodb://mamoud:mamoud1@smbud-2-shard-00-00.2dbjr.mongodb.net:27017,smbud-2-shard-00-01.2dbjr.mongodb.net:27017,smbud-2-shard-00-02.2dbjr.mongodb.net:27017/SMBUD-2?ssl=true&replicaSet=atlas-kgahg5-shard-0&authSource=admin&retryWrites=true&w=majority";
 //"mongodb://mamoud:mamoud1@smbud-2.2dbjr.mongodb.net/test";
 const client = new MongoClient(DBUri, {
   useNewUrlParser: true,
@@ -18,7 +18,7 @@ app.get("/valid/:code", (req, res) => {
   client.connect(async (err) => {
     if (err) {
       console.log(err);
-      res.send("error: " + err);
+      res.send("error while connecting: " + err);
     } else {
       const db = await client.db("SMBUD-2");
       const collection = db.collection("Certificates");

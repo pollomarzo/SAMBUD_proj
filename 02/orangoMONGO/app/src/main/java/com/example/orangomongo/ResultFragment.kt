@@ -25,14 +25,13 @@ class ResultFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
     private val model: QRViewModel by activityViewModels {
-        QRViewModelFactory((activity?.application as DocumentsApplication).repository)
+        QRViewModelFactory()
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentResultBinding.inflate(inflater, container, false)
         return binding.root
 
@@ -43,9 +42,8 @@ class ResultFragment : Fragment() {
         binding.result.setTextColor(Color.parseColor(model.color))
         binding.result.text = model.result
         binding.personCode.text = model.personID
-        binding.checkMark2.visibility = if (model.check) View.VISIBLE else View.INVISIBLE
-        binding.checkMark.visibility = if (model.check) View.INVISIBLE else View.VISIBLE
-
+        binding.checkMark.visibility = if (model.valid) View.GONE else View.VISIBLE
+        binding.checkMark2.visibility = if (model.valid) View.VISIBLE else View.GONE
     }
 
     override fun onDestroyView() {

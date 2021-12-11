@@ -20,8 +20,8 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="133dp"
-        android:layout_height="98dp"
+        android:layout_width="298dp"
+        android:layout_height="104dp"
         android:layout_marginBottom="223dp"
         android:text="TextView"
         android:textAlignment="center"
@@ -48,7 +48,9 @@
         android:layout_width="151dp"
         android:layout_height="143dp"
         android:src="@drawable/whitecheck"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="244dp" />
+        app:layout_constraintBottom_toTopOf="@+id/personCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

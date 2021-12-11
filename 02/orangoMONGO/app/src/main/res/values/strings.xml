@@ -2,8 +2,8 @@
     <string name="app_name">orangoMONGO</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="scan_fragment_label">Scan Fragment</string>
-    <string name="result_fragment_label">Result Fragment</string>
+    <string name="scan_fragment_label">Home</string>
+    <string name="result_fragment_label">Result</string>
     <string name="scan">Scan</string>
 
     <string name="welcome">Click scan to scan your covid QR</string>

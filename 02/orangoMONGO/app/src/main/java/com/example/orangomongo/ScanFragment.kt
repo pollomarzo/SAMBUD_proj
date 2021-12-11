@@ -24,7 +24,7 @@ class ScanFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
     private val model: QRViewModel by activityViewModels {
-        QRViewModelFactory((activity?.application as DocumentsApplication).repository)
+        QRViewModelFactory()
     }
 
     override fun onCreateView(
@@ -48,6 +48,9 @@ class ScanFragment : Fragment() {
             intentIntegrator.setCameraId(0)
             intentIntegrator.setPrompt("SCAN")
             intentIntegrator.setBarcodeImageEnabled(false)
+            // keep it vertical
+            intentIntegrator.captureActivity = VerticalCapture::class.java
+            intentIntegrator.setOrientationLocked(false)
             intentIntegrator.initiateScan()
 
         }
