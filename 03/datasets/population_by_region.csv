@@ -1,0 +1,23 @@
+NUTS2,Territorio,TIPO_DATO15,Tipo di indicatore demografico,SEXISTAT1,Sesso,ETA1,Età,STATCIV2,Stato civile,TIME,Seleziona periodo,Value
+ITC1,Piemonte,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,4274945
+ITC2,Valle d'Aosta / Vallée d'Aoste,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,124089
+ITC3,Liguria,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,1518495
+ITC4,Lombardia,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,9981554
+ITHA,Trentino Alto Adige / Südtirol,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,1077078
+ITH1,Provincia Autonoma Bolzano / Bozen,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,534912
+ITH2,Provincia Autonoma Trento,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,542166
+ITH3,Veneto,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,4869830
+ITH4,Friuli-Venezia Giulia,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,1201510
+ITH5,Emilia-Romagna,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,4438937
+ITI1,Toscana,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,3692865
+ITI2,Umbria,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,865452
+ITI3,Marche,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,1498236
+ITI4,Lazio,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,5730399
+ITF1,Abruzzo,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,1281012
+ITF2,Molise,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,294294
+ITF3,Campania,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,5624260
+ITF4,Puglia,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,3933777
+ITF5,Basilicata,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,545130
+ITF6,Calabria,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,1860601
+ITG1,Sicilia,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,4833705
+ITG2,Sardegna,JAN,popolazione al 1º gennaio,9,totale,TOTAL,totale,99,totale,2021,2021,1590044
